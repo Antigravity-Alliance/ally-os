@@ -4009,6 +4009,211 @@ body::after {
 }
 
 /* ============================================
+   FEATURES FLIP GRID
+   ============================================ */
+.features-grid-section {
+  padding: var(--section-pad) 0;
+  background: var(--gunmetal);
+  position: relative;
+}
+
+.features-grid-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--white-10), transparent);
+}
+
+.features-flip-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.flip-card {
+  perspective: 800px;
+  cursor: pointer;
+  aspect-ratio: 1.05;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem 1rem;
+  transition: all 0.35s var(--ease-out);
+}
+
+.flip-card-front {
+  background: linear-gradient(160deg, var(--storm) 0%, rgba(30, 37, 48, 0.6) 100%);
+  border: 1px solid var(--white-10);
+  gap: 0.75rem;
+}
+
+.flip-card:hover .flip-card-front {
+  border-color: var(--aqua);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.1), inset 0 1px 0 rgba(0, 212, 255, 0.1);
+  transform: translateY(-3px);
+}
+
+.flip-card:hover .flip-card-front svg {
+  filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.4));
+}
+
+.flip-card-front svg {
+  width: 40px;
+  height: 40px;
+  color: var(--aqua);
+  stroke-width: 1.5;
+  transition: filter 0.35s var(--ease-out);
+}
+
+.flip-card-front span {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--white);
+  text-align: center;
+  line-height: 1.25;
+}
+
+.flip-card-back {
+  background: linear-gradient(160deg, var(--deep-navy) 0%, rgba(10, 14, 20, 0.95) 100%);
+  border: 1px solid var(--aqua);
+  box-shadow: 0 0 24px rgba(0, 212, 255, 0.12), inset 0 1px 0 rgba(0, 212, 255, 0.15);
+  transform: rotateY(180deg);
+  padding: 1.25rem;
+}
+
+.flip-card-back p {
+  font-size: 0.8125rem;
+  color: var(--white-90);
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Tap hint on mobile */
+.flip-card-front::after {
+  content: 'Tap to learn more';
+  position: absolute;
+  bottom: 0.5rem;
+  font-size: 0.5625rem;
+  color: var(--white-30);
+  letter-spacing: 0.03em;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+@media (hover: none) {
+  .flip-card-front::after { opacity: 1; }
+}
+
+@media (max-width: 1024px) {
+  .features-flip-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .features-flip-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.625rem;
+  }
+
+  .flip-card-front svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .flip-card-front span {
+    font-size: 0.6875rem;
+  }
+
+  .flip-card-back p {
+    font-size: 0.75rem;
+  }
+}
+
+/* ============================================
+   PAYMENT INTEGRATIONS SECTION
+   ============================================ */
+.integrations-section {
+  padding: var(--section-pad) 0;
+  position: relative;
+}
+
+.integrations-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.integration-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--gunmetal);
+  border: 1px solid var(--white-10);
+  border-radius: 12px;
+  min-width: 120px;
+  transition: all 0.3s var(--ease-out);
+}
+
+.integration-logo:hover {
+  border-color: var(--white-15);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.integration-logo svg {
+  width: 36px;
+  height: 36px;
+  color: var(--white-70);
+}
+
+.integration-logo span {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.8125rem;
+  color: var(--white-70);
+  letter-spacing: 0.03em;
+}
+
+.integrations-more {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  color: var(--fog);
+}
+
+/* ============================================
    PRICING SECTION
    ============================================ */
 .pricing {
@@ -5510,7 +5715,7 @@ body::after {
 
 .steps-grid {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: center;
   gap: 0;
   margin-top: 3rem;
@@ -5518,45 +5723,57 @@ body::after {
 
 .step-card {
   flex: 1;
-  max-width: 220px;
+  max-width: 240px;
   text-align: center;
-  padding: 1.5rem 1rem;
+  padding: 2rem 1.25rem;
+  background: var(--gunmetal);
+  border: 1px solid var(--white-05);
+  border-radius: 14px;
+  transition: border-color 0.3s var(--ease-out), transform 0.3s var(--ease-out);
+}
+
+.step-card:hover {
+  border-color: var(--white-15);
+  transform: translateY(-3px);
 }
 
 .step-number {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--font-display);
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 1.375rem;
+  font-weight: 800;
   margin: 0 auto 1rem;
 }
 
 .step-card h4 {
   font-family: var(--font-display);
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--salt);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--white);
   margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 .step-card p {
-  font-size: 0.85rem;
-  color: var(--fog);
-  line-height: 1.5;
+  font-size: 0.875rem;
+  color: var(--white-70);
+  line-height: 1.55;
 }
 
 .step-connector {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 1.8rem;
+  padding: 0 0.375rem;
   color: var(--haze);
   flex-shrink: 0;
+  align-self: center;
 }
 
 .step-connector svg {
@@ -5649,6 +5866,95 @@ body::after {
 
 .pricing-dormant svg { color: var(--purple); flex-shrink: 0; }
 
+/* Tier Toggle (School / Center switcher) */
+.pricing-tier-toggle {
+  display: flex;
+  background: var(--deep-navy);
+  border-radius: 10px;
+  padding: 3px;
+  margin-bottom: 1.25rem;
+  border: 1px solid var(--white-10);
+}
+
+.pricing-tier-toggle input { display: none; }
+
+.pricing-tier-toggle label {
+  flex: 1;
+  text-align: center;
+  padding: 0.5rem 0.75rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--white-50);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s var(--ease-out);
+  line-height: 1.3;
+}
+
+.pricing-tier-toggle label span {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--white-30);
+  margin-top: 0.125rem;
+}
+
+.pricing-tier-toggle input:checked + label {
+  background: var(--aqua);
+  color: var(--deep-navy);
+}
+
+.pricing-tier-toggle input:checked + label span {
+  color: rgba(10, 14, 20, 0.6);
+}
+
+/* Toggle-driven content visibility */
+.pricing-limits-school,
+.pricing-limits-center {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: all 0.25s var(--ease-out);
+}
+
+.pricing-limits-school {
+  background: rgba(138, 151, 168, 0.08);
+  border: 1px solid var(--white-10);
+  color: var(--fog);
+}
+
+.pricing-limits-center {
+  background: rgba(0, 212, 255, 0.06);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  color: var(--aqua);
+}
+
+.pricing-limits-school svg,
+.pricing-limits-center svg {
+  flex-shrink: 0;
+}
+
+/* Default: school visible, center hidden */
+.pricing-amount-center { display: none; }
+.pricing-limits-center { display: none; }
+
+/* When card has data-tier="center" */
+.pricing-card[data-tier="center"] .pricing-amount-school { display: none; }
+.pricing-card[data-tier="center"] .pricing-amount-center { display: inline; }
+.pricing-card[data-tier="center"] .pricing-limits-school { display: none; }
+.pricing-card[data-tier="center"] .pricing-limits-center { display: flex; }
+
 /* ============================================
    SHOWCASE WRAPPER
    ============================================ */
@@ -5700,6 +6006,22 @@ body::after {
 
   .pricing-plus {
     display: none;
+  }
+
+  .steps-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .step-card {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .step-connector {
+    transform: rotate(90deg);
+    padding: 0;
   }
 
   .testimonial-cards {
@@ -8089,6 +8411,299 @@ body::after {
   </div>
 </section>
 
+<!-- ============================================
+     FEATURES GRID
+     ============================================ -->
+<section class="features-grid-section" id="features">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Features</span>
+      <h2 class="section-title">Everything Under One Roof</h2>
+    </div>
+
+    <div class="features-flip-grid">
+
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            <span>Command Center</span>
+          </div>
+          <div class="flip-card-back">
+            <p>Real-time overview of your entire operation — bookings, revenue, instructor availability, and weather in one glance.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg>
+            <span>Booking Engine</span>
+          </div>
+          <div class="flip-card-back">
+            <p>Embeddable widget for your website. Students book 24/7, automated confirmations, deposit collection, calendar sync.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>Student CRM</span>
+          </div>
+          <div class="flip-card-back">
+            <p>Full student profiles — contact info, booking history, skill level, session notes, and lifetime value at a glance.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            <span>Student Progression</span>
+          </div>
+          <div class="flip-card-back">
+            <p>Track every student from first body drag to first backroll. Visual skill ladders and certification tracking built in.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            <span>Session Journal</span>
+          </div>
+          <div class="flip-card-back">
+            <p>One form per session auto-updates payroll, student progress, billing, inventory, and session history. Zero duplicate admin.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v10l4.24 4.24"/><circle cx="12" cy="12" r="10"/></svg>
+            <span>Instructor Scheduler</span>
+          </div>
+          <div class="flip-card-back">
+            <p>Visual drag-and-drop scheduling. Instructor availability, shift management, and automatic conflict detection.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12.8 19.6A2 2 0 1 0 14 16H2"/><path d="M17.5 8a2.5 2.5 0 1 1 2 4H2"/><path d="M9.8 4.4A2 2 0 1 1 11 8H2"/></svg>
+            <span>Weather Intelligence</span>
+          </div>
+          <div class="flip-card-back">
+            <p>Live wind, tide, and weather data integrated into your schedule. Auto-suggest session windows and notify students.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+            <span>Inventory Management</span>
+          </div>
+          <div class="flip-card-back">
+            <p>Track every kite, board, harness, and wetsuit. Condition status, repair tickets, usage hours, and low-stock alerts.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            <span>Financial Dashboard</span>
+          </div>
+          <div class="flip-card-back">
+            <p>Revenue tracking, expense monitoring, instructor payroll, and booking income — all in real time with exportable reports.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <span>Cross Communication</span>
+          </div>
+          <div class="flip-card-back">
+            <p>Centralized messaging between school, instructors, and students. No more WhatsApp chaos — one thread per booking.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            <span>Waivers &amp; Forms</span>
+          </div>
+          <div class="flip-card-back">
+            <p>Digital waivers and pre-session questionnaires. Auto-sent before lessons, signed on any device, stored with student profiles.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <span>Multi-Currency</span>
+          </div>
+          <div class="flip-card-back">
+            <p>Display prices in local currency with USD/EUR toggle. Accept payments worldwide — never store converted amounts.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Excursion Planner</span>
+          </div>
+          <div class="flip-card-back">
+            <p>Plan and sell guided excursions — downwinders, island trips, spot tours. Participant tracking, gear assignment, and deposits.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+            <span>Repair Tickets</span>
+          </div>
+          <div class="flip-card-back">
+            <p>Log gear damage, assign repair status, track turnaround time. Know exactly what's flight-ready and what's grounded.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+            <span>Smart Notifications</span>
+          </div>
+          <div class="flip-card-back">
+            <p>Booking confirmations, weather alerts, low inventory warnings, and daily summary emails — all automated.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+            <span>Analytics &amp; Reports</span>
+          </div>
+          <div class="flip-card-back">
+            <p>Booking trends, revenue by service, instructor performance, student retention — data-driven decisions made simple.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            <span>School Settings</span>
+          </div>
+          <div class="flip-card-back">
+            <p>Booking rules, cancellation policies, deposit percentages, timezone, language, and notification preferences — fully customizable.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Public School Profile</span>
+          </div>
+          <div class="flip-card-back">
+            <p>Your school's public listing on The Kite Alliance — discoverable by riders worldwide. Reviews, services, location, and direct booking.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M12 11v6"/><path d="M9 14h6"/></svg>
+            <span>Smart Waitlist</span>
+          </div>
+          <div class="flip-card-back">
+            <p>When sessions are full, students join a waitlist. Cancellations auto-notify the next in line — no manual juggling.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/><path d="M16 10l-4 4m0-4l4 4"/></svg>
+            <span>Abandoned Cart Recovery</span>
+          </div>
+          <div class="flip-card-back">
+            <p>When a student drops off mid-booking, automated follow-ups bring them back to complete the purchase.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     PAYMENT INTEGRATIONS
+     ============================================ -->
+<section class="integrations-section" id="integrations">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label" style="color: var(--green);">Integrations</span>
+      <h2 class="section-title">Payment Gateways That Just Work</h2>
+    </div>
+
+    <div class="integrations-grid">
+      <div class="integration-logo reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10h20"/><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 16h.01"/><path d="M10 16h.01"/></svg>
+        <span>Stripe</span>
+      </div>
+      <div class="integration-logo reveal reveal-delay-1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+        <span>Payfast</span>
+      </div>
+      <div class="integration-logo reveal reveal-delay-1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/><path d="M12 15h4"/></svg>
+        <span>iKhokha</span>
+      </div>
+      <div class="integration-logo reveal reveal-delay-2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <span>Tab.travel</span>
+      </div>
+      <div class="integration-logo reveal reveal-delay-2" style="border-style: dashed; border-color: var(--white-15);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color: var(--white-30);"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+        <span style="color: var(--white-30);">More coming</span>
+      </div>
+    </div>
+
+    <p class="integrations-more reveal">Accept payments in any currency, anywhere. Local gateways for lower fees — global reach when you need it.</p>
+  </div>
+</section>
+
 <div class="glow-divider"></div>
 
 <!-- ============================================
@@ -8122,26 +8737,46 @@ body::after {
 
       <div class="pricing-plus reveal reveal-delay-1">+</div>
 
-      <!-- School -->
+      <!-- School / Center -->
       <div class="pricing-card featured glow-border reveal reveal-delay-1">
         <div class="pricing-popular">Most Popular</div>
-        <div class="pricing-tier">School</div>
-        <div class="pricing-price">
-          <span class="pricing-amount">$99<span class="pricing-period">/mo</span></span>
+
+        <div class="pricing-tier-toggle">
+          <input type="radio" name="school-tier" id="tier-school" checked>
+          <label for="tier-school">School<span>$99/mo</span></label>
+          <input type="radio" name="school-tier" id="tier-center">
+          <label for="tier-center">Center<span>$199/mo</span></label>
         </div>
-        <p class="pricing-desc">The full school operating system.</p>
+
+        <div class="pricing-price">
+          <span class="pricing-amount pricing-amount-school">$99<span class="pricing-period">/mo</span></span>
+          <span class="pricing-amount pricing-amount-center">$199<span class="pricing-period">/mo</span></span>
+        </div>
+        <p class="pricing-desc">All 19 features above, included.</p>
+        <div class="pricing-or-commission">
+          <span>or pay 0$/mo + commission per booking</span>
+        </div>
         <ul class="pricing-features">
-          <li>Unlimited students &amp; instructors</li>
-          <li>Smart booking engine + widget</li>
-          <li>Weather intelligence</li>
-          <li>Student progression &amp; journals</li>
-          <li>CRM, inventory &amp; excursions</li>
-          <li>Financial dashboard &amp; reports</li>
-          <li>Priority support</li>
+          <li>Easy onboarding — be live in minutes</li>
+          <li>Full control over your bookings</li>
+          <li>Reduce admin by 75%</li>
+          <li>Payment gateway integrations available</li>
+          <li>14-day free trial — no credit card required</li>
         </ul>
+
+        <div class="pricing-limits-school">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          Up to 5 instructors + 3 freelancers &bull; Max 50 kites &amp; wings + 20 boards
+        </div>
+
+        <div class="pricing-limits-center">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          Unlimited instructors, freelancers &amp; gear inventory
+        </div>
+
         <div class="pricing-dormant">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M12.8 19.6A2 2 0 1 0 14 16H2"/><path d="M17.5 8a2.5 2.5 0 1 1 2 4H2"/><path d="M9.8 4.4A2 2 0 1 1 11 8H2"/></svg>
-          Off-season? Dormant mode at 50% off
+          Off-season mode at 50% off
         </div>
         <a href="https://app.thekitealliance.com/login" target="_blank" rel="noopener" class="pricing-cta primary">Start Free Trial</a>
       </div>
@@ -8160,6 +8795,7 @@ body::after {
           <li>Accommodation management</li>
           <li>Shop integration</li>
           <li>Custom integrations</li>
+          <li>AI agent integration</li>
           <li>SLA &amp; priority support</li>
         </ul>
         <a href="https://calendly.com/christian-bergler81/new-meeting" target="_blank" rel="noopener" class="pricing-cta secondary">Book a Call</a>
@@ -8256,12 +8892,12 @@ body::after {
       <div class="faq-item reveal reveal-delay-1">
         <input type="checkbox" class="faq-toggle" id="faq2">
         <label class="faq-question" for="faq2">
-          <h4>What's the deal with dormant months?</h4>
+          <h4>What's the deal with off-season months?</h4>
           <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span>
         </label>
         <div class="faq-answer">
           <div class="faq-answer-inner">
-            We know most schools aren't year-round. Pick your active months — you pay $99/mo for those. In the off-season, flip to dormant mode at 50% off. Your data, your bookings history, your student records — everything stays exactly where you left it. You're not paying full price to stare at a flat ocean.
+            We know most schools aren't year-round. Pick your active months — you pay $99/mo for those. In the off-season, switch to off-season mode at 50% off. Your data, your bookings history, your student records — everything stays exactly where you left it. You're not paying full price to stare at a flat ocean.
           </div>
         </div>
       </div>
@@ -8746,6 +9382,27 @@ document.getElementById('chatSendBtn').addEventListener('click', function() {
 document.getElementById('chatInput').addEventListener('keydown', function(e) {
   if (e.key === 'Enter') document.getElementById('chatSendBtn').click();
 });
+</script>
+
+<script>
+// Feature flip cards
+document.querySelectorAll('.flip-card').forEach(function(card) {
+  card.addEventListener('click', function() {
+    card.classList.toggle('flipped');
+  });
+});
+
+// Pricing tier toggle (School / Center)
+(function() {
+  var card = document.querySelector('.pricing-card.featured');
+  if (!card) return;
+  var radios = card.querySelectorAll('input[name="school-tier"]');
+  radios.forEach(function(radio) {
+    radio.addEventListener('change', function() {
+      card.setAttribute('data-tier', radio.id === 'tier-center' ? 'center' : 'school');
+    });
+  });
+})();
 </script>
 
 </body>
