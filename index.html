@@ -4265,16 +4265,40 @@ body::after {
 }
 
 .pricing-card.featured {
-  padding: 2rem 2rem 1.75rem;
+  padding: 1.5rem 1.75rem 1.25rem;
   border-color: var(--aqua);
   background: linear-gradient(180deg, rgba(0, 212, 255, 0.05), var(--storm));
   box-shadow: 0 0 40px rgba(0, 212, 255, 0.08);
 }
 
+.pricing-card.featured .pricing-desc {
+  margin-bottom: 0.75rem;
+}
+
+.pricing-card.featured .pricing-features {
+  gap: 0.375rem;
+  margin-bottom: 1rem;
+}
+
+.pricing-card.featured .pricing-price {
+  margin-bottom: 0.125rem;
+}
+
+.pricing-card.featured .pricing-amount {
+  font-size: 2.25rem;
+}
+
+.pricing-or-commission {
+  font-size: 0.8125rem;
+  color: var(--fog);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
 .pricing-card.featured::before {
   content: 'MOST POPULAR';
   position: absolute;
-  top: -12px;
+  top: -10px;
   left: 50%;
   transform: translateX(-50%);
   padding: 0.375rem 1rem;
@@ -5855,9 +5879,9 @@ body::after {
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  padding: 0.5rem 0.75rem;
-  margin-top: 0.75rem;
-  margin-bottom: 0.5rem;
+  padding: 0.4rem 0.75rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
   background: rgba(167, 139, 250, 0.06);
   border: 1px solid rgba(167, 139, 250, 0.15);
   border-radius: 8px;
@@ -5874,7 +5898,7 @@ body::after {
   background: var(--deep-navy);
   border-radius: 10px;
   padding: 3px;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.75rem;
   border: 1px solid var(--white-10);
 }
 
@@ -5922,11 +5946,11 @@ body::after {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.5rem 0.75rem;
+  padding: 0.4rem 0.75rem;
   border-radius: 8px;
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   font-weight: 600;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   transition: all 0.25s var(--ease-out);
 }
 
