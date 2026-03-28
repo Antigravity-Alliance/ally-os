@@ -6175,7 +6175,7 @@ body::after {
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="/features">Features</a></li>
-      <li><a href="/features#showcase">Dashboard</a></li>
+      <li><a href="#showcase">Dashboards</a></li>
       <li><a href="/pricing">Pricing</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="https://app.thekitealliance.com/login" target="_blank" rel="noopener" class="nav-cta">Start Free Trial</a></li>
@@ -6376,31 +6376,1218 @@ body::after {
   </div>
 </section>
 
+<div class="glow-divider purple"></div>
+
+<!-- ============================================
+     FEATURE SHOWCASE (Interactive Slider)
+     ============================================ -->
+<section class="feature-showcase" id="showcase">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label" style="color: var(--purple);">Explore</span>
+      <h2 class="section-title">See It In Action</h2>
+      <p style="max-width:540px; margin:0.75rem auto 0; color:var(--fog); font-size:1rem; text-align:center;">Click through the tools that run your school. Every screen built for speed, clarity, and zero training.</p>
+    </div>
+
+    <div class="showcase-wrapper reveal-scale">
+    <div class="showcase-dashboard-wrapper" id="showcase">
+      <div class="hero-dashboard">
+        <!-- Browser Chrome -->
+        <div class="dash-chrome">
+          <div class="dash-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="dash-url" id="showcase-url-bar">app.thekitealliance.com/school/overview</div>
+          <div class="mock-toggle-wrap">
+            <span class="mock-toggle-label" id="schoolNameLabel">Kitesurf Roatan</span>
+            <label class="mock-toggle">
+              <input type="checkbox" id="mockDataToggle">
+              <span class="mock-toggle-slider"></span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Feature Tabs -->
+        <div class="hero-slider-tabs" id="showcaseSliderTabs">
+          <div class="hero-tab active" data-tab="overview" data-url="school/overview">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>
+            Overview
+            <div class="hero-tab-progress"></div>
+          </div>
+          <div class="hero-tab" data-tab="scheduler" data-url="school/calendar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
+            Organisation
+            <div class="hero-tab-progress"></div>
+          </div>
+          <div class="hero-tab" data-tab="services" data-url="school/services">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m6.08 9.5-3.5 1.6a1 1 0 0 0 0 1.81l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9a1 1 0 0 0 0-1.83l-3.5-1.59"/><path d="m6.08 14.5-3.5 1.6a1 1 0 0 0 0 1.81l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9a1 1 0 0 0 0-1.83l-3.5-1.59"/></svg>
+            Services
+            <div class="hero-tab-progress"></div>
+          </div>
+          <div class="hero-tab" data-tab="bookings" data-url="school/bookings">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v14"/><path d="M16 12H2"/><path d="M22 12H18"/><path d="M12 3v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 4.93-1.41 1.41"/></svg>
+            Bookings
+            <div class="hero-tab-progress"></div>
+          </div>
+          <div class="hero-tab" data-tab="crm" data-url="school/clients">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Clients
+            <div class="hero-tab-progress"></div>
+          </div>
+          <div class="hero-tab" data-tab="inventory" data-url="school/inventory">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"/><path d="m7.5 4.27 9 5.15"/></svg>
+            Inventory
+            <div class="hero-tab-progress"></div>
+          </div>
+          <div class="hero-tab" data-tab="finance" data-url="school/finance">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            Finance
+            <div class="hero-tab-progress"></div>
+          </div>
+          <div class="hero-tab" data-tab="team" data-url="school/team">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4"/><path d="M12 19v4"/><path d="m5.64 5.64 2.83 2.83"/><path d="m15.54 15.54 2.83 2.83"/><path d="M1 12h4"/><path d="M19 12h4"/><path d="m5.64 18.36 2.83-2.83"/><path d="m15.54 8.46 2.83-2.83"/></svg>
+            Team
+            <div class="hero-tab-progress"></div>
+          </div>
+          <div class="hero-tab" data-tab="public-profile" data-url="school/public-profile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            Public Profile
+            <div class="hero-tab-progress"></div>
+          </div>
+          <div class="hero-tab" data-tab="settings" data-url="school/settings">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+            Settings
+            <div class="hero-tab-progress"></div>
+          </div>
+        </div>
+
+        <!-- Slider Panels -->
+        <div class="hero-slider-panels" id="panelsRoatan">
+
+        <div class="hero-slider-panel active" data-panel="overview">
+<div class="overview-mock">
+  <div class="overview-welcome">
+    <div class="overview-school-name">Kitesurf Roatan</div>
+    <div class="overview-school-loc">West End, Roatan, Honduras</div>
+  </div>
+  <div class="overview-stats-row">
+    <div class="overview-stat"><div class="overview-stat-val" style="color:var(--aqua);">3</div><div class="overview-stat-label">Bookings Today</div></div>
+    <div class="overview-stat"><div class="overview-stat-val" style="color:#2ed573;">2</div><div class="overview-stat-label">Instructors Active</div></div>
+    <div class="overview-stat"><div class="overview-stat-val" style="color:#f59e0b;">$840</div><div class="overview-stat-label">Revenue Today</div></div>
+    <div class="overview-stat"><div class="overview-stat-val" style="color:var(--purple);">14</div><div class="overview-stat-label">Active Clients</div></div>
+  </div>
+  <div class="overview-grid">
+    <div class="overview-card">
+      <div class="overview-card-title">Upcoming Lessons</div>
+      <div class="overview-list-item"><span class="overview-dot" style="background:#0ea5e9;"></span><span>10:00 — Beginner Group (3)</span><span class="overview-tag">Carlos M.</span></div>
+      <div class="overview-list-item"><span class="overview-dot" style="background:#f59e0b;"></span><span>13:00 — Private Kite</span><span class="overview-tag">Maria L.</span></div>
+      <div class="overview-list-item"><span class="overview-dot" style="background:#8b5cf6;"></span><span>15:00 — Wing Foil Intro</span><span class="overview-tag">Carlos M.</span></div>
+    </div>
+    <div class="overview-card">
+      <div class="overview-card-title">Recent Activity</div>
+      <div class="overview-list-item"><span>💬 New booking from Jake P.</span><span class="overview-time">2h ago</span></div>
+      <div class="overview-list-item"><span>✅ Lesson completed — Sarah K.</span><span class="overview-time">4h ago</span></div>
+      <div class="overview-list-item"><span>📦 Kite K-003 returned</span><span class="overview-time">5h ago</span></div>
+    </div>
+  </div>
+</div>
+        </div>
+
+        <div class="hero-slider-panel" data-panel="scheduler">
+<div class="scheduler-mock">
+  <div class="scheduler-toolbar">
+    <div class="scheduler-toolbar-left">
+      <span class="scheduler-view-btn active">Today</span>
+      <span class="scheduler-view-btn">Tomorrow</span>
+      <span class="scheduler-view-btn">Week</span>
+    </div>
+    <span class="scheduler-date">Mon, 23 March 2026</span>
+    <div class="scheduler-nav"><span class="scheduler-nav-btn">‹</span><span class="scheduler-nav-btn">›</span></div>
+  </div>
+  <div class="scheduler-grid">
+    <div class="scheduler-header">
+      <div class="scheduler-col-label">Instructor</div>
+      <div class="scheduler-hour">8 AM</div><div class="scheduler-hour">9 AM</div><div class="scheduler-hour now">10 AM</div>
+      <div class="scheduler-hour">11 AM</div><div class="scheduler-hour">12 PM</div><div class="scheduler-hour">1 PM</div>
+      <div class="scheduler-hour">2 PM</div><div class="scheduler-hour">3 PM</div><div class="scheduler-hour">4 PM</div>
+    </div>
+    <div class="scheduler-wind-row">
+      <div class="scheduler-wind-label"><span class="wind-icon">💨</span> West End</div>
+      <div class="scheduler-wind-cell wind-green">12</div><div class="scheduler-wind-cell wind-green">14</div><div class="scheduler-wind-cell wind-green">16</div>
+      <div class="scheduler-wind-cell wind-green">18</div><div class="scheduler-wind-cell wind-green">16</div><div class="scheduler-wind-cell wind-green">15</div>
+      <div class="scheduler-wind-cell wind-amber">10</div><div class="scheduler-wind-cell wind-amber">8</div><div class="scheduler-wind-cell wind-amber">6</div>
+    </div>
+    <div class="scheduler-row">
+      <div class="scheduler-instructor">
+        <div class="instructor-dot" style="background:#0ea5e9;">CM</div>
+        <div class="scheduler-instructor-info"><div class="scheduler-instructor-name">Carlos Mendez</div><div class="scheduler-instructor-spot">West End</div></div>
+      </div>
+      <div class="scheduler-cells">
+        <div class="scheduler-cell has-wind-green"></div><div class="scheduler-cell has-wind-green"></div><div class="scheduler-cell has-wind-green"></div>
+        <div class="scheduler-cell has-wind-green"></div><div class="scheduler-cell has-wind-green"></div><div class="scheduler-cell has-wind-green"></div>
+        <div class="scheduler-cell"></div><div class="scheduler-cell"></div><div class="scheduler-cell"></div>
+        <div class="lesson-card lesson-beginner" style="left:calc((2/9)*100%);width:calc((2/9)*100%);"><span class="lesson-name">Beginner Group (3)</span><span class="lesson-time">10:00 – 12:00</span></div>
+        <div class="lesson-card lesson-intermediate" style="left:calc((5/9)*100%);width:calc((2/9)*100%);"><span class="lesson-name">Private Kite</span><span class="lesson-time">13:00 – 15:00</span></div>
+        <div class="scheduler-time-indicator" style="left:calc((2.3/9)*100%);"></div>
+      </div>
+    </div>
+    <div class="scheduler-row">
+      <div class="scheduler-instructor">
+        <div class="instructor-dot" style="background:#f59e0b;">ML</div>
+        <div class="scheduler-instructor-info"><div class="scheduler-instructor-name">Maria Lopez</div><div class="scheduler-instructor-spot">West End</div></div>
+      </div>
+      <div class="scheduler-cells">
+        <div class="scheduler-cell has-wind-green"></div><div class="scheduler-cell has-wind-green"></div><div class="scheduler-cell has-wind-green"></div>
+        <div class="scheduler-cell has-wind-green"></div><div class="scheduler-cell has-wind-green"></div><div class="scheduler-cell has-wind-green"></div>
+        <div class="scheduler-cell"></div><div class="scheduler-cell"></div><div class="scheduler-cell"></div>
+        <div class="lesson-card lesson-advanced" style="left:calc((0/9)*100%);width:calc((2/9)*100%);"><span class="lesson-name">Wing Foil Intro</span><span class="lesson-time">08:00 – 10:00</span></div>
+        <div class="scheduler-time-indicator" style="left:calc((2.3/9)*100%);"></div>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+
+        <div class="hero-slider-panel" data-panel="services">
+<div class="services-mock">
+  <div class="services-header-row">
+    <div class="services-title">Your Services</div>
+    <span class="excursion-add-btn">+ Add Service</span>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-card-type">Group Lesson</div>
+      <div class="service-card-name">Beginner Kite — Group</div>
+      <div class="service-card-detail">2h · Max 4 students · $120/person</div>
+      <div class="service-card-row"><span class="service-active">Active</span><span class="service-bookings">3 bookings this week</span></div>
+    </div>
+    <div class="service-card">
+      <div class="service-card-type">Private Lesson</div>
+      <div class="service-card-name">Private Kitesurf Session</div>
+      <div class="service-card-detail">2h · 1 student · $180/person</div>
+      <div class="service-card-row"><span class="service-active">Active</span><span class="service-bookings">1 booking this week</span></div>
+    </div>
+    <div class="service-card">
+      <div class="service-card-type">Wing Foil</div>
+      <div class="service-card-name">Wing Foil Introduction</div>
+      <div class="service-card-detail">1.5h · Max 2 students · $150/person</div>
+      <div class="service-card-row"><span class="service-active">Active</span><span class="service-bookings">2 bookings this week</span></div>
+    </div>
+    <div class="service-card" style="opacity:0.5;">
+      <div class="service-card-type">Excursion</div>
+      <div class="service-card-name">Sunset Boat Tour</div>
+      <div class="service-card-detail">2.5h · Max 8 pax · $85/person</div>
+      <div class="service-card-row"><span class="service-draft">Draft</span><span class="service-bookings">Not published</span></div>
+    </div>
+  </div>
+</div>
+        </div>
+
+        <div class="hero-slider-panel" data-panel="bookings">
+<div class="bookings-mock">
+  <div class="bookings-toolbar">
+    <div class="bookings-filters">
+      <span class="bookings-filter active">All</span>
+      <span class="bookings-filter">Upcoming</span>
+      <span class="bookings-filter">Completed</span>
+      <span class="bookings-filter">Cancelled</span>
+    </div>
+    <span class="excursion-add-btn">+ New Booking</span>
+  </div>
+  <table class="bookings-table">
+    <thead><tr><th>Client</th><th>Service</th><th>Date</th><th>Time</th><th>Instructor</th><th>Status</th><th>Amount</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Jake Patterson</strong></td><td>Beginner Group</td><td>23 Mar</td><td>10:00</td><td>Carlos M.</td><td><span class="inv-status active">Confirmed</span></td><td>$120</td></tr>
+      <tr><td><strong>Lily Chen</strong></td><td>Beginner Group</td><td>23 Mar</td><td>10:00</td><td>Carlos M.</td><td><span class="inv-status active">Confirmed</span></td><td>$120</td></tr>
+      <tr><td><strong>Tom Berger</strong></td><td>Private Kite</td><td>23 Mar</td><td>13:00</td><td>Carlos M.</td><td><span class="inv-status active">Confirmed</span></td><td>$180</td></tr>
+      <tr><td><strong>Sarah Klein</strong></td><td>Wing Foil Intro</td><td>24 Mar</td><td>09:00</td><td>Maria L.</td><td><span class="inv-status checked-out">Pending</span></td><td>$150</td></tr>
+      <tr><td><strong>Mike Ross</strong></td><td>Beginner Group</td><td>22 Mar</td><td>10:00</td><td>Maria L.</td><td><span class="inv-status maintenance">Completed</span></td><td>$120</td></tr>
+    </tbody>
+  </table>
+</div>
+        </div>
+
+        <div class="hero-slider-panel" data-panel="crm">
+<div class="crm-mock">
+  <div class="crm-stats">
+    <div class="crm-stat-card"><div class="crm-stat-num">14</div><div class="crm-stat-label green">Active</div></div>
+    <div class="crm-stat-card"><div class="crm-stat-num">6</div><div class="crm-stat-label gray">Inactive</div></div>
+    <div class="crm-stat-card"><div class="crm-stat-num">2</div><div class="crm-stat-label amber">VIP</div></div>
+  </div>
+  <div class="crm-toolbar">
+    <div class="crm-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg> Search clients...</div>
+    <span class="excursion-add-btn">+ Add Client</span>
+  </div>
+  <div class="crm-grid">
+    <div class="crm-card">
+      <div class="crm-card-header"><div class="crm-avatar">JP</div><div><div class="crm-name">Jake Patterson</div><div class="crm-email">jake@email.com</div></div></div>
+      <div class="crm-card-badges"><span class="crm-badge beginner">Beginner</span><span class="crm-badge vip">VIP</span></div>
+      <div class="crm-card-stats"><div class="crm-card-stat"><div class="crm-card-stat-val">8</div><div class="crm-card-stat-label">Bookings</div></div><div class="crm-card-stat"><div class="crm-card-stat-val">$960</div><div class="crm-card-stat-label">Spent</div></div><div class="crm-card-stat"><div class="crm-card-stat-val">Mar 23</div><div class="crm-card-stat-label">Last Visit</div></div></div>
+    </div>
+    <div class="crm-card">
+      <div class="crm-card-header"><div class="crm-avatar">LC</div><div><div class="crm-name">Lily Chen</div><div class="crm-email">lily@email.com</div></div></div>
+      <div class="crm-card-badges"><span class="crm-badge beginner">Beginner</span></div>
+      <div class="crm-card-stats"><div class="crm-card-stat"><div class="crm-card-stat-val">3</div><div class="crm-card-stat-label">Bookings</div></div><div class="crm-card-stat"><div class="crm-card-stat-val">$360</div><div class="crm-card-stat-label">Spent</div></div><div class="crm-card-stat"><div class="crm-card-stat-val">Mar 23</div><div class="crm-card-stat-label">Last Visit</div></div></div>
+    </div>
+    <div class="crm-card">
+      <div class="crm-card-header"><div class="crm-avatar">SK</div><div><div class="crm-name">Sarah Klein</div><div class="crm-email">sarah@email.com</div></div></div>
+      <div class="crm-card-badges"><span class="crm-badge intermediate">Intermediate</span></div>
+      <div class="crm-card-stats"><div class="crm-card-stat"><div class="crm-card-stat-val">5</div><div class="crm-card-stat-label">Bookings</div></div><div class="crm-card-stat"><div class="crm-card-stat-val">$720</div><div class="crm-card-stat-label">Spent</div></div><div class="crm-card-stat"><div class="crm-card-stat-val">Mar 20</div><div class="crm-card-stat-label">Last Visit</div></div></div>
+    </div>
+  </div>
+</div>
+        </div>
+
+        <div class="hero-slider-panel" data-panel="inventory">
+<div class="inventory-mock">
+  <div class="inventory-stats">
+    <div class="inventory-stat-card"><svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"/></svg><div class="inventory-stat-num">18</div><div class="inventory-stat-label">Total Items</div></div>
+    <div class="inventory-stat-card"><svg class="stat-icon green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg><div class="inventory-stat-num">14</div><div class="inventory-stat-label">Active</div></div>
+    <div class="inventory-stat-card"><svg class="stat-icon amber" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg><div class="inventory-stat-num">2</div><div class="inventory-stat-label">Needs Repair</div></div>
+  </div>
+  <div class="inventory-categories">
+    <span class="inventory-cat-btn active">All</span><span class="inventory-cat-btn">Kite</span><span class="inventory-cat-btn">Board</span><span class="inventory-cat-btn">Harness</span>
+  </div>
+  <table class="inventory-table">
+    <thead><tr><th>Item #</th><th>Brand / Model</th><th>Size</th><th>Condition</th><th>Status</th><th>Hours</th></tr></thead>
+    <tbody>
+      <tr><td>K-001</td><td>Cabrinha Moto</td><td>12m</td><td>4/5</td><td><span class="inv-status active">Active</span></td><td>80h</td></tr>
+      <tr><td>K-002</td><td>Cabrinha Moto</td><td>9m</td><td>3/5</td><td><span class="inv-status active">Active</span></td><td>120h</td></tr>
+      <tr><td>B-001</td><td>Cabrinha Ace</td><td>138cm</td><td>4/5</td><td><span class="inv-status active">Active</span></td><td>90h</td></tr>
+      <tr><td>H-001</td><td>Ride Engine Prime</td><td>L</td><td>3/5</td><td><span class="inv-status repair">Repair</span></td><td>200h</td></tr>
+    </tbody>
+  </table>
+</div>
+        </div>
+
+        <div class="hero-slider-panel" data-panel="finance">
+<div class="finance-mock">
+  <div class="finance-tabs">
+    <span class="finance-tab-btn active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg> By Service</span>
+    <span class="finance-tab-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> By Instructor</span>
+  </div>
+  <div class="finance-summary">
+    <div class="finance-summary-card"><div class="finance-summary-num">$4,200</div><div class="finance-summary-label">Revenue (MTD)</div></div>
+    <div class="finance-summary-card"><div class="finance-summary-num green">$1,680</div><div class="finance-summary-label">Profit (MTD)</div></div>
+    <div class="finance-summary-card"><div class="finance-summary-num">40%</div><div class="finance-summary-label">Avg Margin</div></div>
+  </div>
+  <div class="finance-chart-card">
+    <div class="finance-chart-title">Revenue by Service</div>
+    <div class="finance-bar-row"><span class="finance-bar-label">Group Lessons</span><div class="finance-bar-track"><div class="finance-bar-fill blue" style="width:100%;"></div></div><span class="finance-bar-amount">$2,160</span></div>
+    <div class="finance-bar-row"><span class="finance-bar-label">Private Lessons</span><div class="finance-bar-track"><div class="finance-bar-fill blue" style="width:56%;"></div></div><span class="finance-bar-amount">$1,200</span></div>
+    <div class="finance-bar-row"><span class="finance-bar-label">Wing Foil</span><div class="finance-bar-track"><div class="finance-bar-fill blue" style="width:39%;"></div></div><span class="finance-bar-amount">$840</span></div>
+  </div>
+</div>
+        </div>
+
+        <div class="hero-slider-panel" data-panel="team">
+<div class="team-mock">
+  <div class="team-header-row">
+    <div class="services-title">Team Members</div>
+    <span class="excursion-add-btn">+ Invite</span>
+  </div>
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="team-avatar" style="background:#0ea5e9;">CM</div>
+      <div class="team-name">Carlos Mendez</div>
+      <div class="team-role">Head Instructor</div>
+      <div class="team-meta">Contract · 40h/week</div>
+      <div class="team-stats-row"><span>12 lessons this month</span><span style="color:#2ed573;">$1,800 earned</span></div>
+    </div>
+    <div class="team-card">
+      <div class="team-avatar" style="background:#f59e0b;">ML</div>
+      <div class="team-name">Maria Lopez</div>
+      <div class="team-role">Wing Foil Instructor</div>
+      <div class="team-meta">Freelance · 20h/week</div>
+      <div class="team-stats-row"><span>6 lessons this month</span><span style="color:#2ed573;">$900 earned</span></div>
+    </div>
+  </div>
+</div>
+        </div>
+
+        <div class="hero-slider-panel" data-panel="public-profile">
+<div class="profile-mock">
+  <div class="profile-header">
+    <div class="profile-avatar-large" style="background:linear-gradient(135deg, #0ea5e9, #00D4FF);">KR</div>
+    <div class="profile-header-info">
+      <div class="profile-school-name">Kitesurf Roatan</div>
+      <div class="profile-school-tagline">Learn to kite in paradise — West End, Roatan</div>
+      <div class="profile-url"><span style="color:var(--aqua);">thekitealliance.com/</span>kitesurf-roatan</div>
+    </div>
+  </div>
+  <div class="profile-section">
+    <div class="profile-section-title">Public Listing</div>
+    <div class="profile-toggle-row"><span>Show on Spot Directory</span><span class="profile-toggle-on">On</span></div>
+    <div class="profile-toggle-row"><span>Accept Online Bookings</span><span class="profile-toggle-on">On</span></div>
+    <div class="profile-toggle-row"><span>Show Instructor Profiles</span><span class="profile-toggle-off">Off</span></div>
+    <div class="profile-toggle-row"><span>Display Pricing</span><span class="profile-toggle-on">On</span></div>
+  </div>
+  <div class="profile-section">
+    <div class="profile-section-title">About</div>
+    <div class="profile-text">Small, personal kite school on the beautiful West End of Roatan. We specialize in beginner and intermediate kitesurfing with small group sizes and warm Caribbean water.</div>
+  </div>
+  <div class="profile-section">
+    <div class="profile-section-title">Gallery</div>
+    <div class="profile-gallery">
+      <div class="profile-gallery-placeholder">+3 Photos</div>
+    </div>
+  </div>
+</div>
+        </div>
+
+        <div class="hero-slider-panel" data-panel="settings">
+<div class="settings-mock">
+  <div class="settings-header-row">
+    <div class="services-title">School Settings</div>
+  </div>
+  <div class="settings-sections">
+    <div class="settings-group">
+      <div class="settings-group-title">General</div>
+      <div class="settings-row"><span class="settings-label">School Name</span><span class="settings-value">Kitesurf Roatan</span></div>
+      <div class="settings-row"><span class="settings-label">Location</span><span class="settings-value">West End, Roatan, Honduras</span></div>
+      <div class="settings-row"><span class="settings-label">Currency</span><span class="settings-value">USD ($)</span></div>
+      <div class="settings-row"><span class="settings-label">Timezone</span><span class="settings-value">America/Tegucigalpa (CST)</span></div>
+      <div class="settings-row"><span class="settings-label">Language</span><span class="settings-value">English</span></div>
+    </div>
+    <div class="settings-group">
+      <div class="settings-group-title">Booking Rules</div>
+      <div class="settings-row"><span class="settings-label">Min. Advance Booking</span><span class="settings-value">2 hours</span></div>
+      <div class="settings-row"><span class="settings-label">Max. Advance Booking</span><span class="settings-value">30 days</span></div>
+      <div class="settings-row"><span class="settings-label">Cancellation Policy</span><span class="settings-value">24h free cancellation</span></div>
+      <div class="settings-row"><span class="settings-label">Deposit Required</span><span class="settings-value">50%</span></div>
+    </div>
+    <div class="settings-group">
+      <div class="settings-group-title">Notifications</div>
+      <div class="settings-row"><span class="settings-label">New Booking Alert</span><span class="profile-toggle-on">On</span></div>
+      <div class="settings-row"><span class="settings-label">Daily Summary Email</span><span class="profile-toggle-on">On</span></div>
+      <div class="settings-row"><span class="settings-label">Low Inventory Alert</span><span class="profile-toggle-off">Off</span></div>
+    </div>
+  </div>
+</div>
+        </div>
+
+        </div><!-- /Roatan panels -->
+
+        <div class="hero-slider-panels" id="panelsCapeTown" style="display:none;">
+
+        <div class="hero-slider-panel active" data-panel="overview">
+<div class="overview-mock">
+  <div class="overview-welcome">
+    <div class="overview-school-name">Watersport Center Cape Town</div>
+    <div class="overview-school-loc">Blouberg Beach, Cape Town, South Africa</div>
+  </div>
+  <div class="overview-stats-row">
+    <div class="overview-stat"><div class="overview-stat-val" style="color:var(--aqua);">18</div><div class="overview-stat-label">Bookings Today</div></div>
+    <div class="overview-stat"><div class="overview-stat-val" style="color:#2ed573;">6</div><div class="overview-stat-label">Instructors Active</div></div>
+    <div class="overview-stat"><div class="overview-stat-val" style="color:#f59e0b;">R 12,400</div><div class="overview-stat-label">Revenue Today</div></div>
+    <div class="overview-stat"><div class="overview-stat-val" style="color:var(--purple);">142</div><div class="overview-stat-label">Active Clients</div></div>
+  </div>
+  <div class="overview-grid">
+    <div class="overview-card">
+      <div class="overview-card-title">Upcoming Lessons</div>
+      <div class="overview-list-item"><span class="overview-dot" style="background:#0ea5e9;"></span><span>10:00 — Beginner Group (4)</span><span class="overview-tag">João V.</span></div>
+      <div class="overview-list-item"><span class="overview-dot" style="background:#f59e0b;"></span><span>10:00 — Inter Group (3)</span><span class="overview-tag">Lisa M.</span></div>
+      <div class="overview-list-item"><span class="overview-dot" style="background:#8b5cf6;"></span><span>11:00 — Beginner Camp</span><span class="overview-tag">Thabo N.</span></div>
+      <div class="overview-list-item"><span class="overview-dot" style="background:#ec4899;"></span><span>13:00 — Advanced Foil</span><span class="overview-tag">João V.</span></div>
+      <div class="overview-list-item"><span class="overview-dot" style="background:#2ed573;"></span><span>14:00 — Private Kite</span><span class="overview-tag">Lisa M.</span></div>
+      <div class="overview-list-item"><span class="overview-dot" style="background:#ff6b35;"></span><span>15:00 — Wing Foil Intro</span><span class="overview-tag">Ana S.</span></div>
+    </div>
+    <div class="overview-card">
+      <div class="overview-card-title">Recent Activity</div>
+      <div class="overview-list-item"><span>💬 New booking from Yuki T. (VIP)</span><span class="overview-time">12m ago</span></div>
+      <div class="overview-list-item"><span>✅ Lesson completed — Alex Turner</span><span class="overview-time">1h ago</span></div>
+      <div class="overview-list-item"><span>📦 Kite K-002 checked out</span><span class="overview-time">2h ago</span></div>
+      <div class="overview-list-item"><span>⚠️ Kite K-003 flagged for repair</span><span class="overview-time">3h ago</span></div>
+      <div class="overview-list-item"><span>🚐 Downwinder shuttle confirmed — 5 pax</span><span class="overview-time">4h ago</span></div>
+      <div class="overview-list-item"><span>💰 Payment received — R 2,400 (Sarah C.)</span><span class="overview-time">5h ago</span></div>
+    </div>
+  </div>
+</div>
+        </div>
+
+        <div class="hero-slider-panel" data-panel="scheduler">
+<div class="scheduler-mock">
+          <!-- Toolbar -->
+          <div class="scheduler-toolbar">
+            <div class="scheduler-toolbar-left">
+              <span class="scheduler-view-btn active">Today</span>
+              <span class="scheduler-view-btn">Tomorrow</span>
+              <span class="scheduler-view-btn">Week</span>
+            </div>
+            <span class="scheduler-date">Mon, 23 March 2026</span>
+            <div class="scheduler-nav">
+              <span class="scheduler-nav-btn">‹</span>
+              <span class="scheduler-nav-btn">›</span>
+            </div>
+          </div>
+
+          <div class="scheduler-grid">
+            <!-- Hour header -->
+            <div class="scheduler-header">
+              <div class="scheduler-col-label">Instructor</div>
+              <div class="scheduler-hour">6 AM</div>
+              <div class="scheduler-hour">7 AM</div>
+              <div class="scheduler-hour">8 AM</div>
+              <div class="scheduler-hour">9 AM</div>
+              <div class="scheduler-hour now">10 AM</div>
+              <div class="scheduler-hour">11 AM</div>
+              <div class="scheduler-hour">12 PM</div>
+              <div class="scheduler-hour">1 PM</div>
+              <div class="scheduler-hour">2 PM</div>
+              <div class="scheduler-hour">3 PM</div>
+              <div class="scheduler-hour">4 PM</div>
+              <div class="scheduler-hour">5 PM</div>
+            </div>
+
+            <!-- Wind row — Blouberg -->
+            <div class="scheduler-wind-row">
+              <div class="scheduler-wind-label"><span class="wind-icon">💨</span> Blouberg</div>
+              <div class="scheduler-wind-cell wind-amber">8</div>
+              <div class="scheduler-wind-cell wind-amber">10</div>
+              <div class="scheduler-wind-cell wind-green">14</div>
+              <div class="scheduler-wind-cell wind-green">18</div>
+              <div class="scheduler-wind-cell wind-green">22</div>
+              <div class="scheduler-wind-cell wind-green">24</div>
+              <div class="scheduler-wind-cell wind-green">26</div>
+              <div class="scheduler-wind-cell wind-orange">28</div>
+              <div class="scheduler-wind-cell wind-orange">30</div>
+              <div class="scheduler-wind-cell wind-green">25</div>
+              <div class="scheduler-wind-cell wind-green">20</div>
+              <div class="scheduler-wind-cell wind-green">16</div>
+            </div>
+
+            <!-- Divider: Contract Instructors -->
+            <div class="scheduler-section-divider"><span>Contract</span></div>
+
+            <!-- Instructor 1: João Viana -->
+            <div class="scheduler-row">
+              <div class="scheduler-instructor">
+                <div class="instructor-dot" style="background:#0ea5e9;">JV</div>
+                <div class="scheduler-instructor-info">
+                  <div class="scheduler-instructor-name">João Viana</div>
+                  <div class="scheduler-instructor-spot">Blouberg</div>
+                </div>
+              </div>
+              <div class="scheduler-cells">
+                <div class="scheduler-cell"></div>
+                <div class="scheduler-cell"></div>
+                <div class="scheduler-cell has-wind-green"></div>
+                <div class="scheduler-cell has-wind-green"></div>
+                <div class="scheduler-cell has-wind-green"></div>
+                <div class="scheduler-cell has-wind-green"></div>
+                <div class="scheduler-cell has-wind-green"></div>
+                <div class="scheduler-cell"></div>
+                <div class="scheduler-cell"></div>
+                <div class="scheduler-cell has-wind-green"></div>
+                <div class="scheduler-cell has-wind-green"></div>
+                <div class="scheduler-cell"></div>
+                <!-- Lesson: 8-10 Beginner Group -->
+                <div class="lesson-card lesson-beginner" style="left: calc((2/12)*100%); width: calc((2/12)*100%);">
+                  <span class="lesson-name">Beginner Group (4)</span>
+                  <span class="lesson-time">08:00 – 10:00</span>
+                </div>
+                <!-- Lesson: 11-13 Intermediate -->
+                <div class="lesson-card lesson-intermediate" style="left: calc((5/12)*100%); width: calc((2/12)*100%);">
+                  <span class="lesson-name">Intermediate Private</span>
+                  <span class="lesson-time">11:00 – 13:00</span>
+                </div>
+                <!-- Lesson: 14-16 Advanced Foil -->
+                <div class="lesson-card lesson-advanced" style="left: calc((8/12)*100%); width: calc((2/12)*100%);">
+                  <span class="lesson-name">Advanced Foil</span>
+                  <span class="lesson-time">14:00 – 16:00</span>
+                </div>
+                <!-- Time indicator at ~10:20 AM -->
+                <div class="scheduler-time-indicator" style="left: calc((4.33/12)*100%);"></div>
+              </div>
+            </div>
+
+            <!-- Instructor 2: Lisa Müller -->
+            <div class="scheduler-row">
+              <div class="scheduler-instructor">
+                <div class="instructor-dot" style="background:#f59e0b;">LM</div>
+                <div class="scheduler-instructor-info">
+                  <div class="scheduler-instructor-name">Lisa Müller</div>
+                  <div class="scheduler-instructor-spot">Blouberg</div>
+                </div>
+              </div>
+              <div class="scheduler-cells">
+                <div class="scheduler-cell"></div>
+                <div class="scheduler-cell"></div>
+                <div class="scheduler-cell has-wind-green"></div>
+                <div class="scheduler-cell has-wind-green"></div>
+                <div class="scheduler-cell has-wind-green"></div>
+                <div class="scheduler-cell has-wind-green"></div>
+                <div class="scheduler-cell has-wind-green"></div>
+                <div class="scheduler-cell"></div>
+                <div class="scheduler-cell"></div>
+                <div class="scheduler-cell has-wind-green"></div>
+                <div class="scheduler-cell has-wind-green"></div>
+                <div class="scheduler-cell"></div>
+                <!-- Lesson: 7-9 Beginner -->
+                <div class="lesson-card lesson-beginner" style="left: calc((1/12)*100%); width: calc((2/12)*100%);">
+                  <span class="lesson-name">Beginner 1-on-1</span>
+                  <span class="lesson-time">07:00 – 09:00</span>
+                </div>
+                <!-- Lesson: 10-12 Intermediate Group -->
+                <div class="lesson-card lesson-intermediate" style="left: calc((4/12)*100%); width: calc((2/12)*100%);">
+                  <span class="lesson-name">Inter Group (3)</span>
+                  <span class="lesson-time">10:00 – 12:00</span>
+                </div>
+                <!-- Lesson: 14-15 Private -->
+                <div class="lesson-card lesson-private" style="left: calc((8/12)*100%); width: calc((1/12)*100%);">
+                  <span class="lesson-name">Private</span>
+                  <span class="lesson-time">14:00 – 15:00</span>
+                </div>
+                <div class="scheduler-time-indicator" style="left: calc((4.33/12)*100%);"></div>
+              </div>
+            </div>
+
+            <!-- Instructor 3: Thabo Nkosi -->
+            <div class="scheduler-row">
+              <div class="scheduler-instructor">
+                <div class="instructor-dot" style="background:#8b5cf6;">TN</div>
+                <div class="scheduler-instructor-info">
+                  <div class="scheduler-instructor-name">Thabo Nkosi</div>
+                  <div class="scheduler-instructor-spot">Sunset Beach</div>
+                </div>
+              </div>
+              <div class="scheduler-cells">
+                <div class="scheduler-cell"></div>
+                <div class="scheduler-cell"></div>
+                <div class="scheduler-cell has-wind-green"></div>
+                <div class="scheduler-cell has-wind-green"></div>
+                <div class="scheduler-cell has-wind-green"></div>
+                <div class="scheduler-cell has-wind-green"></div>
+                <div class="scheduler-cell has-wind-green"></div>
+                <div class="scheduler-cell"></div>
+                <div class="scheduler-cell"></div>
+                <div class="scheduler-cell has-wind-green"></div>
+                <div class="scheduler-cell has-wind-green"></div>
+                <div class="scheduler-cell"></div>
+                <!-- Lesson: 9-11 Beginner Group -->
+                <div class="lesson-card lesson-beginner" style="left: calc((3/12)*100%); width: calc((2/12)*100%);">
+                  <span class="lesson-name">Beginner Camp</span>
+                  <span class="lesson-time">09:00 – 11:00</span>
+                </div>
+                <!-- Lesson: 13-15 Advanced -->
+                <div class="lesson-card lesson-advanced" style="left: calc((7/12)*100%); width: calc((2/12)*100%);">
+                  <span class="lesson-name">Adv. Kiteloop</span>
+                  <span class="lesson-time">13:00 – 15:00</span>
+                </div>
+                <div class="scheduler-time-indicator" style="left: calc((4.33/12)*100%);"></div>
+              </div>
+            </div>
+
+            <!-- Divider: Freelance -->
+            <div class="scheduler-section-divider"><span>Freelance</span></div>
+
+            <!-- Instructor 4: Ana Silva (Freelance) -->
+            <div class="scheduler-row">
+              <div class="scheduler-instructor">
+                <div class="instructor-dot" style="background:#ec4899;">AS</div>
+                <div class="scheduler-instructor-info">
+                  <div class="scheduler-instructor-name">Ana Silva</div>
+                  <div class="scheduler-instructor-spot">Blouberg</div>
+                </div>
+              </div>
+              <div class="scheduler-cells">
+                <div class="scheduler-cell"></div>
+                <div class="scheduler-cell"></div>
+                <div class="scheduler-cell has-wind-green"></div>
+                <div class="scheduler-cell has-wind-green"></div>
+                <div class="scheduler-cell has-wind-green"></div>
+                <div class="scheduler-cell has-wind-green"></div>
+                <div class="scheduler-cell has-wind-green"></div>
+                <div class="scheduler-cell"></div>
+                <div class="scheduler-cell"></div>
+                <div class="scheduler-cell has-wind-green"></div>
+                <div class="scheduler-cell has-wind-green"></div>
+                <div class="scheduler-cell"></div>
+                <!-- Lesson: 10-13 Full Day Camp segment -->
+                <div class="lesson-card lesson-beginner" style="left: calc((4/12)*100%); width: calc((3/12)*100%);">
+                  <span class="lesson-name">Full Day Camp (6)</span>
+                  <span class="lesson-time">10:00 – 13:00</span>
+                </div>
+                <!-- Lesson: 15-17 Intermediate -->
+                <div class="lesson-card lesson-intermediate" style="left: calc((9/12)*100%); width: calc((2/12)*100%);">
+                  <span class="lesson-name">Wing Foil Intro</span>
+                  <span class="lesson-time">15:00 – 17:00</span>
+                </div>
+                <div class="scheduler-time-indicator" style="left: calc((4.33/12)*100%);"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        </div>
+
+        <div class="hero-slider-panel" data-panel="services">
+<div class="services-mock">
+  <div class="services-header-row">
+    <div class="services-title">Your Services</div>
+    <span class="excursion-add-btn">+ Add Service</span>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-card-type">Group Lesson</div>
+      <div class="service-card-name">Beginner Kite — Group</div>
+      <div class="service-card-detail">2h · Max 4 students · R 1,200/person</div>
+      <div class="service-card-row"><span class="service-active">Active</span><span class="service-bookings">18 bookings this week</span></div>
+    </div>
+    <div class="service-card">
+      <div class="service-card-type">Group Lesson</div>
+      <div class="service-card-name">Intermediate Group</div>
+      <div class="service-card-detail">2h · Max 3 students · R 1,400/person</div>
+      <div class="service-card-row"><span class="service-active">Active</span><span class="service-bookings">12 bookings this week</span></div>
+    </div>
+    <div class="service-card">
+      <div class="service-card-type">Private Lesson</div>
+      <div class="service-card-name">Private Kitesurf Session</div>
+      <div class="service-card-detail">2h · 1 student · R 2,200/person</div>
+      <div class="service-card-row"><span class="service-active">Active</span><span class="service-bookings">8 bookings this week</span></div>
+    </div>
+    <div class="service-card">
+      <div class="service-card-type">Advanced</div>
+      <div class="service-card-name">Advanced Kiteloop Clinic</div>
+      <div class="service-card-detail">3h · Max 2 students · R 2,800/person</div>
+      <div class="service-card-row"><span class="service-active">Active</span><span class="service-bookings">4 bookings this week</span></div>
+    </div>
+    <div class="service-card">
+      <div class="service-card-type">Wing Foil</div>
+      <div class="service-card-name">Wing Foil Introduction</div>
+      <div class="service-card-detail">1.5h · Max 2 students · R 1,600/person</div>
+      <div class="service-card-row"><span class="service-active">Active</span><span class="service-bookings">6 bookings this week</span></div>
+    </div>
+    <div class="service-card">
+      <div class="service-card-type">Excursion</div>
+      <div class="service-card-name">Langebaan Downwinder</div>
+      <div class="service-card-detail">4h · Max 8 pax · R 950/person</div>
+      <div class="service-card-row"><span class="service-active">Active</span><span class="service-bookings">5 bookings this week</span></div>
+    </div>
+    <div class="service-card">
+      <div class="service-card-type">Camp</div>
+      <div class="service-card-name">Full Day Kite Camp</div>
+      <div class="service-card-detail">6h · Max 6 students · R 2,600/person</div>
+      <div class="service-card-row"><span class="service-active">Active</span><span class="service-bookings">3 bookings this week</span></div>
+    </div>
+    <div class="service-card">
+      <div class="service-card-type">Rental</div>
+      <div class="service-card-name">Gear Rental — Full Kit</div>
+      <div class="service-card-detail">3h · Self-supervised · R 650/session</div>
+      <div class="service-card-row"><span class="service-active">Active</span><span class="service-bookings">10 bookings this week</span></div>
+    </div>
+  </div>
+</div>
+        </div>
+
+        <div class="hero-slider-panel" data-panel="bookings">
+<div class="bookings-mock">
+  <div class="bookings-toolbar">
+    <div class="bookings-filters">
+      <span class="bookings-filter active">All</span><span class="bookings-filter">Upcoming</span><span class="bookings-filter">Completed</span><span class="bookings-filter">Cancelled</span>
+    </div>
+    <span class="excursion-add-btn">+ New Booking</span>
+  </div>
+  <table class="bookings-table">
+    <thead><tr><th>Client</th><th>Service</th><th>Date</th><th>Time</th><th>Instructor</th><th>Status</th><th>Amount</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Alex Turner</strong></td><td>Beginner Group</td><td>23 Mar</td><td>10:00</td><td>João V.</td><td><span class="inv-status active">Confirmed</span></td><td>R 1,200</td></tr>
+      <tr><td><strong>Sarah Chen</strong></td><td>Inter Group</td><td>23 Mar</td><td>10:00</td><td>Lisa M.</td><td><span class="inv-status active">Confirmed</span></td><td>R 1,400</td></tr>
+      <tr><td><strong>Yuki Tanaka</strong></td><td>Advanced Foil</td><td>23 Mar</td><td>14:00</td><td>João V.</td><td><span class="inv-status active">Confirmed</span></td><td>R 2,200</td></tr>
+      <tr><td><strong>Marco Rossi</strong></td><td>Beginner Group</td><td>23 Mar</td><td>10:00</td><td>Thabo N.</td><td><span class="inv-status active">Confirmed</span></td><td>R 1,200</td></tr>
+      <tr><td><strong>Emma Johansson</strong></td><td>Wing Foil Intro</td><td>23 Mar</td><td>15:00</td><td>Ana S.</td><td><span class="inv-status active">Confirmed</span></td><td>R 1,600</td></tr>
+      <tr><td><strong>Carlos Mendez</strong></td><td>Full Day Camp</td><td>23 Mar</td><td>09:00</td><td>Thabo N.</td><td><span class="inv-status active">Confirmed</span></td><td>R 2,600</td></tr>
+      <tr><td><strong>David Park</strong></td><td>Private Kite</td><td>24 Mar</td><td>08:00</td><td>João V.</td><td><span class="inv-status checked-out">Pending</span></td><td>R 2,200</td></tr>
+      <tr><td><strong>Anja Müller</strong></td><td>Gear Rental</td><td>24 Mar</td><td>11:00</td><td>—</td><td><span class="inv-status checked-out">Pending</span></td><td>R 650</td></tr>
+      <tr><td><strong>Luca Ferrari</strong></td><td>Downwinder</td><td>24 Mar</td><td>12:00</td><td>Ana S.</td><td><span class="inv-status checked-out">Pending</span></td><td>R 950</td></tr>
+      <tr><td><strong>Mike Thompson</strong></td><td>Beginner Group</td><td>22 Mar</td><td>10:00</td><td>Lisa M.</td><td><span class="inv-status maintenance">Completed</span></td><td>R 1,200</td></tr>
+    </tbody>
+  </table>
+</div>
+        </div>
+
+        <div class="hero-slider-panel" data-panel="crm">
+<div class="crm-mock">
+          <div class="crm-stats">
+            <div class="crm-stat-card">
+              <div class="crm-stat-num">142</div>
+              <div class="crm-stat-label green">Active</div>
+            </div>
+            <div class="crm-stat-card">
+              <div class="crm-stat-num">28</div>
+              <div class="crm-stat-label gray">Inactive</div>
+            </div>
+            <div class="crm-stat-card">
+              <div class="crm-stat-num">18</div>
+              <div class="crm-stat-label amber">VIP</div>
+            </div>
+            <div class="crm-stat-card">
+              <div class="crm-stat-num">5</div>
+              <div class="crm-stat-label red">Archived</div>
+            </div>
+          </div>
+
+          <div class="crm-toolbar">
+            <div class="crm-search">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+              Search clients...
+            </div>
+            <div style="display:flex;gap:0.4rem;align-items:center;">
+              <div class="crm-view-toggle">
+                <span class="crm-view-btn active">Grid</span>
+                <span class="crm-view-btn">List</span>
+              </div>
+              <span class="excursion-add-btn">+ Add Client</span>
+            </div>
+          </div>
+
+          <div class="crm-grid">
+            <div class="crm-card">
+              <div class="crm-card-header">
+                <div class="crm-avatar">AT</div>
+                <div><div class="crm-name">Alex Turner</div><div class="crm-email">alex@email.com</div></div>
+              </div>
+              <div class="crm-card-badges">
+                <span class="crm-badge beginner">Beginner</span>
+              </div>
+              <div class="crm-card-stats">
+                <div class="crm-card-stat"><div class="crm-card-stat-val">3</div><div class="crm-card-stat-label">Bookings</div></div>
+                <div class="crm-card-stat"><div class="crm-card-stat-val">€360</div><div class="crm-card-stat-label">Spent</div></div>
+                <div class="crm-card-stat"><div class="crm-card-stat-val">Mar 15</div><div class="crm-card-stat-label">Last Visit</div></div>
+              </div>
+            </div>
+            <div class="crm-card">
+              <div class="crm-card-header">
+                <div class="crm-avatar">SC</div>
+                <div><div class="crm-name">Sarah Chen</div><div class="crm-email">sarah@email.com</div></div>
+              </div>
+              <div class="crm-card-badges">
+                <span class="crm-badge intermediate">Intermediate</span>
+              </div>
+              <div class="crm-card-stats">
+                <div class="crm-card-stat"><div class="crm-card-stat-val">5</div><div class="crm-card-stat-label">Bookings</div></div>
+                <div class="crm-card-stat"><div class="crm-card-stat-val">€600</div><div class="crm-card-stat-label">Spent</div></div>
+                <div class="crm-card-stat"><div class="crm-card-stat-val">Mar 20</div><div class="crm-card-stat-label">Last Visit</div></div>
+              </div>
+            </div>
+            <div class="crm-card">
+              <div class="crm-card-header">
+                <div class="crm-avatar" style="background:rgba(255,209,0,0.15);color:var(--yellow);">YT</div>
+                <div><div class="crm-name">Yuki Tanaka</div><div class="crm-email">yuki@email.com</div></div>
+              </div>
+              <div class="crm-card-badges">
+                <span class="crm-badge advanced">Advanced</span>
+                <span class="crm-badge vip">VIP</span>
+              </div>
+              <div class="crm-card-stats">
+                <div class="crm-card-stat"><div class="crm-card-stat-val">10</div><div class="crm-card-stat-label">Bookings</div></div>
+                <div class="crm-card-stat"><div class="crm-card-stat-val">€2,000</div><div class="crm-card-stat-label">Spent</div></div>
+                <div class="crm-card-stat"><div class="crm-card-stat-val">Mar 22</div><div class="crm-card-stat-label">Last Visit</div></div>
+              </div>
+            </div>
+            <div class="crm-card">
+              <div class="crm-card-header">
+                <div class="crm-avatar">MR</div>
+                <div><div class="crm-name">Marco Rossi</div><div class="crm-email">marco@email.com</div></div>
+              </div>
+              <div class="crm-card-badges">
+                <span class="crm-badge beginner">Beginner</span>
+              </div>
+              <div class="crm-card-stats">
+                <div class="crm-card-stat"><div class="crm-card-stat-val">2</div><div class="crm-card-stat-label">Bookings</div></div>
+                <div class="crm-card-stat"><div class="crm-card-stat-val">€240</div><div class="crm-card-stat-label">Spent</div></div>
+                <div class="crm-card-stat"><div class="crm-card-stat-val">Mar 12</div><div class="crm-card-stat-label">Last Visit</div></div>
+              </div>
+            </div>
+            <div class="crm-card">
+              <div class="crm-card-header">
+                <div class="crm-avatar">EJ</div>
+                <div><div class="crm-name">Emma Johansson</div><div class="crm-email">emma@email.com</div></div>
+              </div>
+              <div class="crm-card-badges">
+                <span class="crm-badge beginner">Beginner</span>
+              </div>
+              <div class="crm-card-stats">
+                <div class="crm-card-stat"><div class="crm-card-stat-val">1</div><div class="crm-card-stat-label">Bookings</div></div>
+                <div class="crm-card-stat"><div class="crm-card-stat-val">€120</div><div class="crm-card-stat-label">Spent</div></div>
+                <div class="crm-card-stat"><div class="crm-card-stat-val">Mar 18</div><div class="crm-card-stat-label">Last Visit</div></div>
+              </div>
+            </div>
+            <div class="crm-card">
+              <div class="crm-card-header">
+                <div class="crm-avatar">CM</div>
+                <div><div class="crm-name">Carlos Mendez</div><div class="crm-email">carlos@email.com</div></div>
+              </div>
+              <div class="crm-card-badges">
+                <span class="crm-badge intermediate">Intermediate</span>
+              </div>
+              <div class="crm-card-stats">
+                <div class="crm-card-stat"><div class="crm-card-stat-val">4</div><div class="crm-card-stat-label">Bookings</div></div>
+                <div class="crm-card-stat"><div class="crm-card-stat-val">€480</div><div class="crm-card-stat-label">Spent</div></div>
+                <div class="crm-card-stat"><div class="crm-card-stat-val">Mar 21</div><div class="crm-card-stat-label">Last Visit</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="hero-slider-panel" data-panel="inventory">
+<div class="inventory-mock">
+          <div class="inventory-stats">
+            <div class="inventory-stat-card">
+              <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"/><path d="m7.5 4.27 9 5.15"/></svg>
+              <div class="inventory-stat-num">47</div>
+              <div class="inventory-stat-label">Total Items</div>
+            </div>
+            <div class="inventory-stat-card">
+              <svg class="stat-icon green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>
+              <div class="inventory-stat-num">38</div>
+              <div class="inventory-stat-label">Active</div>
+            </div>
+            <div class="inventory-stat-card">
+              <svg class="stat-icon amber" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+              <div class="inventory-stat-num">4</div>
+              <div class="inventory-stat-label">Needs Repair</div>
+            </div>
+            <div class="inventory-stat-card">
+              <svg class="stat-icon orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              <div class="inventory-stat-num">3</div>
+              <div class="inventory-stat-label">At Repair</div>
+            </div>
+            <div class="inventory-stat-card">
+              <svg class="stat-icon muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
+              <div class="inventory-stat-num">2</div>
+              <div class="inventory-stat-label">Retired</div>
+            </div>
+          </div>
+
+          <div class="inventory-toolbar">
+            <div class="inventory-search">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+              Search by item #, brand, model...
+            </div>
+            <span class="excursion-add-btn">+ Add Equipment</span>
+          </div>
+
+          <div class="inventory-categories">
+            <span class="inventory-cat-btn active">All</span>
+            <span class="inventory-cat-btn">Kite</span>
+            <span class="inventory-cat-btn">Board</span>
+            <span class="inventory-cat-btn">Bar</span>
+            <span class="inventory-cat-btn">Harness</span>
+            <span class="inventory-cat-btn">Wetsuit</span>
+            <span class="inventory-cat-btn">Helmet</span>
+            <span class="inventory-cat-btn">Wing</span>
+          </div>
+
+          <table class="inventory-table">
+            <thead>
+              <tr>
+                <th>Item #</th>
+                <th>Brand / Model</th>
+                <th>Size</th>
+                <th>Condition</th>
+                <th>Status</th>
+                <th>Hours</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>K-001</td><td>Duotone Rebel</td><td>12m</td><td>4/5</td><td><span class="inv-status active">Active</span></td><td>90h</td><td>€1,100</td></tr>
+              <tr><td>K-002</td><td>Core XR7</td><td>10m</td><td>5/5</td><td><span class="inv-status active">Active</span></td><td>24h</td><td>€1,500</td></tr>
+              <tr><td>B-001</td><td>Cabrinha Ace</td><td>138cm</td><td>4/5</td><td><span class="inv-status active">Active</span></td><td>120h</td><td>€450</td></tr>
+              <tr><td>BR-001</td><td>Duotone Trust Bar</td><td>52cm</td><td>3/5</td><td><span class="inv-status maintenance">Maintenance</span></td><td>160h</td><td>€300</td></tr>
+              <tr><td>H-001</td><td>Mystic Majestic X</td><td>L</td><td>5/5</td><td><span class="inv-status checked-out">Checked Out</span></td><td>45h</td><td>€190</td></tr>
+              <tr><td>K-003</td><td>Naish Pivot</td><td>9m</td><td>2/5</td><td><span class="inv-status repair">Repair</span></td><td>210h</td><td>€600</td></tr>
+              <tr><td>W-001</td><td>O'Neill Psycho Tech</td><td>M</td><td>4/5</td><td><span class="inv-status active">Active</span></td><td>80h</td><td>€280</td></tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+
+        <div class="hero-slider-panel" data-panel="finance">
+<div class="finance-mock">
+          <div class="finance-tabs">
+            <span class="finance-tab-btn active">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+              By Service
+            </span>
+            <span class="finance-tab-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              By Instructor
+            </span>
+            <span class="finance-tab-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              By Time Slot
+            </span>
+          </div>
+
+          <div class="finance-summary">
+            <div class="finance-summary-card">
+              <div class="finance-summary-num">€24,800</div>
+              <div class="finance-summary-label">Revenue (MTD)</div>
+            </div>
+            <div class="finance-summary-card">
+              <div class="finance-summary-num green">€8,120</div>
+              <div class="finance-summary-label">Profit (MTD)</div>
+            </div>
+            <div class="finance-summary-card">
+              <div class="finance-summary-num">32.7%</div>
+              <div class="finance-summary-label">Avg Margin</div>
+            </div>
+          </div>
+
+          <div class="finance-chart-card">
+            <div class="finance-chart-title">Top Services by Revenue</div>
+            <div class="finance-bar-row">
+              <span class="finance-bar-label">Group Lessons</span>
+              <div class="finance-bar-track"><div class="finance-bar-fill blue" style="width:100%;"></div></div>
+              <span class="finance-bar-amount">€8,400</span>
+            </div>
+            <div class="finance-bar-row">
+              <span class="finance-bar-label">Private Lessons</span>
+              <div class="finance-bar-track"><div class="finance-bar-fill blue" style="width:72%;"></div></div>
+              <span class="finance-bar-amount">€6,050</span>
+            </div>
+            <div class="finance-bar-row">
+              <span class="finance-bar-label">Boat Excursions</span>
+              <div class="finance-bar-track"><div class="finance-bar-fill blue" style="width:55%;"></div></div>
+              <span class="finance-bar-amount">€4,600</span>
+            </div>
+            <div class="finance-bar-row">
+              <span class="finance-bar-label">Wing Foil</span>
+              <div class="finance-bar-track"><div class="finance-bar-fill blue" style="width:38%;"></div></div>
+              <span class="finance-bar-amount">€3,200</span>
+            </div>
+            <div class="finance-bar-row">
+              <span class="finance-bar-label">Gear Rental</span>
+              <div class="finance-bar-track"><div class="finance-bar-fill blue" style="width:30%;"></div></div>
+              <span class="finance-bar-amount">€2,550</span>
+            </div>
+          </div>
+
+          <table class="finance-table">
+            <thead>
+              <tr>
+                <th>Service</th>
+                <th>Bookings</th>
+                <th>Revenue</th>
+                <th>Rev/Hr</th>
+                <th>Profit</th>
+                <th>Margin</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Group Lessons</td><td>68</td><td style="font-weight:700;">€8,400</td><td>€42</td><td style="font-weight:700;color:#2ed573;">€3,024</td><td><span class="finance-margin high">36%</span></td></tr>
+              <tr><td>Private Lessons</td><td>42</td><td style="font-weight:700;">€6,050</td><td>€58</td><td style="font-weight:700;color:#2ed573;">€2,178</td><td><span class="finance-margin high">36%</span></td></tr>
+              <tr><td>Boat Excursions</td><td>24</td><td style="font-weight:700;">€4,600</td><td>€38</td><td style="font-weight:700;color:#2ed573;">€1,380</td><td><span class="finance-margin high">30%</span></td></tr>
+              <tr><td>Wing Foil</td><td>18</td><td style="font-weight:700;">€3,200</td><td>€53</td><td style="font-weight:700;color:#f59e0b;">€768</td><td><span class="finance-margin mid">24%</span></td></tr>
+              <tr><td>Gear Rental</td><td>31</td><td style="font-weight:700;">€2,550</td><td>€—</td><td style="font-weight:700;color:#f59e0b;">€770</td><td><span class="finance-margin high">30%</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+
+        <div class="hero-slider-panel" data-panel="team">
+<div class="team-mock">
+  <div class="team-header-row">
+    <div class="services-title">Team Members</div>
+    <span class="excursion-add-btn">+ Invite</span>
+  </div>
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="team-avatar" style="background:#0ea5e9;">JV</div>
+      <div class="team-name">João Viana</div>
+      <div class="team-role">Senior Instructor</div>
+      <div class="team-meta">Contract · 40h/week · Blouberg</div>
+      <div class="team-stats-row"><span>24 lessons this month</span><span style="color:#2ed573;">R 18,600 earned</span></div>
+    </div>
+    <div class="team-card">
+      <div class="team-avatar" style="background:#f59e0b;">LM</div>
+      <div class="team-name">Lisa Müller</div>
+      <div class="team-role">Instructor</div>
+      <div class="team-meta">Contract · 35h/week · Blouberg</div>
+      <div class="team-stats-row"><span>20 lessons this month</span><span style="color:#2ed573;">R 14,200 earned</span></div>
+    </div>
+    <div class="team-card">
+      <div class="team-avatar" style="background:#8b5cf6;">TN</div>
+      <div class="team-name">Thabo Nkosi</div>
+      <div class="team-role">Instructor</div>
+      <div class="team-meta">Contract · 30h/week · Sunset Beach</div>
+      <div class="team-stats-row"><span>16 lessons this month</span><span style="color:#2ed573;">R 11,400 earned</span></div>
+    </div>
+    <div class="team-card">
+      <div class="team-avatar" style="background:#ec4899;">AS</div>
+      <div class="team-name">Ana Silva</div>
+      <div class="team-role">Wing Foil Specialist</div>
+      <div class="team-meta">Freelance · 20h/week · Blouberg</div>
+      <div class="team-stats-row"><span>10 lessons this month</span><span style="color:#2ed573;">R 8,800 earned</span></div>
+    </div>
+    <div class="team-card">
+      <div class="team-avatar" style="background:#2ed573;">RD</div>
+      <div class="team-name">Ryan Davies</div>
+      <div class="team-role">Junior Instructor</div>
+      <div class="team-meta">Contract · 25h/week · Blouberg</div>
+      <div class="team-stats-row"><span>8 lessons this month</span><span style="color:#2ed573;">R 5,200 earned</span></div>
+    </div>
+    <div class="team-card">
+      <div class="team-avatar" style="background:#ff6b35;">KM</div>
+      <div class="team-name">Kaya Moyo</div>
+      <div class="team-role">Boat Captain</div>
+      <div class="team-meta">Freelance · 15h/week · Table Bay</div>
+      <div class="team-stats-row"><span>6 excursions this month</span><span style="color:#2ed573;">R 4,500 earned</span></div>
+    </div>
+  </div>
+</div>
+        </div>
+
+        <div class="hero-slider-panel" data-panel="public-profile">
+<div class="profile-mock">
+  <div class="profile-header">
+    <div class="profile-avatar-large" style="background:linear-gradient(135deg, #8b5cf6, #ec4899);">WC</div>
+    <div class="profile-header-info">
+      <div class="profile-school-name">Watersport Center Cape Town</div>
+      <div class="profile-school-tagline">Premier kitesurf, wingfoil &amp; downwinder experiences — Blouberg Beach</div>
+      <div class="profile-url"><span style="color:var(--aqua);">thekitealliance.com/</span>watersport-center-cape-town</div>
+    </div>
+  </div>
+  <div class="profile-section">
+    <div class="profile-section-title">Public Listing</div>
+    <div class="profile-toggle-row"><span>Show on Spot Directory</span><span class="profile-toggle-on">On</span></div>
+    <div class="profile-toggle-row"><span>Accept Online Bookings</span><span class="profile-toggle-on">On</span></div>
+    <div class="profile-toggle-row"><span>Show Instructor Profiles</span><span class="profile-toggle-on">On</span></div>
+    <div class="profile-toggle-row"><span>Display Pricing</span><span class="profile-toggle-on">On</span></div>
+    <div class="profile-toggle-row"><span>Show Reviews</span><span class="profile-toggle-on">On</span></div>
+    <div class="profile-toggle-row"><span>Enable Waitlist</span><span class="profile-toggle-on">On</span></div>
+  </div>
+  <div class="profile-section">
+    <div class="profile-section-title">About</div>
+    <div class="profile-text">Cape Town's leading watersport center at Blouberg Beach, offering kitesurfing, wingfoiling, and epic Langebaan downwinders. 6 certified instructors, 50+ kites, and the best Table Mountain views in the game. Alliance certified.</div>
+  </div>
+  <div class="profile-section">
+    <div class="profile-section-title">Reviews</div>
+    <div class="profile-reviews-summary"><span class="profile-stars">4.9</span><span class="profile-review-count">127 reviews</span></div>
+  </div>
+  <div class="profile-section">
+    <div class="profile-section-title">Gallery</div>
+    <div class="profile-gallery">
+      <div class="profile-gallery-placeholder">+12 Photos</div>
+      <div class="profile-gallery-placeholder">+4 Videos</div>
+    </div>
+  </div>
+</div>
+        </div>
+
+        <div class="hero-slider-panel" data-panel="settings">
+<div class="settings-mock">
+  <div class="settings-header-row">
+    <div class="services-title">School Settings</div>
+  </div>
+  <div class="settings-sections">
+    <div class="settings-group">
+      <div class="settings-group-title">General</div>
+      <div class="settings-row"><span class="settings-label">School Name</span><span class="settings-value">Watersport Center Cape Town</span></div>
+      <div class="settings-row"><span class="settings-label">Location</span><span class="settings-value">Blouberg Beach, Cape Town, South Africa</span></div>
+      <div class="settings-row"><span class="settings-label">Currency</span><span class="settings-value">ZAR (R)</span></div>
+      <div class="settings-row"><span class="settings-label">Secondary Currency</span><span class="settings-value">USD ($) — display only</span></div>
+      <div class="settings-row"><span class="settings-label">Timezone</span><span class="settings-value">Africa/Johannesburg (SAST)</span></div>
+      <div class="settings-row"><span class="settings-label">Language</span><span class="settings-value">English</span></div>
+    </div>
+    <div class="settings-group">
+      <div class="settings-group-title">Booking Rules</div>
+      <div class="settings-row"><span class="settings-label">Min. Advance Booking</span><span class="settings-value">4 hours</span></div>
+      <div class="settings-row"><span class="settings-label">Max. Advance Booking</span><span class="settings-value">60 days</span></div>
+      <div class="settings-row"><span class="settings-label">Cancellation Policy</span><span class="settings-value">48h free cancellation</span></div>
+      <div class="settings-row"><span class="settings-label">Deposit Required</span><span class="settings-value">30%</span></div>
+      <div class="settings-row"><span class="settings-label">Waitlist Enabled</span><span class="profile-toggle-on">On</span></div>
+      <div class="settings-row"><span class="settings-label">Auto-Assign Instructors</span><span class="profile-toggle-on">On</span></div>
+    </div>
+    <div class="settings-group">
+      <div class="settings-group-title">Notifications</div>
+      <div class="settings-row"><span class="settings-label">New Booking Alert</span><span class="profile-toggle-on">On</span></div>
+      <div class="settings-row"><span class="settings-label">Daily Summary Email</span><span class="profile-toggle-on">On</span></div>
+      <div class="settings-row"><span class="settings-label">Low Inventory Alert</span><span class="profile-toggle-on">On</span></div>
+      <div class="settings-row"><span class="settings-label">Weather Alert</span><span class="profile-toggle-on">On</span></div>
+      <div class="settings-row"><span class="settings-label">Instructor Absence Alert</span><span class="profile-toggle-on">On</span></div>
+    </div>
+    <div class="settings-group">
+      <div class="settings-group-title">Integrations</div>
+      <div class="settings-row"><span class="settings-label">WOO Session Tracking</span><span class="profile-toggle-on">Connected</span></div>
+      <div class="settings-row"><span class="settings-label">Stripe Payments</span><span class="profile-toggle-on">Connected</span></div>
+      <div class="settings-row"><span class="settings-label">Google Calendar Sync</span><span class="profile-toggle-on">Connected</span></div>
+      <div class="settings-row"><span class="settings-label">WhatsApp Notifications</span><span class="profile-toggle-off">Off</span></div>
+    </div>
+  </div>
+</div>
+        </div>
+
+        </div><!-- /Cape Town panels -->
+
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+
 <div class="glow-divider"></div>
 
 
-<section class="pricing-teaser" id="pricing" style="padding:5rem 1.5rem;text-align:center;">
+
+<div class="glow-divider purple"></div>
+
+<!-- ============================================
+     TESTIMONIALS
+     ============================================ -->
+<section class="testimonials" id="testimonials">
   <div class="container">
     <div class="section-header reveal">
-      <span class="section-label">Pricing</span>
-      <h2 class="section-title">Simple Pricing. No Surprises.</h2>
+      <span class="section-label" style="color: #ec4899;">Testimonials</span>
+      <h2 class="section-title">Loved by School Owners Worldwide</h2>
     </div>
-    <div style="display:flex;justify-content:center;gap:2rem;margin:2rem auto;flex-wrap:wrap;">
-      <div class="reveal" style="display:flex;flex-direction:column;align-items:center;gap:0.25rem;padding:1.25rem 2rem;border-radius:12px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);">
-        <span style="font-family:var(--font-display);font-size:0.875rem;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:var(--fog);">Rider</span>
-        <span style="font-family:var(--font-display);font-size:1.5rem;font-weight:800;color:var(--white);">$0.99/mo</span>
+
+    <div class="testimonial-cards">
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="testimonial-quote">"Ally OS saved us 15 hours a week on admin alone. Our instructors actually have time to teach now. The dashboard gives me everything I need in one place — it's a game changer."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar t1">MV</div>
+          <div>
+            <div class="testimonial-name">Marco V.</div>
+            <div class="testimonial-role">Cape Kite School, Blouberg SA</div>
+          </div>
+        </div>
       </div>
-      <div class="reveal reveal-delay-1" style="display:flex;flex-direction:column;align-items:center;gap:0.25rem;padding:1.25rem 2rem;border-radius:12px;background:rgba(0,212,255,0.05);border:1px solid var(--aqua);">
-        <span style="font-family:var(--font-display);font-size:0.875rem;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:var(--fog);">School</span>
-        <span style="font-family:var(--font-display);font-size:1.5rem;font-weight:800;color:var(--white);">$99/mo</span>
+
+      <div class="testimonial-card reveal reveal-delay-1">
+        <div class="testimonial-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="testimonial-quote">"The booking widget increased our online bookings by 340%. Students book at midnight, we wake up to full schedules. The weather integration alone is worth the subscription."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar t2">SK</div>
+          <div>
+            <div class="testimonial-name">Sarah K.</div>
+            <div class="testimonial-role">Windchaser Academy, Tarifa Spain</div>
+          </div>
+        </div>
       </div>
-      <div class="reveal reveal-delay-2" style="display:flex;flex-direction:column;align-items:center;gap:0.25rem;padding:1.25rem 2rem;border-radius:12px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);">
-        <span style="font-family:var(--font-display);font-size:0.875rem;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:var(--fog);">Custom</span>
-        <span style="font-family:var(--font-display);font-size:1.5rem;font-weight:800;color:var(--white);">Let\'s Talk</span>
+
+      <div class="testimonial-card reveal reveal-delay-2">
+        <div class="testimonial-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="testimonial-quote">"Finally, one place for everything. No more WhatsApp groups, no more spreadsheets. Just pure organization. Our students love the progression tracker — it keeps them coming back."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar t3">JM</div>
+          <div>
+            <div class="testimonial-name">Jan M.</div>
+            <div class="testimonial-role">Baltic Kite Center, Rügen Germany</div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="reveal" style="margin-top:2rem;">
-      <a href="/pricing" class="btn-primary">See Full Pricing →</a>
     </div>
   </div>
 </section>
@@ -6530,7 +7717,7 @@ body::after {
           <ul>
             <li><a href="/features">Features</a></li>
             <li><a href="/pricing">Pricing</a></li>
-            <li><a href="/features#showcase">Dashboard</a></li>
+            <li><a href="#showcase">Dashboards</a></li>
             <li><a href="#">Integrations</a></li>
             <li><a href="#">Changelog</a></li>
           </ul>
@@ -6650,6 +7837,77 @@ const revealObserver = new IntersectionObserver((entries) => {
 });
 
 revealElements.forEach(el => revealObserver.observe(el));
+
+// ---- Showcase Slider: Tab switching + auto-rotation + mock data toggle ----
+(function() {
+  var tabs = document.querySelectorAll('#showcaseSliderTabs .hero-tab');
+  var roatanContainer = document.getElementById('panelsRoatan');
+  var capeContainer = document.getElementById('panelsCapeTown');
+  var urlBar = document.getElementById('showcase-url-bar');
+  var toggle = document.getElementById('mockDataToggle');
+  var nameLabel = document.getElementById('schoolNameLabel');
+  var baseUrl = 'app.thekitealliance.com/';
+  var autoTimer = null;
+  var currentIdx = 0;
+  var INTERVAL = 6000;
+
+  function getActivePanels() {
+    var container = toggle && toggle.checked ? capeContainer : roatanContainer;
+    return container.querySelectorAll('.hero-slider-panel');
+  }
+
+  function switchTo(idx) {
+    var panels = getActivePanels();
+    tabs.forEach(function(t) { t.classList.remove('active'); });
+    panels.forEach(function(p) { p.classList.remove('active'); });
+    if (idx >= tabs.length) idx = 0;
+    tabs[idx].classList.add('active');
+    if (panels[idx]) panels[idx].classList.add('active');
+    if (urlBar) urlBar.textContent = baseUrl + tabs[idx].getAttribute('data-url');
+    currentIdx = idx;
+    var prog = tabs[idx].querySelector('.hero-tab-progress');
+    if (prog) { prog.style.animation = 'none'; prog.offsetHeight; prog.style.animation = ''; }
+  }
+
+  function startAuto() {
+    stopAuto();
+    autoTimer = setInterval(function() {
+      switchTo((currentIdx + 1) % tabs.length);
+    }, INTERVAL);
+  }
+
+  function stopAuto() {
+    if (autoTimer) { clearInterval(autoTimer); autoTimer = null; }
+  }
+
+  tabs.forEach(function(tab, i) {
+    tab.addEventListener('click', function() {
+      switchTo(i);
+      stopAuto();
+      setTimeout(startAuto, 12000);
+    });
+  });
+
+  // Mock data toggle
+  if (toggle) {
+    toggle.addEventListener('change', function() {
+      if (toggle.checked) {
+        roatanContainer.style.display = 'none';
+        capeContainer.style.display = '';
+        nameLabel.textContent = 'Watersport Center Cape Town';
+        nameLabel.classList.add('active-mock');
+      } else {
+        capeContainer.style.display = 'none';
+        roatanContainer.style.display = '';
+        nameLabel.textContent = 'Kitesurf Roatan';
+        nameLabel.classList.remove('active-mock');
+      }
+      switchTo(currentIdx);
+    });
+  }
+
+  startAuto();
+})();
 
 // ---- Showcase Slider: Tab switching + auto-rotation + mock data toggle ----
 (function() {
