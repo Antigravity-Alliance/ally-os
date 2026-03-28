@@ -4236,7 +4236,7 @@ body::after {
   display: grid;
   grid-template-columns: 1fr auto 1fr auto 1fr;
   gap: 1rem;
-  align-items: center;
+  align-items: start;
   margin-bottom: 2.5rem;
 }
 
@@ -4248,6 +4248,7 @@ body::after {
   text-align: center;
   line-height: 1;
   opacity: 0.7;
+  align-self: center;
 }
 
 .pricing-card {
@@ -4264,6 +4265,7 @@ body::after {
 }
 
 .pricing-card.featured {
+  padding: 2rem 2rem 1.75rem;
   border-color: var(--aqua);
   background: linear-gradient(180deg, rgba(0, 212, 255, 0.05), var(--storm));
   box-shadow: 0 0 40px rgba(0, 212, 255, 0.08);
