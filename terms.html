@@ -13,8 +13,8 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ally OS — The Operating System for Kite Schools | by Antigravity Alliance</title>
-<meta name="description" content="Ally OS replaces spreadsheets, WhatsApp chaos, and paper waivers with one powerful dashboard. Bookings, students, instructors, inventory, weather — all in one place.">
+<title>Terms of Service — Ally OS</title>
+<meta name="description" content="Terms of Service for Ally OS and The Kite &amp; Wing Alliance by Antigravity Alliance Inc. Read the terms governing your use of our services.">
 <meta property="og:title" content="Ally OS — The Operating System for Kite Schools">
 <meta property="og:description" content="The all-in-one operating system for kite schools, wingfoil centers, and watersport academies.">
 <meta property="og:type" content="website">
@@ -6153,6 +6153,9 @@ body::after {
     display: none;
   }
 }
+.page-hero { padding: 8rem 1.5rem 3rem; text-align: center; }
+.page-hero h1 { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; text-transform: uppercase; color: var(--white); margin-bottom: 0.75rem; }
+.page-hero p { color: var(--fog); font-size: 1.125rem; max-width: 600px; margin: 0 auto; }
 
 /* ---- Cookie Consent Banner ---- */
 .cookie-banner {
@@ -6227,7 +6230,42 @@ body::after {
   .cookie-banner-inner { flex-direction: column; text-align: center; }
   .cookie-banner-buttons { width: 100%; justify-content: center; }
 }
+
+.legal-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 5rem;
+  color: rgba(255,255,255,0.8);
+  font-size: 0.9375rem;
+  line-height: 1.8;
+}
+.legal-content h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--white);
+  margin: 3rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.legal-content h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--white);
+  margin: 2rem 0 0.75rem;
+}
+.legal-content p { margin: 0.75rem 0; }
+.legal-content ul, .legal-content ol { margin: 0.75rem 0; padding-left: 1.5rem; }
+.legal-content li { margin: 0.4rem 0; }
+.legal-content a { color: var(--aqua); text-decoration: underline; text-underline-offset: 2px; }
+.legal-content strong { color: var(--white); }
+.legal-content table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.875rem; }
+.legal-content th, .legal-content td { padding: 0.5rem 0.75rem; border: 1px solid rgba(255,255,255,0.1); text-align: left; }
+.legal-content th { background: rgba(255,255,255,0.05); color: var(--white); font-weight: 600; }
+.legal-content hr { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 2rem 0; }
+.legal-content blockquote { border-left: 3px solid var(--aqua); padding-left: 1rem; margin: 1rem 0; color: rgba(255,255,255,0.6); }
 </style>
+
 </head>
 <body>
 
@@ -6241,20 +6279,19 @@ body::after {
   <div class="parallax-orb parallax-orb-3"></div>
   <div class="parallax-orb parallax-orb-4"></div>
 </div>
-
 <!-- ============================================
      NAVIGATION
      ============================================ -->
 <nav class="nav" id="navbar">
   <div class="nav-inner">
-    <a href="#" class="nav-logo">
+    <a href="/" class="nav-logo">
       <img src="aos_gradient_a.svg" alt="Ally OS by Antigravity Alliance" style="height:135px; width:auto;">
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="/features">Features</a></li>
       
       <li><a href="/pricing">Pricing</a></li>
-      <li><a href="#faq">FAQ</a></li>
+      <li><a href="/#faq">FAQ</a></li>
       <li><a href="https://www.antigravityalliance.com/auth" target="_blank" rel="noopener" class="nav-login">Login</a></li>
       <li><a href="https://www.antigravityalliance.com/register?role=school" target="_blank" rel="noopener" class="nav-cta">Start Free Trial</a></li>
     </ul>
@@ -6266,1570 +6303,266 @@ body::after {
   </div>
 </nav>
 
-<!-- ============================================
-     HERO SECTION
-     ============================================ -->
-<section class="hero" id="hero">
-  <div class="hero-inner">
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span class="hero-badge-dot"></span>
-        Now in Beta — Free for Early Adopters
-      </div>
-      <h1 class="hero-headline">
-        Your Kite School,<br>
-        <span class="highlight">On Autopilot.</span>
-      </h1>
-      <p class="hero-sub">
-        Ally OS replaces your spreadsheets, WhatsApp chaos, and paper waivers with one powerful dashboard. Bookings, students, instructors, inventory, weather — all in one place.
-      </p>
-      <div class="hero-ctas">
-        <a href="https://www.antigravityalliance.com/register?role=school" target="_blank" rel="noopener" class="btn-primary">Start Free Trial →</a>
-        <a href="https://calendly.com/christian-bergler81/new-meeting" target="_blank" rel="noopener" class="btn-ghost">Book a Call</a>
-      </div>
-    </div>
-
-    <div class="hero-video-wrapper" id="demo">
-      <div class="hero-video" style="overflow:hidden; border-radius:12px; border:1px solid var(--white-10); box-shadow: 0 20px 50px rgba(0,0,0,0.4), 0 0 0 1px rgba(0,212,255,0.05);">
-        <iframe src="hero-demo.html" style="width:100%;height:100%;border:none;display:block;min-height:340px;" loading="lazy" title="Ally OS Dashboard Demo"></iframe>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================
-     SOCIAL PROOF BAR
-     ============================================ -->
-<section class="social-proof">
-  <div class="container-wide">
-    <p class="social-proof-label">Built for watersport schools worldwide</p>
-  </div>
-  <div class="ticker-wrap">
-    <div class="ticker-track">
-      <div class="ticker-item"><span class="ticker-num">24<span class="ticker-suffix">/7</span></span><span class="ticker-label">Online Booking</span></div>
-      <span class="ticker-dot"></span>
-      <div class="ticker-item"><span class="ticker-num">99.9<span class="ticker-suffix">%</span></span><span class="ticker-label">Uptime</span></div>
-      <span class="ticker-dot"></span>
-      <div class="ticker-item"><span class="ticker-num">3<span class="ticker-suffix">s</span></span><span class="ticker-label">Page Load</span></div>
-      <span class="ticker-dot"></span>
-      <div class="ticker-item"><span class="ticker-num">0<span class="ticker-suffix">%</span></span><span class="ticker-label">Commission</span></div>
-      <span class="ticker-dot"></span>
-      <div class="ticker-item"><span class="ticker-num">5<span class="ticker-suffix">min</span></span><span class="ticker-label">Setup Time</span></div>
-      <span class="ticker-dot"></span>
-      <div class="ticker-item"><span class="ticker-num">50<span class="ticker-suffix">+</span></span><span class="ticker-label">Currencies</span></div>
-      <span class="ticker-dot"></span>
-      <div class="ticker-item"><span class="ticker-num">1<span class="ticker-suffix">line</span></span><span class="ticker-label">Widget Embed</span></div>
-      <span class="ticker-dot"></span>
-      <!-- Duplicate for seamless loop -->
-      <div class="ticker-item"><span class="ticker-num">24<span class="ticker-suffix">/7</span></span><span class="ticker-label">Online Booking</span></div>
-      <span class="ticker-dot"></span>
-      <div class="ticker-item"><span class="ticker-num">99.9<span class="ticker-suffix">%</span></span><span class="ticker-label">Uptime</span></div>
-      <span class="ticker-dot"></span>
-      <div class="ticker-item"><span class="ticker-num">3<span class="ticker-suffix">s</span></span><span class="ticker-label">Page Load</span></div>
-      <span class="ticker-dot"></span>
-      <div class="ticker-item"><span class="ticker-num">0<span class="ticker-suffix">%</span></span><span class="ticker-label">Commission</span></div>
-      <span class="ticker-dot"></span>
-      <div class="ticker-item"><span class="ticker-num">5<span class="ticker-suffix">min</span></span><span class="ticker-label">Setup Time</span></div>
-      <span class="ticker-dot"></span>
-      <div class="ticker-item"><span class="ticker-num">50<span class="ticker-suffix">+</span></span><span class="ticker-label">Currencies</span></div>
-      <span class="ticker-dot"></span>
-      <div class="ticker-item"><span class="ticker-num">1<span class="ticker-suffix">line</span></span><span class="ticker-label">Widget Embed</span></div>
-      <span class="ticker-dot"></span>
-    </div>
-  </div>
-</section>
-
-<div class="glow-divider"></div>
-
-
-<div class="glow-divider yellow"></div>
-
-<!-- ============================================
-     HOW IT WORKS
-     ============================================ -->
-<section class="how-it-works" id="how-it-works">
+<section class="page-hero">
   <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label" style="color: var(--yellow);">How It Works</span>
-      <h2 class="section-title">Live in Four Steps</h2>
-    </div>
-
-    <div class="steps-grid">
-      <div class="step-card reveal">
-        <div class="step-number" style="background: rgba(167,139,250,0.12); color: var(--purple);">1</div>
-        <h4>Create</h4>
-        <p>Sign up as a rider and join your local spot community.</p>
-      </div>
-      <div class="step-connector reveal">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-      </div>
-      <div class="step-card reveal reveal-delay-1">
-        <div class="step-number" style="background: rgba(0,212,255,0.12); color: var(--aqua);">2</div>
-        <h4>Unlock</h4>
-        <p>Activate your school dashboard.</p>
-      </div>
-      <div class="step-connector reveal reveal-delay-1">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-      </div>
-      <div class="step-card reveal reveal-delay-2">
-        <div class="step-number" style="background: rgba(255,209,0,0.12); color: var(--yellow);">3</div>
-        <h4>Complete</h4>
-        <p>Add your services, gear, instructors, and availability.</p>
-      </div>
-      <div class="step-connector reveal reveal-delay-2">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-      </div>
-      <div class="step-card reveal reveal-delay-3">
-        <div class="step-number" style="background: rgba(236,72,153,0.12); color: #ec4899;">4</div>
-        <h4>Publish</h4>
-        <p>Implement the booking widget and Ally OS is live.</p>
-      </div>
-    </div>
+    <h1>Terms of Service</h1>
   </div>
 </section>
 
-<div class="glow-divider"></div>
-
-<!-- ============================================
-     PAIN POINTS SECTION
-     ============================================ -->
-<section class="pain-points" id="pain">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">The Problem</span>
-      <h2 class="section-title">Still Running Your School Like It's 2015?</h2>
-    </div>
-
-    <div class="pain-cards">
-      <div class="pain-card reveal">
-        <div class="pain-icon">📋</div>
-        <h3>Spreadsheet Hell</h3>
-        <p>Bookings in one sheet, students in another, financials who knows where. Sound familiar? You're running a business on a system designed for budgets and grocery lists.</p>
-      </div>
-      <div class="pain-card reveal reveal-delay-1">
-        <div class="pain-icon">💬</div>
-        <h3>WhatsApp Chaos</h3>
-        <p>Instructors messaging students directly. No central record. Lost bookings. Missed payments. Your business communications scattered across 47 group chats.</p>
-      </div>
-      <div class="pain-card reveal reveal-delay-2">
-        <div class="pain-icon">🌧️</div>
-        <h3>Weather Roulette</h3>
-        <p>Checking 5 different apps to decide if you should run sessions. Students showing up on flat days. No-shows when it's pumping. Zero automation.</p>
-      </div>
-    </div>
-
-    <div class="pain-transition reveal">
-      <p>There's a better way.</p>
-      <span class="arrow">↓</span>
-    </div>
-  </div>
-</section>
-
-
-<div class="glow-divider purple"></div>
-
-<section class="features-teaser" id="features" style="padding:5rem 1.5rem;text-align:center;">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label" style="color: var(--yellow);">Features</span>
-      <h2 class="section-title">Everything Your School Needs. One Dashboard.</h2>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem;margin:2.5rem auto 2rem;max-width:900px;">
-      <div class="reveal" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:2rem 1.5rem;text-align:left;">
-        <h4 style="font-family:var(--font-display);font-size:1.125rem;font-weight:700;text-transform:uppercase;color:var(--white);margin-bottom:0.5rem;">Command Center</h4>
-        <p style="color:var(--fog);font-size:0.9rem;line-height:1.5;">Revenue, bookings, students, instructors — all in real time on one dashboard.</p>
-      </div>
-      <div class="reveal reveal-delay-1" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:2rem 1.5rem;text-align:left;">
-        <h4 style="font-family:var(--font-display);font-size:1.125rem;font-weight:700;text-transform:uppercase;color:var(--white);margin-bottom:0.5rem;">Smart Booking Engine</h4>
-        <p style="color:var(--fog);font-size:0.9rem;line-height:1.5;">24/7 online bookings with weather-aware scheduling and automated reminders.</p>
-      </div>
-      <div class="reveal reveal-delay-2" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:2rem 1.5rem;text-align:left;">
-        <h4 style="font-family:var(--font-display);font-size:1.125rem;font-weight:700;text-transform:uppercase;color:var(--white);margin-bottom:0.5rem;">Student Progression</h4>
-        <p style="color:var(--fog);font-size:0.9rem;line-height:1.5;">IKO/VDWS skill tracking, visual journals, and achievement badges.</p>
-      </div>
-    </div>
-    <div class="reveal" style="margin-top:2rem;">
-      <a href="/features" class="btn-primary">Explore All Features →</a>
-    </div>
-  </div>
-</section>
-
-<div class="glow-divider purple"></div>
-
-<!-- ============================================
-     FEATURE SHOWCASE (Interactive Slider)
-     ============================================ -->
-<section class="feature-showcase" id="showcase">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label" style="color: var(--purple);">Explore</span>
-      <h2 class="section-title">See It In Action</h2>
-      <p style="max-width:540px; margin:0.75rem auto 0; color:var(--fog); font-size:1rem; text-align:center;">Click through the tools that run your school. Every screen built for speed, clarity, and zero training.</p>
-    </div>
-
-    <div class="showcase-wrapper reveal-scale">
-    <div class="showcase-dashboard-wrapper" id="showcase">
-      <div class="hero-dashboard">
-        <!-- Browser Chrome -->
-        <div class="dash-chrome">
-          <div class="dash-dots">
-            <span></span><span></span><span></span>
-          </div>
-          <div class="dash-url" id="showcase-url-bar">app.thekitealliance.com/school/overview</div>
-          <div class="mock-toggle-wrap">
-            <span class="mock-toggle-label" id="schoolNameLabel">Kitesurf Roatan</span>
-            <label class="mock-toggle">
-              <input type="checkbox" id="mockDataToggle">
-              <span class="mock-toggle-slider"></span>
-            </label>
-          </div>
-        </div>
-
-        <!-- Feature Tabs -->
-        <div class="hero-slider-tabs" id="showcaseSliderTabs">
-          <div class="hero-tab active" data-tab="overview" data-url="school/overview">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>
-            Overview
-            <div class="hero-tab-progress"></div>
-          </div>
-          <div class="hero-tab" data-tab="scheduler" data-url="school/calendar">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
-            Organisation
-            <div class="hero-tab-progress"></div>
-          </div>
-          <div class="hero-tab" data-tab="services" data-url="school/services">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m6.08 9.5-3.5 1.6a1 1 0 0 0 0 1.81l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9a1 1 0 0 0 0-1.83l-3.5-1.59"/><path d="m6.08 14.5-3.5 1.6a1 1 0 0 0 0 1.81l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9a1 1 0 0 0 0-1.83l-3.5-1.59"/></svg>
-            Services
-            <div class="hero-tab-progress"></div>
-          </div>
-          <div class="hero-tab" data-tab="bookings" data-url="school/bookings">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v14"/><path d="M16 12H2"/><path d="M22 12H18"/><path d="M12 3v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 4.93-1.41 1.41"/></svg>
-            Bookings
-            <div class="hero-tab-progress"></div>
-          </div>
-          <div class="hero-tab" data-tab="crm" data-url="school/clients">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            Clients
-            <div class="hero-tab-progress"></div>
-          </div>
-          <div class="hero-tab" data-tab="inventory" data-url="school/inventory">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"/><path d="m7.5 4.27 9 5.15"/></svg>
-            Inventory
-            <div class="hero-tab-progress"></div>
-          </div>
-          <div class="hero-tab" data-tab="finance" data-url="school/finance">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-            Finance
-            <div class="hero-tab-progress"></div>
-          </div>
-          <div class="hero-tab" data-tab="team" data-url="school/team">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4"/><path d="M12 19v4"/><path d="m5.64 5.64 2.83 2.83"/><path d="m15.54 15.54 2.83 2.83"/><path d="M1 12h4"/><path d="M19 12h4"/><path d="m5.64 18.36 2.83-2.83"/><path d="m15.54 8.46 2.83-2.83"/></svg>
-            Team
-            <div class="hero-tab-progress"></div>
-          </div>
-          <div class="hero-tab" data-tab="public-profile" data-url="school/public-profile">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
-            Public Profile
-            <div class="hero-tab-progress"></div>
-          </div>
-          <div class="hero-tab" data-tab="settings" data-url="school/settings">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
-            Settings
-            <div class="hero-tab-progress"></div>
-          </div>
-        </div>
-
-        <!-- Slider Panels -->
-        <div class="hero-slider-panels" id="panelsRoatan">
-
-        <div class="hero-slider-panel active" data-panel="overview">
-<div class="overview-mock">
-  <div class="overview-welcome">
-    <div class="overview-school-name">Kitesurf Roatan</div>
-    <div class="overview-school-loc">West End, Roatan, Honduras</div>
-  </div>
-  <div class="overview-stats-row">
-    <div class="overview-stat"><div class="overview-stat-val" style="color:var(--aqua);">3</div><div class="overview-stat-label">Bookings Today</div></div>
-    <div class="overview-stat"><div class="overview-stat-val" style="color:#2ed573;">2</div><div class="overview-stat-label">Instructors Active</div></div>
-    <div class="overview-stat"><div class="overview-stat-val" style="color:#f59e0b;">$840</div><div class="overview-stat-label">Revenue Today</div></div>
-    <div class="overview-stat"><div class="overview-stat-val" style="color:var(--purple);">14</div><div class="overview-stat-label">Active Clients</div></div>
-  </div>
-  <div class="overview-grid">
-    <div class="overview-card">
-      <div class="overview-card-title">Upcoming Lessons</div>
-      <div class="overview-list-item"><span class="overview-dot" style="background:#0ea5e9;"></span><span>10:00 — Beginner Group (3)</span><span class="overview-tag">Carlos M.</span></div>
-      <div class="overview-list-item"><span class="overview-dot" style="background:#f59e0b;"></span><span>13:00 — Private Kite</span><span class="overview-tag">Maria L.</span></div>
-      <div class="overview-list-item"><span class="overview-dot" style="background:#8b5cf6;"></span><span>15:00 — Wing Foil Intro</span><span class="overview-tag">Carlos M.</span></div>
-    </div>
-    <div class="overview-card">
-      <div class="overview-card-title">Recent Activity</div>
-      <div class="overview-list-item"><span>💬 New booking from Jake P.</span><span class="overview-time">2h ago</span></div>
-      <div class="overview-list-item"><span>✅ Lesson completed — Sarah K.</span><span class="overview-time">4h ago</span></div>
-      <div class="overview-list-item"><span>📦 Kite K-003 returned</span><span class="overview-time">5h ago</span></div>
-    </div>
-  </div>
+<div class="legal-content">
+<p><strong>Antigravity Alliance Inc. — AllyOS &amp; The Kite &amp; Wing Alliance</strong>
+<strong>Last Updated:</strong> March 29, 2026
+<strong>Effective Date:</strong> March 29, 2026</p>
+<hr />
+<h2>1. Agreement to Terms</h2>
+<p>By accessing or using AllyOS, The Kite &amp; Wing Alliance platform, website, mobile applications, or any related services (collectively, the "Services") operated by <strong>Antigravity Alliance Inc.</strong> ("we," "us," "our," "Antigravity Alliance"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree, do not use the Services.</p>
+<p>These Terms constitute a legally binding agreement between you and Antigravity Alliance Inc., a Delaware C-Corp registered in the United States and operating from Cape Town, South Africa.</p>
+<hr />
+<h2>2. Eligibility</h2>
+<p>To use the Services, you must:
+- Be at least 16 years of age (users aged 13–16 require verified parental or guardian consent).
+- Have the legal capacity to enter into a binding agreement.
+- Not be prohibited from using the Services under applicable law.
+- Provide accurate and complete registration information.</p>
+<p>By creating an account, you represent and warrant that you meet these eligibility requirements.</p>
+<hr />
+<h2>3. Account Registration &amp; Security</h2>
+<h3>3.1 Your Account</h3>
+<p>You must register for an account to access most features of the Services. You agree to:
+- Provide accurate, current, and complete information during registration.
+- Maintain and update your account information.
+- Keep your password secure and confidential.
+- Notify us immediately of any unauthorized access at support@thekitealliance.com.</p>
+<h3>3.2 Account Types</h3>
+<p>The Services offer different account types for both products:</p>
+<p><strong>AllyOS School Management:</strong>
+- <strong>School Account:</strong> Kite schools and businesses that manage bookings, instructors, students, and school programs through AllyOS features including instructor management, student milestones, and scheduling.
+- <strong>Instructor Account:</strong> Certified instructors who manage students, offer lessons, track teaching activity, and maintain their instructor profile.</p>
+<p><strong>The Kite &amp; Wing Alliance Community:</strong>
+- <strong>Rider Account:</strong> Individual users who log sessions, join spots, participate in community features, join leagues, and engage in forums.</p>
+<h3>3.3 Account Responsibility</h3>
+<p>You are responsible for all activity under your account. We are not liable for any loss or damage arising from unauthorized use of your account.</p>
+<hr />
+<h2>4. The Services</h2>
+<h3>4.1 Platform Description</h3>
+<p>The Services comprise two integrated products:</p>
+<p><strong>AllyOS</strong> is a school management SaaS platform that provides:
+- Booking and scheduling tools for lessons and sessions
+- Instructor management and profile features
+- Student milestone tracking and progress management
+- Lesson payment processing
+- School dashboard and administrative tools</p>
+<p><strong>The Kite &amp; Wing Alliance</strong> is a community platform for kitesurfing, wingfoiling, and windsurfing that includes:
+- Spot discovery with wind and weather data
+- Session logging and activity tracking
+- AllianceScore, XP, and league rankings
+- Community features (forums, journals, check-ins, reviews, spot feedback)
+- Instructor and school profiles
+- Used gear marketplace and jobs board (when available)</p>
+<p>Both products are operated by Antigravity Alliance Inc. and share user authentication and some integrated features.</p>
+<h3>4.2 Service Availability</h3>
+<p>We strive to keep the Services available 24/7 but do not guarantee uninterrupted access. We may temporarily suspend or restrict access for maintenance, updates, security, or reasons beyond our control. We will provide reasonable notice of planned downtime when possible.</p>
+<h3>4.3 Modifications to Services</h3>
+<p>We reserve the right to modify, suspend, or discontinue any part of the Services at any time. We will provide reasonable notice of material changes that affect your use of the platform.</p>
+<hr />
+<h2>5. Subscriptions &amp; Payments</h2>
+<h3>5.1 Free &amp; Paid Features</h3>
+<p>Some features of the Services are free. Others require a paid subscription or per-transaction fees (e.g., AllyOS school subscriptions, Kite &amp; Wing Alliance booking fees, premium Rider features).</p>
+<h3>5.2 Pricing &amp; Billing</h3>
+<ul>
+<li>All prices are displayed in the local currency of the school's or user's operating country, with optional USD/EUR conversion display.</li>
+<li>Subscription fees are billed in advance on a monthly or annual basis.</li>
+<li>Annual subscriptions receive a discount as displayed at the time of purchase.</li>
+<li>All payments are processed by <strong>Stripe</strong>. By making a payment, you also agree to Stripe's terms of service.</li>
+</ul>
+<h3>5.3 Booking Fees</h3>
+<ul>
+<li>When riders book lessons through the Kite &amp; Wing Alliance platform, a transaction fee is applied to the school's booking total.</li>
+<li>The fee percentage is disclosed to schools during AllyOS onboarding and in their dashboard.</li>
+</ul>
+<h3>5.4 Refunds &amp; Cancellations</h3>
+<ul>
+<li><strong>Subscription refunds:</strong> You may cancel your subscription at any time. Cancellation takes effect at the end of the current billing period. We do not provide pro-rated refunds for partial months/years.</li>
+<li><strong>Lesson booking refunds:</strong> Refund policies for individual lessons are set by each school. Antigravity Alliance facilitates the refund but the school's policy governs.</li>
+<li><strong>Disputes:</strong> If you believe you were charged in error, contact support@thekitealliance.com within 30 days.</li>
+</ul>
+<h3>5.5 Taxes</h3>
+<p>You are responsible for any applicable taxes on your subscription or transactions. We will collect and remit taxes where legally required.</p>
+<hr />
+<h2>6. User Content</h2>
+<h3>6.1 Your Content</h3>
+<p>"User Content" means any text, photos, videos, reviews, journal entries, forum posts, comments, session logs, or other material you submit, post, or transmit through the Services.</p>
+<p>You retain ownership of your User Content. By posting User Content, you grant Antigravity Alliance a worldwide, non-exclusive, royalty-free, sublicensable, transferable license to use, reproduce, modify, display, distribute, and create derivative works of your User Content in connection with operating and improving the Services.</p>
+<p>This license ends when you delete your User Content or your account, except where your content has been shared with others and they have not deleted it, or where retention is necessary for legal compliance.</p>
+<h3>6.2 Content Responsibilities</h3>
+<p>You are solely responsible for your User Content. You represent and warrant that:
+- You own or have the necessary rights to post the content.
+- Your content does not violate any third party's rights (including intellectual property and privacy).
+- Your content complies with these Terms and our Acceptable Use Policy.</p>
+<h3>6.3 Content Moderation</h3>
+<p>We reserve the right (but are not obligated) to review, edit, or remove User Content that violates these Terms or our Acceptable Use Policy. We may do so without notice.</p>
+<h3>6.4 Session Data &amp; Analytics</h3>
+<p>Session data you log (spots visited, session duration, conditions, XP earned) is used to calculate your AllianceScore and contribute to spot and league statistics within The Kite &amp; Wing Alliance. Aggregate, anonymized session data may be used for platform-wide analytics and reporting. This data is not shared with schools or other users without your consent.</p>
+<hr />
+<h2>7. School &amp; Instructor Terms</h2>
+<h3>7.1 School Accounts (AllyOS)</h3>
+<p>Schools using AllyOS features agree to:
+- Provide accurate business information, operating licenses, and insurance documentation.
+- Maintain current pricing and availability information.
+- Respond to booking requests within a reasonable timeframe.
+- Comply with all applicable local laws governing their operation.
+- Maintain appropriate liability insurance for their activities and instruction.</p>
+<h3>7.2 Instructor Accounts</h3>
+<p>Instructors agree to:
+- Provide accurate certification and qualification information.
+- Not misrepresent their skill level, experience, or certifications.
+- Comply with the safety standards of their operating jurisdiction.</p>
+<h3>7.3 Relationship Between Schools, Instructors &amp; Antigravity Alliance</h3>
+<p>Antigravity Alliance is a platform that facilitates connections between riders, instructors, and schools. We are not an employer, agent, or partner of any school or instructor. Schools and instructors are independent entities solely responsible for the services they provide, compliance with local regulations, and their interactions with riders.</p>
+<h3>7.4 Multi-Tenant Data Isolation</h3>
+<p>Each school's data (students, bookings, financial records) is logically separated within our database. Schools cannot access another school's data. We enforce this through row-level security policies at the database level.</p>
+<hr />
+<h2>8. Prohibited Conduct</h2>
+<p>You agree not to:</p>
+<ul>
+<li>Violate any applicable law or regulation.</li>
+<li>Impersonate any person or entity, or falsely claim an affiliation.</li>
+<li>Post false, misleading, or fraudulent content (including fake reviews or certifications).</li>
+<li>Harass, bully, intimidate, or threaten other users.</li>
+<li>Collect personal information of other users without their consent.</li>
+<li>Use automated bots, scrapers, or crawlers to access the Services without written permission.</li>
+<li>Attempt to gain unauthorized access to any part of the Services, other accounts, or our systems.</li>
+<li>Interfere with or disrupt the Services, servers, or networks.</li>
+<li>Upload malware, viruses, or any harmful code.</li>
+<li>Use the Services for any purpose that is illegal or not authorized by these Terms.</li>
+<li>Circumvent, disable, or interfere with any security features of the Services.</li>
+<li>Manipulate AllianceScore, XP, or league rankings through fraudulent activity or exploitation of system vulnerabilities.</li>
+<li>Create multiple accounts to artificially inflate rankings or circumvent bans.</li>
+</ul>
+<p>See our <a href="/acceptable-use">Acceptable Use Policy</a> for additional detail.</p>
+<hr />
+<h2>9. Intellectual Property</h2>
+<h3>9.1 Our IP</h3>
+<p>The Services, including all brand names, logos, design systems, AllianceScore algorithm, software, and all original content, are owned by Antigravity Alliance Inc. and protected by copyright, trademark, and other intellectual property laws.</p>
+<p>You may not copy, modify, distribute, sell, or lease any part of the Services or our intellectual property without our written permission.</p>
+<h3>9.2 Trademarks</h3>
+<p>"AllyOS," "The Kite &amp; Wing Alliance," "AllianceScore," "Ally," "Arena," "Pulse," "Agora," "Antigravity Alliance," and associated logos are trademarks of Antigravity Alliance Inc. You may not use these marks without our prior written consent.</p>
+<h3>9.3 Feedback</h3>
+<p>If you provide feedback, suggestions, or ideas about the Services, you grant us the right to use them without restriction or compensation to you.</p>
+<hr />
+<h2>10. Third-Party Services &amp; Integrations</h2>
+<h3>10.1 Third-Party Services</h3>
+<p>The Services integrate with third-party services including Stripe (payments), Mapbox (maps), Open-Meteo (weather), WOO and Surfr (session tracking), and others. Your use of these services is governed by their respective terms and privacy policies.</p>
+<h3>10.2 Links</h3>
+<p>The Services may contain links to third-party websites. We are not responsible for the content, accuracy, or practices of third-party sites.</p>
+<hr />
+<h2>11. Disclaimers</h2>
+<h3>11.1 "As Is" Basis</h3>
+<p>THE SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.</p>
+<h3>11.2 No Guarantee of Accuracy</h3>
+<p>We do not guarantee the accuracy of:
+- Weather and wind data (sourced from third-party providers).
+- User-generated content (reviews, spot descriptions, session logs, certification claims).
+- School or instructor certifications (we verify where possible but are not liable for misrepresentation).</p>
+<h3>11.3 Assumption of Risk</h3>
+<p>Kitesurfing, wingfoiling, and windsurfing are inherently dangerous activities involving significant risk of serious injury or death. Antigravity Alliance provides a platform for community, information, and lesson booking — we are not responsible for any injury, death, or property damage that occurs during or as a result of water sports activities. You participate at your own risk. By using The Kite &amp; Wing Alliance, you acknowledge and assume all risks associated with these activities.</p>
+<h3>11.4 No Guarantee of Bookings or Service Quality</h3>
+<p>We do not guarantee that schools or instructors will accept bookings, provide quality instruction, be available at listed times, or meet your expectations. Schools and instructors are independent operators.</p>
+<hr />
+<h2>12. Limitation of Liability</h2>
+<p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW:</p>
+<ul>
+<li>Antigravity Alliance Inc., its officers, directors, employees, and agents shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including loss of profits, data, or goodwill, arising from or related to your use of the Services.</li>
+<li>Our total aggregate liability for any claims arising from or related to the Services shall not exceed the greater of (a) the amount you paid us in the 12 months preceding the claim, or (b) USD $100.</li>
+<li>These limitations apply regardless of the theory of liability (contract, tort, negligence, strict liability, or otherwise) and even if we have been advised of the possibility of such damages.</li>
+</ul>
+<p>Some jurisdictions do not allow the exclusion of certain warranties or limitation of liability. In those jurisdictions, our liability is limited to the maximum extent permitted by law. For consumers in jurisdictions with mandatory consumer protection laws, the limitations in this section do not apply to the extent they are prohibited by law.</p>
+<hr />
+<h2>13. Indemnification</h2>
+<p>You agree to indemnify, defend, and hold harmless Antigravity Alliance Inc. and its officers, directors, employees, agents, and affiliates from any claims, damages, losses, liabilities, and expenses (including reasonable legal fees) arising from:
+- Your use of the Services.
+- Your User Content.
+- Your violation of these Terms.
+- Your violation of any third party's rights.
+- Any activity conducted through your account.</p>
+<hr />
+<h2>14. Dispute Resolution</h2>
+<h3>14.1 Governing Law</h3>
+<p>These Terms are governed by the laws of the State of Delaware, United States, without regard to conflict of law principles.</p>
+<h3>14.2 Informal Resolution</h3>
+<p>Before filing any legal claim, you agree to try to resolve the dispute informally by contacting legal@thekitealliance.com. We will attempt to resolve the matter within 30 days.</p>
+<h3>14.3 Arbitration</h3>
+<p>If informal resolution fails, any dispute arising from these Terms or the Services shall be resolved through binding arbitration administered by the American Arbitration Association (AAA) under its Commercial Arbitration Rules, except as provided in Section 14.6 below.</p>
+<ul>
+<li>Arbitration shall take place in Wilmington, Delaware, or remotely at your election.</li>
+<li>The arbitrator's decision is final and binding.</li>
+<li>Each party bears its own costs unless the arbitrator decides otherwise.</li>
+</ul>
+<h3>14.4 Class Action Waiver</h3>
+<p>YOU AGREE THAT ANY DISPUTE RESOLUTION PROCEEDINGS WILL BE CONDUCTED ON AN INDIVIDUAL BASIS AND NOT AS A CLASS, CONSOLIDATED, OR REPRESENTATIVE ACTION.</p>
+<h3>14.5 Exceptions</h3>
+<p>Nothing in this section prevents either party from seeking injunctive relief in court for intellectual property infringement or other urgent matters.</p>
+<h3>14.6 Jurisdiction-Specific Consumer Rights</h3>
+<p><strong>For EU/EEA Consumers:</strong>
+If you are a consumer in the European Union or European Economic Area, nothing in these Terms affects your rights under mandatory consumer protection laws in your country of residence, including the Consumer Rights Directive (2011/83/EU) and national implementations. You retain the right to bring proceedings in your local consumer courts. The arbitration clause in Section 14.3 does not apply to you to the extent it conflicts with mandatory EU consumer protection law.</p>
+<p><strong>For South African Consumers:</strong>
+South African consumers retain their rights under the Consumer Protection Act 68 of 2008, including the right to refer complaints to the National Consumer Commission or appropriate ombud. The Consumer Protection Act's mandatory provisions regarding consumer rights, warranties, and dispute resolution shall apply to the extent that any provision of these Terms conflicts with them.</p>
+<p><strong>For Australian Consumers:</strong>
+Australian consumers are protected by the Australian Consumer Law, which provides statutory guarantees of quality, fitness for purpose, and safety that cannot be excluded. Liability for breach of these guarantees is limited as permitted by the Australian Consumer Law. To the extent permitted, our liability for breach of non-excludable statutory guarantees is limited to the re-supply of the Services or the cost of re-supply. The arbitration clause in Section 14.3 does not apply to the extent it excludes Australian consumer rights under mandatory law.</p>
+<p><strong>For Brazilian Consumers:</strong>
+Brazilian consumers are protected under the Consumer Defense Code (Lei nº 8.078/1990). These Terms comply with Brazilian consumer protection requirements, and any conflicting provision is void to the extent prohibited by the Consumer Defense Code. You may pursue remedies available under Brazilian law in the courts of Brazil.</p>
+<p><strong>For Consumers in Japan, Thailand, and Singapore:</strong>
+We acknowledge that consumers in Japan, Thailand, and Singapore are protected by applicable local consumer protection laws and regulations. To the extent any provision of these Terms conflicts with mandatory consumer protections in your jurisdiction, those protections shall apply.</p>
+<hr />
+<h2>15. Termination</h2>
+<h3>15.1 By You</h3>
+<p>You may terminate your account at any time through Account Settings or by emailing support@thekitealliance.com. Active subscriptions will continue until the end of the current billing period unless you request immediate cancellation.</p>
+<h3>15.2 By Us</h3>
+<p>We may suspend or terminate your account if:
+- You violate these Terms or the Acceptable Use Policy.
+- You engage in fraudulent activity.
+- Your account has been inactive for more than 24 months.
+- Required by law or to protect the safety of our users.</p>
+<p>We will provide notice before termination except where immediate action is required for safety or legal reasons.</p>
+<h3>15.3 Effect of Termination</h3>
+<p>Upon termination:
+- Your access to the Services will cease.
+- Your User Content may be deleted or anonymized per our Privacy Policy.
+- Provisions that by their nature should survive (limitation of liability, indemnification, dispute resolution) will survive termination.
+- You may request a data export before account deletion.</p>
+<hr />
+<h2>16. General Provisions</h2>
+<h3>16.1 Entire Agreement</h3>
+<p>These Terms, together with the Privacy Policy, Cookie Policy, and Acceptable Use Policy, constitute the entire agreement between you and Antigravity Alliance Inc.</p>
+<h3>16.2 Severability</h3>
+<p>If any provision of these Terms is found to be unenforceable, the remaining provisions remain in full force and effect. If a provision is found unenforceable due to conflict with mandatory local law, that provision is modified to the minimum extent necessary to comply with local law while preserving the original intent.</p>
+<h3>16.3 Waiver</h3>
+<p>Our failure to enforce any right or provision does not constitute a waiver of that right or provision.</p>
+<h3>16.4 Assignment</h3>
+<p>You may not assign or transfer your rights under these Terms. We may assign our rights without restriction.</p>
+<h3>16.5 Force Majeure</h3>
+<p>We are not liable for any failure or delay caused by circumstances beyond our reasonable control, including natural disasters, war, pandemic, government action, or internet outages.</p>
+<h3>16.6 Notices</h3>
+<p>We may send notices to you via email to the address on your account, or through in-app notifications. You may send notices to us at legal@thekitealliance.com.</p>
+<hr />
+<h2>17. Changes to These Terms</h2>
+<p>We may update these Terms from time to time. When we make material changes:
+- We will post the updated Terms with a new "Last Updated" date.
+- We will notify you via email or in-app notification at least 14 days before changes take effect.
+- Your continued use of the Services after the effective date constitutes acceptance.
+- If you do not agree to the updated Terms, you must stop using the Services and close your account.</p>
+<hr />
+<h2>18. Contact Us</h2>
+<p>If you have questions about these Terms:</p>
+<p><strong>Legal:</strong> legal@thekitealliance.com
+<strong>Support:</strong> support@thekitealliance.com
+<strong>Privacy &amp; Data Protection:</strong> privacy@thekitealliance.com</p>
+<p><strong>Antigravity Alliance Inc.</strong>
+Registered: Delaware, United States
+Operating: Cape Town, South Africa</p>
+<hr />
+<p><em>These Terms of Service were drafted for review by qualified legal counsel. They are not a substitute for professional legal advice tailored to your specific circumstances and jurisdictions.</em></p>
 </div>
-        </div>
-
-        <div class="hero-slider-panel" data-panel="scheduler">
-<div class="scheduler-mock">
-  <div class="scheduler-toolbar">
-    <div class="scheduler-toolbar-left">
-      <span class="scheduler-view-btn active">Today</span>
-      <span class="scheduler-view-btn">Tomorrow</span>
-      <span class="scheduler-view-btn">Week</span>
-    </div>
-    <span class="scheduler-date">Mon, 23 March 2026</span>
-    <div class="scheduler-nav"><span class="scheduler-nav-btn">‹</span><span class="scheduler-nav-btn">›</span></div>
-  </div>
-  <div class="scheduler-grid">
-    <div class="scheduler-header">
-      <div class="scheduler-col-label">Instructor</div>
-      <div class="scheduler-hour">8 AM</div><div class="scheduler-hour">9 AM</div><div class="scheduler-hour now">10 AM</div>
-      <div class="scheduler-hour">11 AM</div><div class="scheduler-hour">12 PM</div><div class="scheduler-hour">1 PM</div>
-      <div class="scheduler-hour">2 PM</div><div class="scheduler-hour">3 PM</div><div class="scheduler-hour">4 PM</div>
-    </div>
-    <div class="scheduler-wind-row">
-      <div class="scheduler-wind-label"><span class="wind-icon">💨</span> West End</div>
-      <div class="scheduler-wind-cell wind-green">12</div><div class="scheduler-wind-cell wind-green">14</div><div class="scheduler-wind-cell wind-green">16</div>
-      <div class="scheduler-wind-cell wind-green">18</div><div class="scheduler-wind-cell wind-green">16</div><div class="scheduler-wind-cell wind-green">15</div>
-      <div class="scheduler-wind-cell wind-amber">10</div><div class="scheduler-wind-cell wind-amber">8</div><div class="scheduler-wind-cell wind-amber">6</div>
-    </div>
-    <div class="scheduler-row">
-      <div class="scheduler-instructor">
-        <div class="instructor-dot" style="background:#0ea5e9;">CM</div>
-        <div class="scheduler-instructor-info"><div class="scheduler-instructor-name">Carlos Mendez</div><div class="scheduler-instructor-spot">West End</div></div>
-      </div>
-      <div class="scheduler-cells">
-        <div class="scheduler-cell has-wind-green"></div><div class="scheduler-cell has-wind-green"></div><div class="scheduler-cell has-wind-green"></div>
-        <div class="scheduler-cell has-wind-green"></div><div class="scheduler-cell has-wind-green"></div><div class="scheduler-cell has-wind-green"></div>
-        <div class="scheduler-cell"></div><div class="scheduler-cell"></div><div class="scheduler-cell"></div>
-        <div class="lesson-card lesson-beginner" style="left:calc((2/9)*100%);width:calc((2/9)*100%);"><span class="lesson-name">Beginner Group (3)</span><span class="lesson-time">10:00 – 12:00</span></div>
-        <div class="lesson-card lesson-intermediate" style="left:calc((5/9)*100%);width:calc((2/9)*100%);"><span class="lesson-name">Private Kite</span><span class="lesson-time">13:00 – 15:00</span></div>
-        <div class="scheduler-time-indicator" style="left:calc((2.3/9)*100%);"></div>
-      </div>
-    </div>
-    <div class="scheduler-row">
-      <div class="scheduler-instructor">
-        <div class="instructor-dot" style="background:#f59e0b;">ML</div>
-        <div class="scheduler-instructor-info"><div class="scheduler-instructor-name">Maria Lopez</div><div class="scheduler-instructor-spot">West End</div></div>
-      </div>
-      <div class="scheduler-cells">
-        <div class="scheduler-cell has-wind-green"></div><div class="scheduler-cell has-wind-green"></div><div class="scheduler-cell has-wind-green"></div>
-        <div class="scheduler-cell has-wind-green"></div><div class="scheduler-cell has-wind-green"></div><div class="scheduler-cell has-wind-green"></div>
-        <div class="scheduler-cell"></div><div class="scheduler-cell"></div><div class="scheduler-cell"></div>
-        <div class="lesson-card lesson-advanced" style="left:calc((0/9)*100%);width:calc((2/9)*100%);"><span class="lesson-name">Wing Foil Intro</span><span class="lesson-time">08:00 – 10:00</span></div>
-        <div class="scheduler-time-indicator" style="left:calc((2.3/9)*100%);"></div>
-      </div>
-    </div>
-  </div>
-</div>
-        </div>
-
-        <div class="hero-slider-panel" data-panel="services">
-<div class="services-mock">
-  <div class="services-header-row">
-    <div class="services-title">Your Services</div>
-    <span class="excursion-add-btn">+ Add Service</span>
-  </div>
-  <div class="services-grid">
-    <div class="service-card">
-      <div class="service-card-type">Group Lesson</div>
-      <div class="service-card-name">Beginner Kite — Group</div>
-      <div class="service-card-detail">2h · Max 4 students · $120/person</div>
-      <div class="service-card-row"><span class="service-active">Active</span><span class="service-bookings">3 bookings this week</span></div>
-    </div>
-    <div class="service-card">
-      <div class="service-card-type">Private Lesson</div>
-      <div class="service-card-name">Private Kitesurf Session</div>
-      <div class="service-card-detail">2h · 1 student · $180/person</div>
-      <div class="service-card-row"><span class="service-active">Active</span><span class="service-bookings">1 booking this week</span></div>
-    </div>
-    <div class="service-card">
-      <div class="service-card-type">Wing Foil</div>
-      <div class="service-card-name">Wing Foil Introduction</div>
-      <div class="service-card-detail">1.5h · Max 2 students · $150/person</div>
-      <div class="service-card-row"><span class="service-active">Active</span><span class="service-bookings">2 bookings this week</span></div>
-    </div>
-    <div class="service-card" style="opacity:0.5;">
-      <div class="service-card-type">Excursion</div>
-      <div class="service-card-name">Sunset Boat Tour</div>
-      <div class="service-card-detail">2.5h · Max 8 pax · $85/person</div>
-      <div class="service-card-row"><span class="service-draft">Draft</span><span class="service-bookings">Not published</span></div>
-    </div>
-  </div>
-</div>
-        </div>
-
-        <div class="hero-slider-panel" data-panel="bookings">
-<div class="bookings-mock">
-  <div class="bookings-toolbar">
-    <div class="bookings-filters">
-      <span class="bookings-filter active">All</span>
-      <span class="bookings-filter">Upcoming</span>
-      <span class="bookings-filter">Completed</span>
-      <span class="bookings-filter">Cancelled</span>
-    </div>
-    <span class="excursion-add-btn">+ New Booking</span>
-  </div>
-  <table class="bookings-table">
-    <thead><tr><th>Client</th><th>Service</th><th>Date</th><th>Time</th><th>Instructor</th><th>Status</th><th>Amount</th></tr></thead>
-    <tbody>
-      <tr><td><strong>Jake Patterson</strong></td><td>Beginner Group</td><td>23 Mar</td><td>10:00</td><td>Carlos M.</td><td><span class="inv-status active">Confirmed</span></td><td>$120</td></tr>
-      <tr><td><strong>Lily Chen</strong></td><td>Beginner Group</td><td>23 Mar</td><td>10:00</td><td>Carlos M.</td><td><span class="inv-status active">Confirmed</span></td><td>$120</td></tr>
-      <tr><td><strong>Tom Berger</strong></td><td>Private Kite</td><td>23 Mar</td><td>13:00</td><td>Carlos M.</td><td><span class="inv-status active">Confirmed</span></td><td>$180</td></tr>
-      <tr><td><strong>Sarah Klein</strong></td><td>Wing Foil Intro</td><td>24 Mar</td><td>09:00</td><td>Maria L.</td><td><span class="inv-status checked-out">Pending</span></td><td>$150</td></tr>
-      <tr><td><strong>Mike Ross</strong></td><td>Beginner Group</td><td>22 Mar</td><td>10:00</td><td>Maria L.</td><td><span class="inv-status maintenance">Completed</span></td><td>$120</td></tr>
-    </tbody>
-  </table>
-</div>
-        </div>
-
-        <div class="hero-slider-panel" data-panel="crm">
-<div class="crm-mock">
-  <div class="crm-stats">
-    <div class="crm-stat-card"><div class="crm-stat-num">14</div><div class="crm-stat-label green">Active</div></div>
-    <div class="crm-stat-card"><div class="crm-stat-num">6</div><div class="crm-stat-label gray">Inactive</div></div>
-    <div class="crm-stat-card"><div class="crm-stat-num">2</div><div class="crm-stat-label amber">VIP</div></div>
-  </div>
-  <div class="crm-toolbar">
-    <div class="crm-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg> Search clients...</div>
-    <span class="excursion-add-btn">+ Add Client</span>
-  </div>
-  <div class="crm-grid">
-    <div class="crm-card">
-      <div class="crm-card-header"><div class="crm-avatar">JP</div><div><div class="crm-name">Jake Patterson</div><div class="crm-email">jake@email.com</div></div></div>
-      <div class="crm-card-badges"><span class="crm-badge beginner">Beginner</span><span class="crm-badge vip">VIP</span></div>
-      <div class="crm-card-stats"><div class="crm-card-stat"><div class="crm-card-stat-val">8</div><div class="crm-card-stat-label">Bookings</div></div><div class="crm-card-stat"><div class="crm-card-stat-val">$960</div><div class="crm-card-stat-label">Spent</div></div><div class="crm-card-stat"><div class="crm-card-stat-val">Mar 23</div><div class="crm-card-stat-label">Last Visit</div></div></div>
-    </div>
-    <div class="crm-card">
-      <div class="crm-card-header"><div class="crm-avatar">LC</div><div><div class="crm-name">Lily Chen</div><div class="crm-email">lily@email.com</div></div></div>
-      <div class="crm-card-badges"><span class="crm-badge beginner">Beginner</span></div>
-      <div class="crm-card-stats"><div class="crm-card-stat"><div class="crm-card-stat-val">3</div><div class="crm-card-stat-label">Bookings</div></div><div class="crm-card-stat"><div class="crm-card-stat-val">$360</div><div class="crm-card-stat-label">Spent</div></div><div class="crm-card-stat"><div class="crm-card-stat-val">Mar 23</div><div class="crm-card-stat-label">Last Visit</div></div></div>
-    </div>
-    <div class="crm-card">
-      <div class="crm-card-header"><div class="crm-avatar">SK</div><div><div class="crm-name">Sarah Klein</div><div class="crm-email">sarah@email.com</div></div></div>
-      <div class="crm-card-badges"><span class="crm-badge intermediate">Intermediate</span></div>
-      <div class="crm-card-stats"><div class="crm-card-stat"><div class="crm-card-stat-val">5</div><div class="crm-card-stat-label">Bookings</div></div><div class="crm-card-stat"><div class="crm-card-stat-val">$720</div><div class="crm-card-stat-label">Spent</div></div><div class="crm-card-stat"><div class="crm-card-stat-val">Mar 20</div><div class="crm-card-stat-label">Last Visit</div></div></div>
-    </div>
-  </div>
-</div>
-        </div>
-
-        <div class="hero-slider-panel" data-panel="inventory">
-<div class="inventory-mock">
-  <div class="inventory-stats">
-    <div class="inventory-stat-card"><svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"/></svg><div class="inventory-stat-num">18</div><div class="inventory-stat-label">Total Items</div></div>
-    <div class="inventory-stat-card"><svg class="stat-icon green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg><div class="inventory-stat-num">14</div><div class="inventory-stat-label">Active</div></div>
-    <div class="inventory-stat-card"><svg class="stat-icon amber" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg><div class="inventory-stat-num">2</div><div class="inventory-stat-label">Needs Repair</div></div>
-  </div>
-  <div class="inventory-categories">
-    <span class="inventory-cat-btn active">All</span><span class="inventory-cat-btn">Kite</span><span class="inventory-cat-btn">Board</span><span class="inventory-cat-btn">Harness</span>
-  </div>
-  <table class="inventory-table">
-    <thead><tr><th>Item #</th><th>Brand / Model</th><th>Size</th><th>Condition</th><th>Status</th><th>Hours</th></tr></thead>
-    <tbody>
-      <tr><td>K-001</td><td>Cabrinha Moto</td><td>12m</td><td>4/5</td><td><span class="inv-status active">Active</span></td><td>80h</td></tr>
-      <tr><td>K-002</td><td>Cabrinha Moto</td><td>9m</td><td>3/5</td><td><span class="inv-status active">Active</span></td><td>120h</td></tr>
-      <tr><td>B-001</td><td>Cabrinha Ace</td><td>138cm</td><td>4/5</td><td><span class="inv-status active">Active</span></td><td>90h</td></tr>
-      <tr><td>H-001</td><td>Ride Engine Prime</td><td>L</td><td>3/5</td><td><span class="inv-status repair">Repair</span></td><td>200h</td></tr>
-    </tbody>
-  </table>
-</div>
-        </div>
-
-        <div class="hero-slider-panel" data-panel="finance">
-<div class="finance-mock">
-  <div class="finance-tabs">
-    <span class="finance-tab-btn active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg> By Service</span>
-    <span class="finance-tab-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> By Instructor</span>
-  </div>
-  <div class="finance-summary">
-    <div class="finance-summary-card"><div class="finance-summary-num">$4,200</div><div class="finance-summary-label">Revenue (MTD)</div></div>
-    <div class="finance-summary-card"><div class="finance-summary-num green">$1,680</div><div class="finance-summary-label">Profit (MTD)</div></div>
-    <div class="finance-summary-card"><div class="finance-summary-num">40%</div><div class="finance-summary-label">Avg Margin</div></div>
-  </div>
-  <div class="finance-chart-card">
-    <div class="finance-chart-title">Revenue by Service</div>
-    <div class="finance-bar-row"><span class="finance-bar-label">Group Lessons</span><div class="finance-bar-track"><div class="finance-bar-fill blue" style="width:100%;"></div></div><span class="finance-bar-amount">$2,160</span></div>
-    <div class="finance-bar-row"><span class="finance-bar-label">Private Lessons</span><div class="finance-bar-track"><div class="finance-bar-fill blue" style="width:56%;"></div></div><span class="finance-bar-amount">$1,200</span></div>
-    <div class="finance-bar-row"><span class="finance-bar-label">Wing Foil</span><div class="finance-bar-track"><div class="finance-bar-fill blue" style="width:39%;"></div></div><span class="finance-bar-amount">$840</span></div>
-  </div>
-</div>
-        </div>
-
-        <div class="hero-slider-panel" data-panel="team">
-<div class="team-mock">
-  <div class="team-header-row">
-    <div class="services-title">Team Members</div>
-    <span class="excursion-add-btn">+ Invite</span>
-  </div>
-  <div class="team-grid">
-    <div class="team-card">
-      <div class="team-avatar" style="background:#0ea5e9;">CM</div>
-      <div class="team-name">Carlos Mendez</div>
-      <div class="team-role">Head Instructor</div>
-      <div class="team-meta">Contract · 40h/week</div>
-      <div class="team-stats-row"><span>12 lessons this month</span><span style="color:#2ed573;">$1,800 earned</span></div>
-    </div>
-    <div class="team-card">
-      <div class="team-avatar" style="background:#f59e0b;">ML</div>
-      <div class="team-name">Maria Lopez</div>
-      <div class="team-role">Wing Foil Instructor</div>
-      <div class="team-meta">Freelance · 20h/week</div>
-      <div class="team-stats-row"><span>6 lessons this month</span><span style="color:#2ed573;">$900 earned</span></div>
-    </div>
-  </div>
-</div>
-        </div>
-
-        <div class="hero-slider-panel" data-panel="public-profile">
-<div class="profile-mock">
-  <div class="profile-header">
-    <div class="profile-avatar-large" style="background:linear-gradient(135deg, #0ea5e9, #00D4FF);">KR</div>
-    <div class="profile-header-info">
-      <div class="profile-school-name">Kitesurf Roatan</div>
-      <div class="profile-school-tagline">Learn to kite in paradise — West End, Roatan</div>
-      <div class="profile-url"><span style="color:var(--aqua);">thekitealliance.com/</span>kitesurf-roatan</div>
-    </div>
-  </div>
-  <div class="profile-section">
-    <div class="profile-section-title">Public Listing</div>
-    <div class="profile-toggle-row"><span>Show on Spot Directory</span><span class="profile-toggle-on">On</span></div>
-    <div class="profile-toggle-row"><span>Accept Online Bookings</span><span class="profile-toggle-on">On</span></div>
-    <div class="profile-toggle-row"><span>Show Instructor Profiles</span><span class="profile-toggle-off">Off</span></div>
-    <div class="profile-toggle-row"><span>Display Pricing</span><span class="profile-toggle-on">On</span></div>
-  </div>
-  <div class="profile-section">
-    <div class="profile-section-title">About</div>
-    <div class="profile-text">Small, personal kite school on the beautiful West End of Roatan. We specialize in beginner and intermediate kitesurfing with small group sizes and warm Caribbean water.</div>
-  </div>
-  <div class="profile-section">
-    <div class="profile-section-title">Gallery</div>
-    <div class="profile-gallery">
-      <div class="profile-gallery-placeholder">+3 Photos</div>
-    </div>
-  </div>
-</div>
-        </div>
-
-        <div class="hero-slider-panel" data-panel="settings">
-<div class="settings-mock">
-  <div class="settings-header-row">
-    <div class="services-title">School Settings</div>
-  </div>
-  <div class="settings-sections">
-    <div class="settings-group">
-      <div class="settings-group-title">General</div>
-      <div class="settings-row"><span class="settings-label">School Name</span><span class="settings-value">Kitesurf Roatan</span></div>
-      <div class="settings-row"><span class="settings-label">Location</span><span class="settings-value">West End, Roatan, Honduras</span></div>
-      <div class="settings-row"><span class="settings-label">Currency</span><span class="settings-value">USD ($)</span></div>
-      <div class="settings-row"><span class="settings-label">Timezone</span><span class="settings-value">America/Tegucigalpa (CST)</span></div>
-      <div class="settings-row"><span class="settings-label">Language</span><span class="settings-value">English</span></div>
-    </div>
-    <div class="settings-group">
-      <div class="settings-group-title">Booking Rules</div>
-      <div class="settings-row"><span class="settings-label">Min. Advance Booking</span><span class="settings-value">2 hours</span></div>
-      <div class="settings-row"><span class="settings-label">Max. Advance Booking</span><span class="settings-value">30 days</span></div>
-      <div class="settings-row"><span class="settings-label">Cancellation Policy</span><span class="settings-value">24h free cancellation</span></div>
-      <div class="settings-row"><span class="settings-label">Deposit Required</span><span class="settings-value">50%</span></div>
-    </div>
-    <div class="settings-group">
-      <div class="settings-group-title">Notifications</div>
-      <div class="settings-row"><span class="settings-label">New Booking Alert</span><span class="profile-toggle-on">On</span></div>
-      <div class="settings-row"><span class="settings-label">Daily Summary Email</span><span class="profile-toggle-on">On</span></div>
-      <div class="settings-row"><span class="settings-label">Low Inventory Alert</span><span class="profile-toggle-off">Off</span></div>
-    </div>
-  </div>
-</div>
-        </div>
-
-        </div><!-- /Roatan panels -->
-
-        <div class="hero-slider-panels" id="panelsCapeTown" style="display:none;">
-
-        <div class="hero-slider-panel active" data-panel="overview">
-<div class="overview-mock">
-  <div class="overview-welcome">
-    <div class="overview-school-name">Watersport Center Cape Town</div>
-    <div class="overview-school-loc">Blouberg Beach, Cape Town, South Africa</div>
-  </div>
-  <div class="overview-stats-row">
-    <div class="overview-stat"><div class="overview-stat-val" style="color:var(--aqua);">18</div><div class="overview-stat-label">Bookings Today</div></div>
-    <div class="overview-stat"><div class="overview-stat-val" style="color:#2ed573;">6</div><div class="overview-stat-label">Instructors Active</div></div>
-    <div class="overview-stat"><div class="overview-stat-val" style="color:#f59e0b;">R 12,400</div><div class="overview-stat-label">Revenue Today</div></div>
-    <div class="overview-stat"><div class="overview-stat-val" style="color:var(--purple);">142</div><div class="overview-stat-label">Active Clients</div></div>
-  </div>
-  <div class="overview-grid">
-    <div class="overview-card">
-      <div class="overview-card-title">Upcoming Lessons</div>
-      <div class="overview-list-item"><span class="overview-dot" style="background:#0ea5e9;"></span><span>10:00 — Beginner Group (4)</span><span class="overview-tag">João V.</span></div>
-      <div class="overview-list-item"><span class="overview-dot" style="background:#f59e0b;"></span><span>10:00 — Inter Group (3)</span><span class="overview-tag">Lisa M.</span></div>
-      <div class="overview-list-item"><span class="overview-dot" style="background:#8b5cf6;"></span><span>11:00 — Beginner Camp</span><span class="overview-tag">Thabo N.</span></div>
-      <div class="overview-list-item"><span class="overview-dot" style="background:#ec4899;"></span><span>13:00 — Advanced Foil</span><span class="overview-tag">João V.</span></div>
-      <div class="overview-list-item"><span class="overview-dot" style="background:#2ed573;"></span><span>14:00 — Private Kite</span><span class="overview-tag">Lisa M.</span></div>
-      <div class="overview-list-item"><span class="overview-dot" style="background:#ff6b35;"></span><span>15:00 — Wing Foil Intro</span><span class="overview-tag">Ana S.</span></div>
-    </div>
-    <div class="overview-card">
-      <div class="overview-card-title">Recent Activity</div>
-      <div class="overview-list-item"><span>💬 New booking from Yuki T. (VIP)</span><span class="overview-time">12m ago</span></div>
-      <div class="overview-list-item"><span>✅ Lesson completed — Alex Turner</span><span class="overview-time">1h ago</span></div>
-      <div class="overview-list-item"><span>📦 Kite K-002 checked out</span><span class="overview-time">2h ago</span></div>
-      <div class="overview-list-item"><span>⚠️ Kite K-003 flagged for repair</span><span class="overview-time">3h ago</span></div>
-      <div class="overview-list-item"><span>🚐 Downwinder shuttle confirmed — 5 pax</span><span class="overview-time">4h ago</span></div>
-      <div class="overview-list-item"><span>💰 Payment received — R 2,400 (Sarah C.)</span><span class="overview-time">5h ago</span></div>
-    </div>
-  </div>
-</div>
-        </div>
-
-        <div class="hero-slider-panel" data-panel="scheduler">
-<div class="scheduler-mock">
-          <!-- Toolbar -->
-          <div class="scheduler-toolbar">
-            <div class="scheduler-toolbar-left">
-              <span class="scheduler-view-btn active">Today</span>
-              <span class="scheduler-view-btn">Tomorrow</span>
-              <span class="scheduler-view-btn">Week</span>
-            </div>
-            <span class="scheduler-date">Mon, 23 March 2026</span>
-            <div class="scheduler-nav">
-              <span class="scheduler-nav-btn">‹</span>
-              <span class="scheduler-nav-btn">›</span>
-            </div>
-          </div>
-
-          <div class="scheduler-grid">
-            <!-- Hour header -->
-            <div class="scheduler-header">
-              <div class="scheduler-col-label">Instructor</div>
-              <div class="scheduler-hour">6 AM</div>
-              <div class="scheduler-hour">7 AM</div>
-              <div class="scheduler-hour">8 AM</div>
-              <div class="scheduler-hour">9 AM</div>
-              <div class="scheduler-hour now">10 AM</div>
-              <div class="scheduler-hour">11 AM</div>
-              <div class="scheduler-hour">12 PM</div>
-              <div class="scheduler-hour">1 PM</div>
-              <div class="scheduler-hour">2 PM</div>
-              <div class="scheduler-hour">3 PM</div>
-              <div class="scheduler-hour">4 PM</div>
-              <div class="scheduler-hour">5 PM</div>
-            </div>
-
-            <!-- Wind row — Blouberg -->
-            <div class="scheduler-wind-row">
-              <div class="scheduler-wind-label"><span class="wind-icon">💨</span> Blouberg</div>
-              <div class="scheduler-wind-cell wind-amber">8</div>
-              <div class="scheduler-wind-cell wind-amber">10</div>
-              <div class="scheduler-wind-cell wind-green">14</div>
-              <div class="scheduler-wind-cell wind-green">18</div>
-              <div class="scheduler-wind-cell wind-green">22</div>
-              <div class="scheduler-wind-cell wind-green">24</div>
-              <div class="scheduler-wind-cell wind-green">26</div>
-              <div class="scheduler-wind-cell wind-orange">28</div>
-              <div class="scheduler-wind-cell wind-orange">30</div>
-              <div class="scheduler-wind-cell wind-green">25</div>
-              <div class="scheduler-wind-cell wind-green">20</div>
-              <div class="scheduler-wind-cell wind-green">16</div>
-            </div>
-
-            <!-- Divider: Contract Instructors -->
-            <div class="scheduler-section-divider"><span>Contract</span></div>
-
-            <!-- Instructor 1: João Viana -->
-            <div class="scheduler-row">
-              <div class="scheduler-instructor">
-                <div class="instructor-dot" style="background:#0ea5e9;">JV</div>
-                <div class="scheduler-instructor-info">
-                  <div class="scheduler-instructor-name">João Viana</div>
-                  <div class="scheduler-instructor-spot">Blouberg</div>
-                </div>
-              </div>
-              <div class="scheduler-cells">
-                <div class="scheduler-cell"></div>
-                <div class="scheduler-cell"></div>
-                <div class="scheduler-cell has-wind-green"></div>
-                <div class="scheduler-cell has-wind-green"></div>
-                <div class="scheduler-cell has-wind-green"></div>
-                <div class="scheduler-cell has-wind-green"></div>
-                <div class="scheduler-cell has-wind-green"></div>
-                <div class="scheduler-cell"></div>
-                <div class="scheduler-cell"></div>
-                <div class="scheduler-cell has-wind-green"></div>
-                <div class="scheduler-cell has-wind-green"></div>
-                <div class="scheduler-cell"></div>
-                <!-- Lesson: 8-10 Beginner Group -->
-                <div class="lesson-card lesson-beginner" style="left: calc((2/12)*100%); width: calc((2/12)*100%);">
-                  <span class="lesson-name">Beginner Group (4)</span>
-                  <span class="lesson-time">08:00 – 10:00</span>
-                </div>
-                <!-- Lesson: 11-13 Intermediate -->
-                <div class="lesson-card lesson-intermediate" style="left: calc((5/12)*100%); width: calc((2/12)*100%);">
-                  <span class="lesson-name">Intermediate Private</span>
-                  <span class="lesson-time">11:00 – 13:00</span>
-                </div>
-                <!-- Lesson: 14-16 Advanced Foil -->
-                <div class="lesson-card lesson-advanced" style="left: calc((8/12)*100%); width: calc((2/12)*100%);">
-                  <span class="lesson-name">Advanced Foil</span>
-                  <span class="lesson-time">14:00 – 16:00</span>
-                </div>
-                <!-- Time indicator at ~10:20 AM -->
-                <div class="scheduler-time-indicator" style="left: calc((4.33/12)*100%);"></div>
-              </div>
-            </div>
-
-            <!-- Instructor 2: Lisa Müller -->
-            <div class="scheduler-row">
-              <div class="scheduler-instructor">
-                <div class="instructor-dot" style="background:#f59e0b;">LM</div>
-                <div class="scheduler-instructor-info">
-                  <div class="scheduler-instructor-name">Lisa Müller</div>
-                  <div class="scheduler-instructor-spot">Blouberg</div>
-                </div>
-              </div>
-              <div class="scheduler-cells">
-                <div class="scheduler-cell"></div>
-                <div class="scheduler-cell"></div>
-                <div class="scheduler-cell has-wind-green"></div>
-                <div class="scheduler-cell has-wind-green"></div>
-                <div class="scheduler-cell has-wind-green"></div>
-                <div class="scheduler-cell has-wind-green"></div>
-                <div class="scheduler-cell has-wind-green"></div>
-                <div class="scheduler-cell"></div>
-                <div class="scheduler-cell"></div>
-                <div class="scheduler-cell has-wind-green"></div>
-                <div class="scheduler-cell has-wind-green"></div>
-                <div class="scheduler-cell"></div>
-                <!-- Lesson: 7-9 Beginner -->
-                <div class="lesson-card lesson-beginner" style="left: calc((1/12)*100%); width: calc((2/12)*100%);">
-                  <span class="lesson-name">Beginner 1-on-1</span>
-                  <span class="lesson-time">07:00 – 09:00</span>
-                </div>
-                <!-- Lesson: 10-12 Intermediate Group -->
-                <div class="lesson-card lesson-intermediate" style="left: calc((4/12)*100%); width: calc((2/12)*100%);">
-                  <span class="lesson-name">Inter Group (3)</span>
-                  <span class="lesson-time">10:00 – 12:00</span>
-                </div>
-                <!-- Lesson: 14-15 Private -->
-                <div class="lesson-card lesson-private" style="left: calc((8/12)*100%); width: calc((1/12)*100%);">
-                  <span class="lesson-name">Private</span>
-                  <span class="lesson-time">14:00 – 15:00</span>
-                </div>
-                <div class="scheduler-time-indicator" style="left: calc((4.33/12)*100%);"></div>
-              </div>
-            </div>
-
-            <!-- Instructor 3: Thabo Nkosi -->
-            <div class="scheduler-row">
-              <div class="scheduler-instructor">
-                <div class="instructor-dot" style="background:#8b5cf6;">TN</div>
-                <div class="scheduler-instructor-info">
-                  <div class="scheduler-instructor-name">Thabo Nkosi</div>
-                  <div class="scheduler-instructor-spot">Sunset Beach</div>
-                </div>
-              </div>
-              <div class="scheduler-cells">
-                <div class="scheduler-cell"></div>
-                <div class="scheduler-cell"></div>
-                <div class="scheduler-cell has-wind-green"></div>
-                <div class="scheduler-cell has-wind-green"></div>
-                <div class="scheduler-cell has-wind-green"></div>
-                <div class="scheduler-cell has-wind-green"></div>
-                <div class="scheduler-cell has-wind-green"></div>
-                <div class="scheduler-cell"></div>
-                <div class="scheduler-cell"></div>
-                <div class="scheduler-cell has-wind-green"></div>
-                <div class="scheduler-cell has-wind-green"></div>
-                <div class="scheduler-cell"></div>
-                <!-- Lesson: 9-11 Beginner Group -->
-                <div class="lesson-card lesson-beginner" style="left: calc((3/12)*100%); width: calc((2/12)*100%);">
-                  <span class="lesson-name">Beginner Camp</span>
-                  <span class="lesson-time">09:00 – 11:00</span>
-                </div>
-                <!-- Lesson: 13-15 Advanced -->
-                <div class="lesson-card lesson-advanced" style="left: calc((7/12)*100%); width: calc((2/12)*100%);">
-                  <span class="lesson-name">Adv. Kiteloop</span>
-                  <span class="lesson-time">13:00 – 15:00</span>
-                </div>
-                <div class="scheduler-time-indicator" style="left: calc((4.33/12)*100%);"></div>
-              </div>
-            </div>
-
-            <!-- Divider: Freelance -->
-            <div class="scheduler-section-divider"><span>Freelance</span></div>
-
-            <!-- Instructor 4: Ana Silva (Freelance) -->
-            <div class="scheduler-row">
-              <div class="scheduler-instructor">
-                <div class="instructor-dot" style="background:#ec4899;">AS</div>
-                <div class="scheduler-instructor-info">
-                  <div class="scheduler-instructor-name">Ana Silva</div>
-                  <div class="scheduler-instructor-spot">Blouberg</div>
-                </div>
-              </div>
-              <div class="scheduler-cells">
-                <div class="scheduler-cell"></div>
-                <div class="scheduler-cell"></div>
-                <div class="scheduler-cell has-wind-green"></div>
-                <div class="scheduler-cell has-wind-green"></div>
-                <div class="scheduler-cell has-wind-green"></div>
-                <div class="scheduler-cell has-wind-green"></div>
-                <div class="scheduler-cell has-wind-green"></div>
-                <div class="scheduler-cell"></div>
-                <div class="scheduler-cell"></div>
-                <div class="scheduler-cell has-wind-green"></div>
-                <div class="scheduler-cell has-wind-green"></div>
-                <div class="scheduler-cell"></div>
-                <!-- Lesson: 10-13 Full Day Camp segment -->
-                <div class="lesson-card lesson-beginner" style="left: calc((4/12)*100%); width: calc((3/12)*100%);">
-                  <span class="lesson-name">Full Day Camp (6)</span>
-                  <span class="lesson-time">10:00 – 13:00</span>
-                </div>
-                <!-- Lesson: 15-17 Intermediate -->
-                <div class="lesson-card lesson-intermediate" style="left: calc((9/12)*100%); width: calc((2/12)*100%);">
-                  <span class="lesson-name">Wing Foil Intro</span>
-                  <span class="lesson-time">15:00 – 17:00</span>
-                </div>
-                <div class="scheduler-time-indicator" style="left: calc((4.33/12)*100%);"></div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        </div>
-
-        <div class="hero-slider-panel" data-panel="services">
-<div class="services-mock">
-  <div class="services-header-row">
-    <div class="services-title">Your Services</div>
-    <span class="excursion-add-btn">+ Add Service</span>
-  </div>
-  <div class="services-grid">
-    <div class="service-card">
-      <div class="service-card-type">Group Lesson</div>
-      <div class="service-card-name">Beginner Kite — Group</div>
-      <div class="service-card-detail">2h · Max 4 students · R 1,200/person</div>
-      <div class="service-card-row"><span class="service-active">Active</span><span class="service-bookings">18 bookings this week</span></div>
-    </div>
-    <div class="service-card">
-      <div class="service-card-type">Group Lesson</div>
-      <div class="service-card-name">Intermediate Group</div>
-      <div class="service-card-detail">2h · Max 3 students · R 1,400/person</div>
-      <div class="service-card-row"><span class="service-active">Active</span><span class="service-bookings">12 bookings this week</span></div>
-    </div>
-    <div class="service-card">
-      <div class="service-card-type">Private Lesson</div>
-      <div class="service-card-name">Private Kitesurf Session</div>
-      <div class="service-card-detail">2h · 1 student · R 2,200/person</div>
-      <div class="service-card-row"><span class="service-active">Active</span><span class="service-bookings">8 bookings this week</span></div>
-    </div>
-    <div class="service-card">
-      <div class="service-card-type">Advanced</div>
-      <div class="service-card-name">Advanced Kiteloop Clinic</div>
-      <div class="service-card-detail">3h · Max 2 students · R 2,800/person</div>
-      <div class="service-card-row"><span class="service-active">Active</span><span class="service-bookings">4 bookings this week</span></div>
-    </div>
-    <div class="service-card">
-      <div class="service-card-type">Wing Foil</div>
-      <div class="service-card-name">Wing Foil Introduction</div>
-      <div class="service-card-detail">1.5h · Max 2 students · R 1,600/person</div>
-      <div class="service-card-row"><span class="service-active">Active</span><span class="service-bookings">6 bookings this week</span></div>
-    </div>
-    <div class="service-card">
-      <div class="service-card-type">Excursion</div>
-      <div class="service-card-name">Langebaan Downwinder</div>
-      <div class="service-card-detail">4h · Max 8 pax · R 950/person</div>
-      <div class="service-card-row"><span class="service-active">Active</span><span class="service-bookings">5 bookings this week</span></div>
-    </div>
-    <div class="service-card">
-      <div class="service-card-type">Camp</div>
-      <div class="service-card-name">Full Day Kite Camp</div>
-      <div class="service-card-detail">6h · Max 6 students · R 2,600/person</div>
-      <div class="service-card-row"><span class="service-active">Active</span><span class="service-bookings">3 bookings this week</span></div>
-    </div>
-    <div class="service-card">
-      <div class="service-card-type">Rental</div>
-      <div class="service-card-name">Gear Rental — Full Kit</div>
-      <div class="service-card-detail">3h · Self-supervised · R 650/session</div>
-      <div class="service-card-row"><span class="service-active">Active</span><span class="service-bookings">10 bookings this week</span></div>
-    </div>
-  </div>
-</div>
-        </div>
-
-        <div class="hero-slider-panel" data-panel="bookings">
-<div class="bookings-mock">
-  <div class="bookings-toolbar">
-    <div class="bookings-filters">
-      <span class="bookings-filter active">All</span><span class="bookings-filter">Upcoming</span><span class="bookings-filter">Completed</span><span class="bookings-filter">Cancelled</span>
-    </div>
-    <span class="excursion-add-btn">+ New Booking</span>
-  </div>
-  <table class="bookings-table">
-    <thead><tr><th>Client</th><th>Service</th><th>Date</th><th>Time</th><th>Instructor</th><th>Status</th><th>Amount</th></tr></thead>
-    <tbody>
-      <tr><td><strong>Alex Turner</strong></td><td>Beginner Group</td><td>23 Mar</td><td>10:00</td><td>João V.</td><td><span class="inv-status active">Confirmed</span></td><td>R 1,200</td></tr>
-      <tr><td><strong>Sarah Chen</strong></td><td>Inter Group</td><td>23 Mar</td><td>10:00</td><td>Lisa M.</td><td><span class="inv-status active">Confirmed</span></td><td>R 1,400</td></tr>
-      <tr><td><strong>Yuki Tanaka</strong></td><td>Advanced Foil</td><td>23 Mar</td><td>14:00</td><td>João V.</td><td><span class="inv-status active">Confirmed</span></td><td>R 2,200</td></tr>
-      <tr><td><strong>Marco Rossi</strong></td><td>Beginner Group</td><td>23 Mar</td><td>10:00</td><td>Thabo N.</td><td><span class="inv-status active">Confirmed</span></td><td>R 1,200</td></tr>
-      <tr><td><strong>Emma Johansson</strong></td><td>Wing Foil Intro</td><td>23 Mar</td><td>15:00</td><td>Ana S.</td><td><span class="inv-status active">Confirmed</span></td><td>R 1,600</td></tr>
-      <tr><td><strong>Carlos Mendez</strong></td><td>Full Day Camp</td><td>23 Mar</td><td>09:00</td><td>Thabo N.</td><td><span class="inv-status active">Confirmed</span></td><td>R 2,600</td></tr>
-      <tr><td><strong>David Park</strong></td><td>Private Kite</td><td>24 Mar</td><td>08:00</td><td>João V.</td><td><span class="inv-status checked-out">Pending</span></td><td>R 2,200</td></tr>
-      <tr><td><strong>Anja Müller</strong></td><td>Gear Rental</td><td>24 Mar</td><td>11:00</td><td>—</td><td><span class="inv-status checked-out">Pending</span></td><td>R 650</td></tr>
-      <tr><td><strong>Luca Ferrari</strong></td><td>Downwinder</td><td>24 Mar</td><td>12:00</td><td>Ana S.</td><td><span class="inv-status checked-out">Pending</span></td><td>R 950</td></tr>
-      <tr><td><strong>Mike Thompson</strong></td><td>Beginner Group</td><td>22 Mar</td><td>10:00</td><td>Lisa M.</td><td><span class="inv-status maintenance">Completed</span></td><td>R 1,200</td></tr>
-    </tbody>
-  </table>
-</div>
-        </div>
-
-        <div class="hero-slider-panel" data-panel="crm">
-<div class="crm-mock">
-          <div class="crm-stats">
-            <div class="crm-stat-card">
-              <div class="crm-stat-num">142</div>
-              <div class="crm-stat-label green">Active</div>
-            </div>
-            <div class="crm-stat-card">
-              <div class="crm-stat-num">28</div>
-              <div class="crm-stat-label gray">Inactive</div>
-            </div>
-            <div class="crm-stat-card">
-              <div class="crm-stat-num">18</div>
-              <div class="crm-stat-label amber">VIP</div>
-            </div>
-            <div class="crm-stat-card">
-              <div class="crm-stat-num">5</div>
-              <div class="crm-stat-label red">Archived</div>
-            </div>
-          </div>
-
-          <div class="crm-toolbar">
-            <div class="crm-search">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-              Search clients...
-            </div>
-            <div style="display:flex;gap:0.4rem;align-items:center;">
-              <div class="crm-view-toggle">
-                <span class="crm-view-btn active">Grid</span>
-                <span class="crm-view-btn">List</span>
-              </div>
-              <span class="excursion-add-btn">+ Add Client</span>
-            </div>
-          </div>
-
-          <div class="crm-grid">
-            <div class="crm-card">
-              <div class="crm-card-header">
-                <div class="crm-avatar">AT</div>
-                <div><div class="crm-name">Alex Turner</div><div class="crm-email">alex@email.com</div></div>
-              </div>
-              <div class="crm-card-badges">
-                <span class="crm-badge beginner">Beginner</span>
-              </div>
-              <div class="crm-card-stats">
-                <div class="crm-card-stat"><div class="crm-card-stat-val">3</div><div class="crm-card-stat-label">Bookings</div></div>
-                <div class="crm-card-stat"><div class="crm-card-stat-val">€360</div><div class="crm-card-stat-label">Spent</div></div>
-                <div class="crm-card-stat"><div class="crm-card-stat-val">Mar 15</div><div class="crm-card-stat-label">Last Visit</div></div>
-              </div>
-            </div>
-            <div class="crm-card">
-              <div class="crm-card-header">
-                <div class="crm-avatar">SC</div>
-                <div><div class="crm-name">Sarah Chen</div><div class="crm-email">sarah@email.com</div></div>
-              </div>
-              <div class="crm-card-badges">
-                <span class="crm-badge intermediate">Intermediate</span>
-              </div>
-              <div class="crm-card-stats">
-                <div class="crm-card-stat"><div class="crm-card-stat-val">5</div><div class="crm-card-stat-label">Bookings</div></div>
-                <div class="crm-card-stat"><div class="crm-card-stat-val">€600</div><div class="crm-card-stat-label">Spent</div></div>
-                <div class="crm-card-stat"><div class="crm-card-stat-val">Mar 20</div><div class="crm-card-stat-label">Last Visit</div></div>
-              </div>
-            </div>
-            <div class="crm-card">
-              <div class="crm-card-header">
-                <div class="crm-avatar" style="background:rgba(255,209,0,0.15);color:var(--yellow);">YT</div>
-                <div><div class="crm-name">Yuki Tanaka</div><div class="crm-email">yuki@email.com</div></div>
-              </div>
-              <div class="crm-card-badges">
-                <span class="crm-badge advanced">Advanced</span>
-                <span class="crm-badge vip">VIP</span>
-              </div>
-              <div class="crm-card-stats">
-                <div class="crm-card-stat"><div class="crm-card-stat-val">10</div><div class="crm-card-stat-label">Bookings</div></div>
-                <div class="crm-card-stat"><div class="crm-card-stat-val">€2,000</div><div class="crm-card-stat-label">Spent</div></div>
-                <div class="crm-card-stat"><div class="crm-card-stat-val">Mar 22</div><div class="crm-card-stat-label">Last Visit</div></div>
-              </div>
-            </div>
-            <div class="crm-card">
-              <div class="crm-card-header">
-                <div class="crm-avatar">MR</div>
-                <div><div class="crm-name">Marco Rossi</div><div class="crm-email">marco@email.com</div></div>
-              </div>
-              <div class="crm-card-badges">
-                <span class="crm-badge beginner">Beginner</span>
-              </div>
-              <div class="crm-card-stats">
-                <div class="crm-card-stat"><div class="crm-card-stat-val">2</div><div class="crm-card-stat-label">Bookings</div></div>
-                <div class="crm-card-stat"><div class="crm-card-stat-val">€240</div><div class="crm-card-stat-label">Spent</div></div>
-                <div class="crm-card-stat"><div class="crm-card-stat-val">Mar 12</div><div class="crm-card-stat-label">Last Visit</div></div>
-              </div>
-            </div>
-            <div class="crm-card">
-              <div class="crm-card-header">
-                <div class="crm-avatar">EJ</div>
-                <div><div class="crm-name">Emma Johansson</div><div class="crm-email">emma@email.com</div></div>
-              </div>
-              <div class="crm-card-badges">
-                <span class="crm-badge beginner">Beginner</span>
-              </div>
-              <div class="crm-card-stats">
-                <div class="crm-card-stat"><div class="crm-card-stat-val">1</div><div class="crm-card-stat-label">Bookings</div></div>
-                <div class="crm-card-stat"><div class="crm-card-stat-val">€120</div><div class="crm-card-stat-label">Spent</div></div>
-                <div class="crm-card-stat"><div class="crm-card-stat-val">Mar 18</div><div class="crm-card-stat-label">Last Visit</div></div>
-              </div>
-            </div>
-            <div class="crm-card">
-              <div class="crm-card-header">
-                <div class="crm-avatar">CM</div>
-                <div><div class="crm-name">Carlos Mendez</div><div class="crm-email">carlos@email.com</div></div>
-              </div>
-              <div class="crm-card-badges">
-                <span class="crm-badge intermediate">Intermediate</span>
-              </div>
-              <div class="crm-card-stats">
-                <div class="crm-card-stat"><div class="crm-card-stat-val">4</div><div class="crm-card-stat-label">Bookings</div></div>
-                <div class="crm-card-stat"><div class="crm-card-stat-val">€480</div><div class="crm-card-stat-label">Spent</div></div>
-                <div class="crm-card-stat"><div class="crm-card-stat-val">Mar 21</div><div class="crm-card-stat-label">Last Visit</div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-
-        <div class="hero-slider-panel" data-panel="inventory">
-<div class="inventory-mock">
-          <div class="inventory-stats">
-            <div class="inventory-stat-card">
-              <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"/><path d="m7.5 4.27 9 5.15"/></svg>
-              <div class="inventory-stat-num">47</div>
-              <div class="inventory-stat-label">Total Items</div>
-            </div>
-            <div class="inventory-stat-card">
-              <svg class="stat-icon green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>
-              <div class="inventory-stat-num">38</div>
-              <div class="inventory-stat-label">Active</div>
-            </div>
-            <div class="inventory-stat-card">
-              <svg class="stat-icon amber" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
-              <div class="inventory-stat-num">4</div>
-              <div class="inventory-stat-label">Needs Repair</div>
-            </div>
-            <div class="inventory-stat-card">
-              <svg class="stat-icon orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-              <div class="inventory-stat-num">3</div>
-              <div class="inventory-stat-label">At Repair</div>
-            </div>
-            <div class="inventory-stat-card">
-              <svg class="stat-icon muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
-              <div class="inventory-stat-num">2</div>
-              <div class="inventory-stat-label">Retired</div>
-            </div>
-          </div>
-
-          <div class="inventory-toolbar">
-            <div class="inventory-search">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-              Search by item #, brand, model...
-            </div>
-            <span class="excursion-add-btn">+ Add Equipment</span>
-          </div>
-
-          <div class="inventory-categories">
-            <span class="inventory-cat-btn active">All</span>
-            <span class="inventory-cat-btn">Kite</span>
-            <span class="inventory-cat-btn">Board</span>
-            <span class="inventory-cat-btn">Bar</span>
-            <span class="inventory-cat-btn">Harness</span>
-            <span class="inventory-cat-btn">Wetsuit</span>
-            <span class="inventory-cat-btn">Helmet</span>
-            <span class="inventory-cat-btn">Wing</span>
-          </div>
-
-          <table class="inventory-table">
-            <thead>
-              <tr>
-                <th>Item #</th>
-                <th>Brand / Model</th>
-                <th>Size</th>
-                <th>Condition</th>
-                <th>Status</th>
-                <th>Hours</th>
-                <th>Value</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>K-001</td><td>Duotone Rebel</td><td>12m</td><td>4/5</td><td><span class="inv-status active">Active</span></td><td>90h</td><td>€1,100</td></tr>
-              <tr><td>K-002</td><td>Core XR7</td><td>10m</td><td>5/5</td><td><span class="inv-status active">Active</span></td><td>24h</td><td>€1,500</td></tr>
-              <tr><td>B-001</td><td>Cabrinha Ace</td><td>138cm</td><td>4/5</td><td><span class="inv-status active">Active</span></td><td>120h</td><td>€450</td></tr>
-              <tr><td>BR-001</td><td>Duotone Trust Bar</td><td>52cm</td><td>3/5</td><td><span class="inv-status maintenance">Maintenance</span></td><td>160h</td><td>€300</td></tr>
-              <tr><td>H-001</td><td>Mystic Majestic X</td><td>L</td><td>5/5</td><td><span class="inv-status checked-out">Checked Out</span></td><td>45h</td><td>€190</td></tr>
-              <tr><td>K-003</td><td>Naish Pivot</td><td>9m</td><td>2/5</td><td><span class="inv-status repair">Repair</span></td><td>210h</td><td>€600</td></tr>
-              <tr><td>W-001</td><td>O'Neill Psycho Tech</td><td>M</td><td>4/5</td><td><span class="inv-status active">Active</span></td><td>80h</td><td>€280</td></tr>
-            </tbody>
-          </table>
-        </div>
-        </div>
-
-        <div class="hero-slider-panel" data-panel="finance">
-<div class="finance-mock">
-          <div class="finance-tabs">
-            <span class="finance-tab-btn active">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
-              By Service
-            </span>
-            <span class="finance-tab-btn">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-              By Instructor
-            </span>
-            <span class="finance-tab-btn">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              By Time Slot
-            </span>
-          </div>
-
-          <div class="finance-summary">
-            <div class="finance-summary-card">
-              <div class="finance-summary-num">€24,800</div>
-              <div class="finance-summary-label">Revenue (MTD)</div>
-            </div>
-            <div class="finance-summary-card">
-              <div class="finance-summary-num green">€8,120</div>
-              <div class="finance-summary-label">Profit (MTD)</div>
-            </div>
-            <div class="finance-summary-card">
-              <div class="finance-summary-num">32.7%</div>
-              <div class="finance-summary-label">Avg Margin</div>
-            </div>
-          </div>
-
-          <div class="finance-chart-card">
-            <div class="finance-chart-title">Top Services by Revenue</div>
-            <div class="finance-bar-row">
-              <span class="finance-bar-label">Group Lessons</span>
-              <div class="finance-bar-track"><div class="finance-bar-fill blue" style="width:100%;"></div></div>
-              <span class="finance-bar-amount">€8,400</span>
-            </div>
-            <div class="finance-bar-row">
-              <span class="finance-bar-label">Private Lessons</span>
-              <div class="finance-bar-track"><div class="finance-bar-fill blue" style="width:72%;"></div></div>
-              <span class="finance-bar-amount">€6,050</span>
-            </div>
-            <div class="finance-bar-row">
-              <span class="finance-bar-label">Boat Excursions</span>
-              <div class="finance-bar-track"><div class="finance-bar-fill blue" style="width:55%;"></div></div>
-              <span class="finance-bar-amount">€4,600</span>
-            </div>
-            <div class="finance-bar-row">
-              <span class="finance-bar-label">Wing Foil</span>
-              <div class="finance-bar-track"><div class="finance-bar-fill blue" style="width:38%;"></div></div>
-              <span class="finance-bar-amount">€3,200</span>
-            </div>
-            <div class="finance-bar-row">
-              <span class="finance-bar-label">Gear Rental</span>
-              <div class="finance-bar-track"><div class="finance-bar-fill blue" style="width:30%;"></div></div>
-              <span class="finance-bar-amount">€2,550</span>
-            </div>
-          </div>
-
-          <table class="finance-table">
-            <thead>
-              <tr>
-                <th>Service</th>
-                <th>Bookings</th>
-                <th>Revenue</th>
-                <th>Rev/Hr</th>
-                <th>Profit</th>
-                <th>Margin</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>Group Lessons</td><td>68</td><td style="font-weight:700;">€8,400</td><td>€42</td><td style="font-weight:700;color:#2ed573;">€3,024</td><td><span class="finance-margin high">36%</span></td></tr>
-              <tr><td>Private Lessons</td><td>42</td><td style="font-weight:700;">€6,050</td><td>€58</td><td style="font-weight:700;color:#2ed573;">€2,178</td><td><span class="finance-margin high">36%</span></td></tr>
-              <tr><td>Boat Excursions</td><td>24</td><td style="font-weight:700;">€4,600</td><td>€38</td><td style="font-weight:700;color:#2ed573;">€1,380</td><td><span class="finance-margin high">30%</span></td></tr>
-              <tr><td>Wing Foil</td><td>18</td><td style="font-weight:700;">€3,200</td><td>€53</td><td style="font-weight:700;color:#f59e0b;">€768</td><td><span class="finance-margin mid">24%</span></td></tr>
-              <tr><td>Gear Rental</td><td>31</td><td style="font-weight:700;">€2,550</td><td>€—</td><td style="font-weight:700;color:#f59e0b;">€770</td><td><span class="finance-margin high">30%</span></td></tr>
-            </tbody>
-          </table>
-        </div>
-        </div>
-
-        <div class="hero-slider-panel" data-panel="team">
-<div class="team-mock">
-  <div class="team-header-row">
-    <div class="services-title">Team Members</div>
-    <span class="excursion-add-btn">+ Invite</span>
-  </div>
-  <div class="team-grid">
-    <div class="team-card">
-      <div class="team-avatar" style="background:#0ea5e9;">JV</div>
-      <div class="team-name">João Viana</div>
-      <div class="team-role">Senior Instructor</div>
-      <div class="team-meta">Contract · 40h/week · Blouberg</div>
-      <div class="team-stats-row"><span>24 lessons this month</span><span style="color:#2ed573;">R 18,600 earned</span></div>
-    </div>
-    <div class="team-card">
-      <div class="team-avatar" style="background:#f59e0b;">LM</div>
-      <div class="team-name">Lisa Müller</div>
-      <div class="team-role">Instructor</div>
-      <div class="team-meta">Contract · 35h/week · Blouberg</div>
-      <div class="team-stats-row"><span>20 lessons this month</span><span style="color:#2ed573;">R 14,200 earned</span></div>
-    </div>
-    <div class="team-card">
-      <div class="team-avatar" style="background:#8b5cf6;">TN</div>
-      <div class="team-name">Thabo Nkosi</div>
-      <div class="team-role">Instructor</div>
-      <div class="team-meta">Contract · 30h/week · Sunset Beach</div>
-      <div class="team-stats-row"><span>16 lessons this month</span><span style="color:#2ed573;">R 11,400 earned</span></div>
-    </div>
-    <div class="team-card">
-      <div class="team-avatar" style="background:#ec4899;">AS</div>
-      <div class="team-name">Ana Silva</div>
-      <div class="team-role">Wing Foil Specialist</div>
-      <div class="team-meta">Freelance · 20h/week · Blouberg</div>
-      <div class="team-stats-row"><span>10 lessons this month</span><span style="color:#2ed573;">R 8,800 earned</span></div>
-    </div>
-    <div class="team-card">
-      <div class="team-avatar" style="background:#2ed573;">RD</div>
-      <div class="team-name">Ryan Davies</div>
-      <div class="team-role">Junior Instructor</div>
-      <div class="team-meta">Contract · 25h/week · Blouberg</div>
-      <div class="team-stats-row"><span>8 lessons this month</span><span style="color:#2ed573;">R 5,200 earned</span></div>
-    </div>
-    <div class="team-card">
-      <div class="team-avatar" style="background:#ff6b35;">KM</div>
-      <div class="team-name">Kaya Moyo</div>
-      <div class="team-role">Boat Captain</div>
-      <div class="team-meta">Freelance · 15h/week · Table Bay</div>
-      <div class="team-stats-row"><span>6 excursions this month</span><span style="color:#2ed573;">R 4,500 earned</span></div>
-    </div>
-  </div>
-</div>
-        </div>
-
-        <div class="hero-slider-panel" data-panel="public-profile">
-<div class="profile-mock">
-  <div class="profile-header">
-    <div class="profile-avatar-large" style="background:linear-gradient(135deg, #8b5cf6, #ec4899);">WC</div>
-    <div class="profile-header-info">
-      <div class="profile-school-name">Watersport Center Cape Town</div>
-      <div class="profile-school-tagline">Premier kitesurf, wingfoil &amp; downwinder experiences — Blouberg Beach</div>
-      <div class="profile-url"><span style="color:var(--aqua);">thekitealliance.com/</span>watersport-center-cape-town</div>
-    </div>
-  </div>
-  <div class="profile-section">
-    <div class="profile-section-title">Public Listing</div>
-    <div class="profile-toggle-row"><span>Show on Spot Directory</span><span class="profile-toggle-on">On</span></div>
-    <div class="profile-toggle-row"><span>Accept Online Bookings</span><span class="profile-toggle-on">On</span></div>
-    <div class="profile-toggle-row"><span>Show Instructor Profiles</span><span class="profile-toggle-on">On</span></div>
-    <div class="profile-toggle-row"><span>Display Pricing</span><span class="profile-toggle-on">On</span></div>
-    <div class="profile-toggle-row"><span>Show Reviews</span><span class="profile-toggle-on">On</span></div>
-    <div class="profile-toggle-row"><span>Enable Waitlist</span><span class="profile-toggle-on">On</span></div>
-  </div>
-  <div class="profile-section">
-    <div class="profile-section-title">About</div>
-    <div class="profile-text">Cape Town's leading watersport center at Blouberg Beach, offering kitesurfing, wingfoiling, and epic Langebaan downwinders. 6 certified instructors, 50+ kites, and the best Table Mountain views in the game. Alliance certified.</div>
-  </div>
-  <div class="profile-section">
-    <div class="profile-section-title">Reviews</div>
-    <div class="profile-reviews-summary"><span class="profile-stars">4.9</span><span class="profile-review-count">127 reviews</span></div>
-  </div>
-  <div class="profile-section">
-    <div class="profile-section-title">Gallery</div>
-    <div class="profile-gallery">
-      <div class="profile-gallery-placeholder">+12 Photos</div>
-      <div class="profile-gallery-placeholder">+4 Videos</div>
-    </div>
-  </div>
-</div>
-        </div>
-
-        <div class="hero-slider-panel" data-panel="settings">
-<div class="settings-mock">
-  <div class="settings-header-row">
-    <div class="services-title">School Settings</div>
-  </div>
-  <div class="settings-sections">
-    <div class="settings-group">
-      <div class="settings-group-title">General</div>
-      <div class="settings-row"><span class="settings-label">School Name</span><span class="settings-value">Watersport Center Cape Town</span></div>
-      <div class="settings-row"><span class="settings-label">Location</span><span class="settings-value">Blouberg Beach, Cape Town, South Africa</span></div>
-      <div class="settings-row"><span class="settings-label">Currency</span><span class="settings-value">ZAR (R)</span></div>
-      <div class="settings-row"><span class="settings-label">Secondary Currency</span><span class="settings-value">USD ($) — display only</span></div>
-      <div class="settings-row"><span class="settings-label">Timezone</span><span class="settings-value">Africa/Johannesburg (SAST)</span></div>
-      <div class="settings-row"><span class="settings-label">Language</span><span class="settings-value">English</span></div>
-    </div>
-    <div class="settings-group">
-      <div class="settings-group-title">Booking Rules</div>
-      <div class="settings-row"><span class="settings-label">Min. Advance Booking</span><span class="settings-value">4 hours</span></div>
-      <div class="settings-row"><span class="settings-label">Max. Advance Booking</span><span class="settings-value">60 days</span></div>
-      <div class="settings-row"><span class="settings-label">Cancellation Policy</span><span class="settings-value">48h free cancellation</span></div>
-      <div class="settings-row"><span class="settings-label">Deposit Required</span><span class="settings-value">30%</span></div>
-      <div class="settings-row"><span class="settings-label">Waitlist Enabled</span><span class="profile-toggle-on">On</span></div>
-      <div class="settings-row"><span class="settings-label">Auto-Assign Instructors</span><span class="profile-toggle-on">On</span></div>
-    </div>
-    <div class="settings-group">
-      <div class="settings-group-title">Notifications</div>
-      <div class="settings-row"><span class="settings-label">New Booking Alert</span><span class="profile-toggle-on">On</span></div>
-      <div class="settings-row"><span class="settings-label">Daily Summary Email</span><span class="profile-toggle-on">On</span></div>
-      <div class="settings-row"><span class="settings-label">Low Inventory Alert</span><span class="profile-toggle-on">On</span></div>
-      <div class="settings-row"><span class="settings-label">Weather Alert</span><span class="profile-toggle-on">On</span></div>
-      <div class="settings-row"><span class="settings-label">Instructor Absence Alert</span><span class="profile-toggle-on">On</span></div>
-    </div>
-    <div class="settings-group">
-      <div class="settings-group-title">Integrations</div>
-      <div class="settings-row"><span class="settings-label">WOO Session Tracking</span><span class="profile-toggle-on">Connected</span></div>
-      <div class="settings-row"><span class="settings-label">Stripe Payments</span><span class="profile-toggle-on">Connected</span></div>
-      <div class="settings-row"><span class="settings-label">Google Calendar Sync</span><span class="profile-toggle-on">Connected</span></div>
-      <div class="settings-row"><span class="settings-label">WhatsApp Notifications</span><span class="profile-toggle-off">Off</span></div>
-    </div>
-  </div>
-</div>
-        </div>
-
-        </div><!-- /Cape Town panels -->
-
-      </div>
-    </div>
-    </div>
-  </div>
-</section>
-
-
-<div class="glow-divider"></div>
-
-
-
-<div class="glow-divider purple"></div>
-
-<!-- ============================================
-     TESTIMONIALS
-     ============================================ -->
-<section class="testimonials" id="testimonials">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label" style="color: #ec4899;">Testimonials</span>
-      <h2 class="section-title">Loved by School Owners Worldwide</h2>
-    </div>
-
-    <div class="testimonial-cards">
-      <div class="testimonial-card reveal">
-        <div class="testimonial-stars">
-          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-        </div>
-        <p class="testimonial-quote">"Ally OS saved us 15 hours a week on admin alone. Our instructors actually have time to teach now. The dashboard gives me everything I need in one place — it's a game changer."</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar t1">MV</div>
-          <div>
-            <div class="testimonial-name">Marco V.</div>
-            <div class="testimonial-role">Cape Kite School, Blouberg SA</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial-card reveal reveal-delay-1">
-        <div class="testimonial-stars">
-          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-        </div>
-        <p class="testimonial-quote">"The booking widget increased our online bookings by 340%. Students book at midnight, we wake up to full schedules. The weather integration alone is worth the subscription."</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar t2">SK</div>
-          <div>
-            <div class="testimonial-name">Sarah K.</div>
-            <div class="testimonial-role">Windchaser Academy, Tarifa Spain</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial-card reveal reveal-delay-2">
-        <div class="testimonial-stars">
-          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-        </div>
-        <p class="testimonial-quote">"Finally, one place for everything. No more WhatsApp groups, no more spreadsheets. Just pure organization. Our students love the progression tracker — it keeps them coming back."</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar t3">JM</div>
-          <div>
-            <div class="testimonial-name">Jan M.</div>
-            <div class="testimonial-role">Baltic Kite Center, Rügen Germany</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================
-     FAQ SECTION
-     ============================================ -->
-<section class="faq" id="faq">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">FAQ</span>
-      <h2 class="section-title">Straight Talk From a School Owner</h2>
-    </div>
-
-    <div class="faq-list">
-
-      <div class="faq-item reveal">
-        <input type="checkbox" class="faq-toggle" id="faq1">
-        <label class="faq-question" for="faq1">
-          <h4>I heard the first 33 schools get something special. What is it?</h4>
-          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span>
-        </label>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">
-            The first 33 schools to join get 3 months completely free — full access, no credit card, no strings. We're opening Ally OS to a limited group of early schools first so we can work closely with real operators and make sure every detail is right before we scale. If you're reading this, that window is still open. Once those 33 spots are claimed, this offer is gone.
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item reveal reveal-delay-1">
-        <input type="checkbox" class="faq-toggle" id="faq2">
-        <label class="faq-question" for="faq2">
-          <h4>What's the difference between School and Center?</h4>
-          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span>
-        </label>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">
-            One limit, honestly. The School plan ($99/mo) supports up to 5 staff instructors and 3 freelancers, with a gear inventory of up to 50 kites &amp; wings and 20 boards — more than enough for the vast majority of operations. The Center plan ($199/mo) removes all of those caps entirely: unlimited instructors, unlimited freelancers, unlimited gear. If you're running a large operation with multiple instructor rosters and a serious fleet, Center is your plan. Everything else — bookings, student progression, session journals, waivers, wind data, the whole OS — is identical across both.
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item reveal reveal-delay-1">
-        <input type="checkbox" class="faq-toggle" id="faq3">
-        <label class="faq-question" for="faq3">
-          <h4>I run a small school with 2 instructors. Is this overkill?</h4>
-          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span>
-        </label>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">
-            It's actually built for you. We started by working with small schools — owner-operators juggling WhatsApp bookings, paper waivers, and a spreadsheet that hasn't been updated since last season. Ally OS replaces all of that without adding complexity. The School plan covers you completely. You'll use what you need and ignore what you don't.
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item reveal reveal-delay-2">
-        <input type="checkbox" class="faq-toggle" id="faq4">
-        <label class="faq-question" for="faq4">
-          <h4>What's the deal with off-season months?</h4>
-          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span>
-        </label>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">
-            We know most schools aren't year-round. Pick your active months — you pay your plan rate for those. In the off-season, switch to off-season mode at 50% off. Your data, your bookings history, your student records — everything stays exactly where you left it. You're not paying full price to stare at a flat ocean.
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item reveal reveal-delay-2">
-        <input type="checkbox" class="faq-toggle" id="faq5">
-        <label class="faq-question" for="faq5">
-          <h4>My instructors are freelancers. Can they use this too?</h4>
-          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span>
-        </label>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">
-            Yes — and that's by design. The School plan includes up to 3 freelance instructors alongside your 5 staff. Each instructor gets their own profile, their own session journal, and their own progression tracking. They join your school on the platform, and you see their schedule, sessions, and student feedback. If they work at multiple schools, their profile travels with them. Everyone wins.
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item reveal reveal-delay-3">
-        <input type="checkbox" class="faq-toggle" id="faq6">
-        <label class="faq-question" for="faq6">
-          <h4>I already have a booking system. Why would I switch?</h4>
-          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span>
-        </label>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">
-            Because your booking system doesn't know what the wind is doing, doesn't track student progression, doesn't manage your gear inventory, and definitely doesn't let your riders see their own journey. Ally OS isn't a booking widget — it's the entire operating system for your school. Bookings are just one part of it. At $99/mo for the School plan, it costs less than most standalone booking tools and does ten times more.
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item reveal reveal-delay-1">
-        <input type="checkbox" class="faq-toggle" id="faq7">
-        <label class="faq-question" for="faq7">
-          <h4>Can I upgrade from School to Center later?</h4>
-          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span>
-        </label>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">
-            Anytime. Upgrade in one click and your limits lift immediately — all your existing data, instructors, and gear carry over. There's no migration, no setup fee, no call with a salesperson. Start on School, grow into Center when you're ready.
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item reveal reveal-delay-2">
-        <input type="checkbox" class="faq-toggle" id="faq8">
-        <label class="faq-question" for="faq8">
-          <h4>Do my students need to download anything?</h4>
-          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span>
-        </label>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">
-            No app, no download. Students get a web link — works on any phone, any browser. They can book lessons, check their progression, sign waivers, and review session notes. Parents of junior riders get the same access. Zero friction for your students means fewer drop-offs before the first lesson.
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item reveal reveal-delay-3">
-        <input type="checkbox" class="faq-toggle" id="faq9">
-        <label class="faq-question" for="faq9">
-          <h4>What happens to my data if I leave?</h4>
-          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span>
-        </label>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">
-            It's yours. Always. You can export your full student database, booking history, session journals, and gear records at any time — no questions asked, no hoops to jump through. We'd rather earn your loyalty every month than lock you in. If you cancel, you leave with everything.
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item reveal reveal-delay-1">
-        <input type="checkbox" class="faq-toggle" id="faq10">
-        <label class="faq-question" for="faq10">
-          <h4>How fast can I actually get this running?</h4>
-          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span>
-        </label>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">
-            Most schools go live within a day. Create your profile, claim your school, add your services and instructors, and you're bookable. We'll personally help migrate your existing student data — that's included in every plan, not upsold. If you've got a CSV, we've got an importer. Early adopter schools get hands-on onboarding from the founding team.
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ============================================
-     FINAL CTA
-     ============================================ -->
-<section class="final-cta" id="trial">
-  <div class="container">
-    <img src="ally_os_logo_white_gradient.svg" alt="Ally OS" style="height: 160px; width: auto; margin: 0 auto 1.5rem; display: block; opacity: 0.9; filter: drop-shadow(0 0 30px rgba(0, 212, 255, 0.2));" class="reveal">
-    <h2 class="final-cta-title reveal">Ready to Run Your<br>School Like a Pro?</h2>
-    <p class="final-cta-sub reveal reveal-delay-1">Join the most sophisticated operating system for watersports on the market. Free setup. Free migration. No credit card required.</p>
-    <div class="final-cta-buttons reveal reveal-delay-2">
-      <a href="https://www.antigravityalliance.com/register?role=school" target="_blank" rel="noopener" class="btn-primary">Start Free Trial →</a>
-      <a href="https://calendly.com/christian-bergler81/new-meeting" target="_blank" rel="noopener" class="btn-ghost">Book a Call</a>
-    </div>
-  </div>
-</section>
 
 <!-- ============================================
      FOOTER
@@ -7849,7 +6582,7 @@ body::after {
           <ul>
             <li><a href="/features">Features</a></li>
             <li><a href="/pricing">Pricing</a></li>
-            <li><a href="#showcase">Dashboards</a></li>
+            <li><a href="/features#showcase">Dashboards</a></li>
             <li><a href="#">Integrations</a></li>
             <li><a href="#">Changelog</a></li>
           </ul>
@@ -7870,7 +6603,7 @@ body::after {
             <li><a href="/privacy">Privacy Policy</a></li>
             <li><a href="/terms">Terms of Service</a></li>
             <li><a href="/cookies">Cookie Policy</a></li>
-            <li><a href="#">POPIA Compliance</a></li>
+            <li><a href="/acceptable-use">Acceptable Use</a></li>
           </ul>
         </div>
       </div>
@@ -7899,7 +6632,6 @@ body::after {
     </div>
   </div>
 </footer>
-
 <!-- ============================================
      JAVASCRIPT
      ============================================ -->
@@ -7969,149 +6701,6 @@ const revealObserver = new IntersectionObserver((entries) => {
 });
 
 revealElements.forEach(el => revealObserver.observe(el));
-
-// ---- Showcase Slider: Tab switching + auto-rotation + mock data toggle ----
-(function() {
-  var tabs = document.querySelectorAll('#showcaseSliderTabs .hero-tab');
-  var roatanContainer = document.getElementById('panelsRoatan');
-  var capeContainer = document.getElementById('panelsCapeTown');
-  var urlBar = document.getElementById('showcase-url-bar');
-  var toggle = document.getElementById('mockDataToggle');
-  var nameLabel = document.getElementById('schoolNameLabel');
-  var baseUrl = 'app.thekitealliance.com/';
-  var autoTimer = null;
-  var currentIdx = 0;
-  var INTERVAL = 6000;
-
-  function getActivePanels() {
-    var container = toggle && toggle.checked ? capeContainer : roatanContainer;
-    return container.querySelectorAll('.hero-slider-panel');
-  }
-
-  function switchTo(idx) {
-    var panels = getActivePanels();
-    tabs.forEach(function(t) { t.classList.remove('active'); });
-    panels.forEach(function(p) { p.classList.remove('active'); });
-    if (idx >= tabs.length) idx = 0;
-    tabs[idx].classList.add('active');
-    if (panels[idx]) panels[idx].classList.add('active');
-    if (urlBar) urlBar.textContent = baseUrl + tabs[idx].getAttribute('data-url');
-    currentIdx = idx;
-    var prog = tabs[idx].querySelector('.hero-tab-progress');
-    if (prog) { prog.style.animation = 'none'; prog.offsetHeight; prog.style.animation = ''; }
-  }
-
-  function startAuto() {
-    stopAuto();
-    autoTimer = setInterval(function() {
-      switchTo((currentIdx + 1) % tabs.length);
-    }, INTERVAL);
-  }
-
-  function stopAuto() {
-    if (autoTimer) { clearInterval(autoTimer); autoTimer = null; }
-  }
-
-  tabs.forEach(function(tab, i) {
-    tab.addEventListener('click', function() {
-      switchTo(i);
-      stopAuto();
-      setTimeout(startAuto, 12000);
-    });
-  });
-
-  // Mock data toggle
-  if (toggle) {
-    toggle.addEventListener('change', function() {
-      if (toggle.checked) {
-        roatanContainer.style.display = 'none';
-        capeContainer.style.display = '';
-        nameLabel.textContent = 'Watersport Center Cape Town';
-        nameLabel.classList.add('active-mock');
-      } else {
-        capeContainer.style.display = 'none';
-        roatanContainer.style.display = '';
-        nameLabel.textContent = 'Kitesurf Roatan';
-        nameLabel.classList.remove('active-mock');
-      }
-      switchTo(currentIdx);
-    });
-  }
-
-  startAuto();
-})();
-
-// ---- Showcase Slider: Tab switching + auto-rotation + mock data toggle ----
-(function() {
-  var tabs = document.querySelectorAll('#showcaseSliderTabs .hero-tab');
-  var roatanContainer = document.getElementById('panelsRoatan');
-  var capeContainer = document.getElementById('panelsCapeTown');
-  var urlBar = document.getElementById('showcase-url-bar');
-  var toggle = document.getElementById('mockDataToggle');
-  var nameLabel = document.getElementById('schoolNameLabel');
-  var baseUrl = 'app.thekitealliance.com/';
-  var autoTimer = null;
-  var currentIdx = 0;
-  var INTERVAL = 6000;
-
-  function getActivePanels() {
-    var container = toggle && toggle.checked ? capeContainer : roatanContainer;
-    return container.querySelectorAll('.hero-slider-panel');
-  }
-
-  function switchTo(idx) {
-    var panels = getActivePanels();
-    tabs.forEach(function(t) { t.classList.remove('active'); });
-    panels.forEach(function(p) { p.classList.remove('active'); });
-    if (idx >= tabs.length) idx = 0;
-    tabs[idx].classList.add('active');
-    if (panels[idx]) panels[idx].classList.add('active');
-    if (urlBar) urlBar.textContent = baseUrl + tabs[idx].getAttribute('data-url');
-    currentIdx = idx;
-    var prog = tabs[idx].querySelector('.hero-tab-progress');
-    if (prog) { prog.style.animation = 'none'; prog.offsetHeight; prog.style.animation = ''; }
-  }
-
-  function startAuto() {
-    stopAuto();
-    autoTimer = setInterval(function() {
-      switchTo((currentIdx + 1) % tabs.length);
-    }, INTERVAL);
-  }
-
-  function stopAuto() {
-    if (autoTimer) { clearInterval(autoTimer); autoTimer = null; }
-  }
-
-  tabs.forEach(function(tab, i) {
-    tab.addEventListener('click', function() {
-      switchTo(i);
-      stopAuto();
-      setTimeout(startAuto, 12000);
-    });
-  });
-
-  // Mock data toggle
-  if (toggle) {
-    toggle.addEventListener('change', function() {
-      if (toggle.checked) {
-        roatanContainer.style.display = 'none';
-        capeContainer.style.display = '';
-        nameLabel.textContent = 'Watersport Center Cape Town';
-        nameLabel.classList.add('active-mock');
-      } else {
-        capeContainer.style.display = 'none';
-        roatanContainer.style.display = '';
-        nameLabel.textContent = 'Kitesurf Roatan';
-        nameLabel.classList.remove('active-mock');
-      }
-      switchTo(currentIdx);
-    });
-  }
-
-  startAuto();
-})();
-
 // ---- Parallax scroll — move orbs at different speeds + directions ----
 const parallaxOrbs = document.querySelectorAll('.parallax-orb');
 const orbSpeeds = [
@@ -8135,7 +6724,6 @@ window.addEventListener('scroll', () => {
     ticking = true;
   }
 }, { passive: true });
-
 // ---- Animated counters ----
 function animateCounter(el) {
   const target = parseInt(el.getAttribute('data-target'));
@@ -8183,70 +6771,6 @@ const counterObserver = new IntersectionObserver((entries) => {
 
 counters.forEach(el => counterObserver.observe(el));
 </script>
-
-<script data-pplx-inline-edit>
-(function(){
-  if(window===window.top)return;
-  function inlineAll(orig,clone){
-    if(orig.nodeType!==1)return;
-    try{
-      var cs=getComputedStyle(orig);
-      var t='';
-      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
-      clone.style.cssText=t;
-    }catch(e){}
-    var oc=orig.children,cc=clone.children;
-    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
-  }
-  function stripExternal(clone){
-    var imgs=clone.querySelectorAll('img');
-    for(var i=0;i<imgs.length;i++){
-      var s=imgs[i].getAttribute('src');
-      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
-    }
-    var all=clone.querySelectorAll('*');
-    for(var i=0;i<all.length;i++){
-      var st=all[i].style.cssText;
-      if(st&&st.indexOf('url(')>=0){
-        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
-      }
-    }
-  }
-  window.addEventListener('message',function(e){
-    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
-    var scrollX=window.scrollX||window.pageXOffset||0;
-    var scrollY=window.scrollY||window.pageYOffset||0;
-    var w=window.innerWidth,h=window.innerHeight;
-    try{
-      var clone=document.documentElement.cloneNode(true);
-      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
-      for(var i=0;i<rm.length;i++){rm[i].remove();}
-      inlineAll(document.documentElement,clone);
-      stripExternal(clone);
-      var html=new XMLSerializer().serializeToString(clone);
-      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
-        +'<foreignObject width="100%" height="100%">'
-        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
-        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
-        +html+'</div></div></foreignObject></svg>';
-      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
-      var img=new Image();
-      img.onload=function(){
-        var c=document.createElement('canvas');c.width=w;c.height=h;
-        c.getContext('2d').drawImage(img,0,0);
-        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
-      };
-      img.onerror=function(){
-        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
-      };
-      img.src=svgUrl;
-    }catch(err){
-      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
-    }
-  });
-})();
-</script>
-
 <!-- ============================================
      FLOATING CHAT BUTTON
      ============================================ -->
@@ -8313,7 +6837,6 @@ document.getElementById('chatInput').addEventListener('keydown', function(e) {
   if (e.key === 'Enter') document.getElementById('chatSendBtn').click();
 });
 </script>
-
 <script>
 // Feature flip cards
 document.querySelectorAll('.flip-card').forEach(function(card) {
@@ -8357,7 +6880,7 @@ function cookieConsent(level) {
 <div class="cookie-banner" id="cookieBanner">
   <div class="cookie-banner-inner">
     <div class="cookie-banner-text">
-      We use essential cookies to keep the app running and optional analytics cookies to improve your experience. No tracking, no ads, no third-party data sharing. <a href="/cookies">Learn more</a>
+      We use essential cookies to keep the app running and optional analytics cookies to improve your experience. No tracking, no ads, no third-party data sharing. <a href="/privacy">Learn more</a>
     </div>
     <div class="cookie-banner-buttons">
       <button class="cookie-btn cookie-btn-necessary" onclick="cookieConsent('necessary')">Necessary Only</button>
