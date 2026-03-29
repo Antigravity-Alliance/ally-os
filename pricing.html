@@ -6156,6 +6156,80 @@ body::after {
 .page-hero { padding: 8rem 1.5rem 3rem; text-align: center; }
 .page-hero h1 { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; text-transform: uppercase; color: var(--white); margin-bottom: 0.75rem; }
 .page-hero p { color: var(--fog); font-size: 1.125rem; max-width: 600px; margin: 0 auto; }
+
+/* ---- Cookie Consent Banner ---- */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  background: rgba(10, 14, 20, 0.97);
+  backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 1.25rem 1.5rem;
+  transform: translateY(100%);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.cookie-banner.visible {
+  transform: translateY(0);
+}
+.cookie-banner-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.cookie-banner-text {
+  flex: 1;
+  min-width: 280px;
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.5;
+}
+.cookie-banner-text a {
+  color: var(--aqua);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.cookie-banner-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+.cookie-btn {
+  padding: 0.625rem 1.25rem;
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  min-height: 40px;
+}
+.cookie-btn-accept {
+  background: var(--aqua);
+  color: var(--deep-navy);
+}
+.cookie-btn-accept:hover {
+  background: #00E5FF;
+  box-shadow: 0 2px 12px rgba(0, 212, 255, 0.3);
+}
+.cookie-btn-necessary {
+  background: transparent;
+  color: rgba(255,255,255,0.7);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+.cookie-btn-necessary:hover {
+  border-color: rgba(255,255,255,0.3);
+  color: white;
+}
+@media (max-width: 600px) {
+  .cookie-banner-inner { flex-direction: column; text-align: center; }
+  .cookie-banner-buttons { width: 100%; justify-content: center; }
+}
 </style>
 </head>
 <body>
@@ -6312,7 +6386,7 @@ body::after {
         </div>
         <div class="trust-text">
           <strong>SSL Encrypted</strong>
-          <span>256-bit encryption on all data</span>
+          <span>256-bit TLS on every connection</span>
         </div>
       </div>
       <div class="trust-item">
@@ -6338,8 +6412,8 @@ body::after {
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
         </div>
         <div class="trust-text">
-          <strong>POPIA Compliant</strong>
-          <span>Student data handled right</span>
+          <strong>GDPR &amp; Privacy First</strong>
+          <span>Built for global data protection</span>
         </div>
       </div>
       <div class="trust-item">
@@ -6663,7 +6737,37 @@ document.querySelectorAll('.flip-card').forEach(function(card) {
     });
   });
 })();
+
+// ---- Cookie Consent ----
+function cookieConsent(level) {
+  localStorage.setItem('cookie-consent', level);
+  localStorage.setItem('cookie-consent-date', new Date().toISOString());
+  document.getElementById('cookieBanner').classList.remove('visible');
+}
+(function() {
+  if (!localStorage.getItem('cookie-consent')) {
+    setTimeout(function() {
+      document.getElementById('cookieBanner').classList.add('visible');
+    }, 1500);
+  }
+})();
+
 </script>
 
+
+<!-- ============================================
+     COOKIE CONSENT BANNER
+     ============================================ -->
+<div class="cookie-banner" id="cookieBanner">
+  <div class="cookie-banner-inner">
+    <div class="cookie-banner-text">
+      We use essential cookies to keep the app running and optional analytics cookies to improve your experience. No tracking, no ads, no third-party data sharing. <a href="/privacy">Learn more</a>
+    </div>
+    <div class="cookie-banner-buttons">
+      <button class="cookie-btn cookie-btn-necessary" onclick="cookieConsent('necessary')">Necessary Only</button>
+      <button class="cookie-btn cookie-btn-accept" onclick="cookieConsent('all')">Accept All</button>
+    </div>
+  </div>
+</div>
 </body>
 </html>
