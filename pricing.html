@@ -419,6 +419,9 @@ body::after {
   box-shadow: 0 4px 20px rgba(0, 212, 255, 0.35);
 }
 
+.nav-login { font-size: 0.875rem; font-weight: 500; color: rgba(255,255,255,0.7) !important; transition: color 0.2s; }
+.nav-login:hover { color: var(--aqua) !important; }
+
 .nav-cta:active {
   transform: translateY(0);
 }
@@ -6180,6 +6183,7 @@ body::after {
       
       <li><a href="/pricing">Pricing</a></li>
       <li><a href="/#faq">FAQ</a></li>
+      <li><a href="https://sandbox-frontend-nu.vercel.app/auth" target="_blank" rel="noopener" class="nav-login">Login</a></li>
       <li><a href="https://sandbox-frontend-nu.vercel.app/register?role=school" target="_blank" rel="noopener" class="nav-cta">Start Free Trial</a></li>
     </ul>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
