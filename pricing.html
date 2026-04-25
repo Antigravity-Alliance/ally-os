@@ -14,7 +14,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pricing — Ally OS | The Operating System for Kite Schools</title>
-<meta name="description" content="Simple, transparent pricing for Ally OS. Free rider profiles at $0.99/mo. Full school operating system at $99/mo. Free 14-day trial, no credit card required.">
+<meta name="description" content="Simple, transparent pricing for Ally OS. Solo $19/mo, School $49/mo, Center $99/mo. Everything included. Free first season for new schools. Pay only when you operate.">
 <meta property="og:title" content="Ally OS — The Operating System for Kite Schools">
 <meta property="og:description" content="The all-in-one operating system for kite schools, wingfoil centers, and watersport academies.">
 <meta property="og:type" content="website">
@@ -5958,14 +5958,44 @@ body::after {
 }
 
 /* Default: school visible, center hidden */
+.pricing-amount-solo { display: none; }
 .pricing-amount-center { display: none; }
+.pricing-limits-solo { display: none; }
 .pricing-limits-center { display: none; }
+
+/* When card has data-tier="solo" */
+.pricing-card[data-tier="solo"] .pricing-amount-school { display: none; }
+.pricing-card[data-tier="solo"] .pricing-amount-solo { display: inline; }
+.pricing-card[data-tier="solo"] .pricing-limits-school { display: none; }
+.pricing-card[data-tier="solo"] .pricing-limits-solo { display: flex; }
 
 /* When card has data-tier="center" */
 .pricing-card[data-tier="center"] .pricing-amount-school { display: none; }
 .pricing-card[data-tier="center"] .pricing-amount-center { display: inline; }
 .pricing-card[data-tier="center"] .pricing-limits-school { display: none; }
 .pricing-card[data-tier="center"] .pricing-limits-center { display: flex; }
+
+/* Commission subtitle under headline price */
+.pricing-commission {
+  font-size: 0.875rem;
+  color: var(--white-50);
+  margin-top: 0.25rem;
+  font-weight: 500;
+}
+
+/* "See all features" link under feature list */
+.pricing-features-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--aqua);
+  text-decoration: none;
+  transition: opacity 0.2s var(--ease-out);
+}
+.pricing-features-link:hover {
+  opacity: 0.8;
+}
 
 /* ============================================
    SHOWCASE WRAPPER
@@ -6307,31 +6337,45 @@ body::after {
         <div class="pricing-popular">Most Popular</div>
 
         <div class="pricing-tier-toggle">
+          <input type="radio" name="school-tier" id="tier-solo">
+          <label for="tier-solo">Solo<span>$19/mo</span></label>
           <input type="radio" name="school-tier" id="tier-school" checked>
-          <label for="tier-school">School<span>$99/mo</span></label>
+          <label for="tier-school">School<span>$49/mo</span></label>
           <input type="radio" name="school-tier" id="tier-center">
-          <label for="tier-center">Center<span>$199/mo</span></label>
+          <label for="tier-center">Center<span>$99/mo</span></label>
         </div>
 
         <div class="pricing-price">
-          <span class="pricing-amount pricing-amount-school">$99<span class="pricing-period">/mo</span></span>
-          <span class="pricing-amount pricing-amount-center">$199<span class="pricing-period">/mo</span></span>
+          <span class="pricing-amount pricing-amount-solo">$19<span class="pricing-period">/mo</span></span>
+          <span class="pricing-amount pricing-amount-school">$49<span class="pricing-period">/mo</span></span>
+          <span class="pricing-amount pricing-amount-center">$99<span class="pricing-period">/mo</span></span>
         </div>
-        <p class="pricing-desc">All 19 features above, included.</p>
+        <p class="pricing-commission">+ 1.5% per online booking</p>
+        <p class="pricing-desc">Everything included. No upgrade tiers, no asterisks.</p>
         <div class="pricing-or-commission">
-          <span>or pay 0$/mo + commission per booking</span>
+          <span>Free first season for new schools</span>
         </div>
         <ul class="pricing-features">
-          <li>Easy onboarding — be live in minutes</li>
-          <li>Full control over your bookings</li>
-          <li>Reduce admin by 75%</li>
-          <li>Payment gateway integrations available</li>
-          <li>14-day free trial — no credit card required</li>
+          <li>Smart booking widget &mdash; 24/7 online bookings</li>
+          <li>Wind &amp; weather intelligence per spot</li>
+          <li>Instructor planning board with drag-and-drop</li>
+          <li>Smart client cards (skill, weight, language, history)</li>
+          <li>Digital waiver signing + QR check-in</li>
+          <li>Push notifications &mdash; group &amp; individual</li>
+          <li>Inventory &amp; equipment tracking</li>
+          <li>Financial dashboard &amp; reports</li>
+          <li>Off-season pause &mdash; pay only when you operate</li>
         </ul>
+        <a href="features.html" class="pricing-features-link">See all 19 features &rarr;</a>
+
+        <div class="pricing-limits-solo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Solo instructor &bull; 1 active calendar
+        </div>
 
         <div class="pricing-limits-school">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          Up to 5 instructors + 3 freelancers &bull; Max 50 kites &amp; wings + 20 boards
+          Up to 5 active instructors
         </div>
 
         <div class="pricing-limits-center">
@@ -6731,7 +6775,10 @@ document.querySelectorAll('.flip-card').forEach(function(card) {
   var radios = card.querySelectorAll('input[name="school-tier"]');
   radios.forEach(function(radio) {
     radio.addEventListener('change', function() {
-      card.setAttribute('data-tier', radio.id === 'tier-center' ? 'center' : 'school');
+      var tier = 'school';
+      if (radio.id === 'tier-solo') tier = 'solo';
+      else if (radio.id === 'tier-center') tier = 'center';
+      card.setAttribute('data-tier', tier);
     });
   });
 })();
